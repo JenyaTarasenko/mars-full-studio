@@ -10,15 +10,15 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 text-white  py-5 navigation">
-      <div className="flex items-center justify-between relative">
+    <nav className="fixed top-0 left-0 right-0 z-50 text-white py-5 backdrop-blur-xl bg-black/30 border-b border-white/10 shadow-2xl">
+      <div className="flex items-center justify-between relative bg-transparent" >
         {/* Лого слева */}
         <div className="logo-menu px-5">
-            <img src="/image/logo-mars.svg" alt="Logo" />
+            <img src="/image/logo-mars.svg" alt="Logo"/>
         </div>
 
         {/* Центр меню */}
-        <ul className="hidden md:flex gap-10 text-xs font-light tracking-widest absolute left-1/2 transform -translate-x-1/2 font-jost uppercase">
+        <ul className="hidden md:flex gap-10 text-xs  font-light tracking-widest absolute left-1/2 transform -translate-x-1/2 font-jost uppercase">
           <li><a href="#" className="hover:text-red-500">{t("menu.about")}</a></li>
           <li><a href="#" className="hover:text-red-500">{t("menu.projects")}</a></li>
           <li><a href="#" className="hover:text-red-500">{t("menu.prices")}</a></li>

@@ -1,4 +1,5 @@
 {
+
     "menu":{
         "home": "Home",
         "about": "About",
@@ -6,5 +7,27 @@
         "prices": "Prices",
         "blog": "Blog",
         "contact": "Contact"
+    },
+
+    "buttonLights":{
+        "connection":"Connection"
+    },
+
+    "buttonSecondary":{
+        "projectsAll":"View projects"
+    },
+
+    "main":{
+        "solution": "Solution",
+        "job":"Website development for your business",
+        "title":"Development",
+        "titlePart1":"turnkey websites",
+        "titlePart2":"from landing page to online store",
+        "description":"Functional and unique websites for any task - from single-page solutions to multi-page and corporate projects with well-thought-out logic and design"
     }
+
 }
+
+
+
+
