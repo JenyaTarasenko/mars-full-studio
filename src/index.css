@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind base;       /* Базовые стили */
+@tailwind components;  /* Компоненты */
+@tailwind utilities;   /* Утилиты */
+/* ---------------------общие--------------*/
+body, html, h1, h2, h3, h4, h5, h6, p, a, div, span {
+  font-family: 'Jost', sans-serif !important;
+  background-color: #0E1520;
+}
+
+a {
+
+  text-decoration: none;
+  color:#E9EBEB;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* .body {
+
+  margin: 0;
+  padding: 0;
+} */
+html,body {
+ 
+  font-family: 'Jost', sans-serif;
+  font-size: 16px; 
+  /* color: #7b5616;  */
+  overflow-x: hidden;
+  max-width: 1280px; 
+  margin: 0 auto; /* Центрируем контент */
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
