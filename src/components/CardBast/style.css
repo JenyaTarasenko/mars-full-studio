@@ -1,0 +1,12 @@
+.card-main {
+    /* background-color: rgba(227, 227, 227, 0.03); */
+    background: linear-gradient(
+    90deg, 
+    rgba(227, 227, 227, 0.03) 0%, 
+    rgba(119, 119, 119, 0.02) 100%
+  );
+  
+  
+    border: 1px solid rgba(247, 247, 247, 0.08); /* 0.2 = 10% opacity */
+    border-radius: 20px;
+}

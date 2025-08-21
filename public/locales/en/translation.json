@@ -33,6 +33,15 @@
         "individual":"Customized solution",
         "functional":"Developments from design to UI and server programming as well as individual functionality.",
         "full":"Full development cycle."
+    },
+
+    "cardBast":{
+        "text":"Landing page",
+        "solution":"Fast and effective, ideal for presenting a single product or service.",
+        "multi-page":"Multi-page",
+        "multi-page-text":"Convenient structure for companies with a large volume of information, services or content.",
+        "onlineStores":"Online stores",
+        "onlineStoresText":"Full-fledged platforms for online sales with a catalog, shopping cart and payment system."
     }
 
 }

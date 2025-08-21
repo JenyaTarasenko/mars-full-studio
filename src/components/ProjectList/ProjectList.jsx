@@ -15,10 +15,16 @@ function ListView(){
 
     
     // Функция для перевода, объявляем внутри компонента
-    const getTranslated = (project, field) => {
-        const lang = i18n.language.startsWith('ru') ? 'ru' : 'en';
-        return project[`${field}_${lang}`];
-    };
+    // const getTranslated = (project, field) => {
+    //     const lang = i18n.language.startsWith('ru') ? 'ru' : 'en';
+    //     return project[`${field}_${lang}`];
+    // };
+
+    // Функция для перевода, объявляем внутри компонента меняет языки динамически апи
+    const getTranslated = (project, field) =>{
+        const lang = i18n.language.slice(0, 2);  
+        return project[`${field}_${lang}`] || project[`${field}_ru`]; 
+    }
 
     // useEffect(()=>{
     //     // fetch('https://jenyatarasenko.pythonanywhere.com/api/projects/')

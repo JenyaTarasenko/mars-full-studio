@@ -161,6 +161,7 @@ USE_L10N = True
 LANGUAGES = (
     ('ru', 'Russian'),
     ('en', 'English'),
+    ('uk', 'Ukrainian'), 
 )
 
 LOCALE_PATHS = [
