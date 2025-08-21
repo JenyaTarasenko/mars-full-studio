@@ -24,6 +24,15 @@
         "titlePart1":"turnkey websites",
         "titlePart2":"from landing page to online store",
         "description":"Functional and unique websites for any task - from single-page solutions to multi-page and corporate projects with well-thought-out logic and design"
+    },
+
+    "advantage":{
+        "solution":"Design from scratch - no templates. We take into account brand style, UX and modern trends.",
+        "description":"Strong design",
+        "develop":"We develop unique solutions on React and Django with full functionality for your tasks.",
+        "individual":"Customized solution",
+        "functional":"Developments from design to UI and server programming as well as individual functionality.",
+        "full":"Full development cycle."
     }
 
 }

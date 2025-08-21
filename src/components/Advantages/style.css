@@ -1,0 +1,19 @@
+.pulse-glow {
+    animation: pulse-glow 1s ease-in-out infinite;
+    text-shadow: 0 0 5px white;
+  }
+  
+  @keyframes pulse-glow {
+    0%, 100% {
+      text-shadow: 0 0 5px white;
+    }
+    50% {
+      text-shadow: 0 0 10px white;
+    }
+  }
+  /* Блок  преимущества */
+  
+  
+.advantages-mobile {
+    display: none !important;
+}
