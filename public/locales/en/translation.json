@@ -45,7 +45,9 @@
     },
     "textDecoration":{
         "default":"OUR",
-        "solutions":"solutions"
+        "solutions":"solutions",
+        "price":"price"
+
     },
 
     "cardJobOne":{

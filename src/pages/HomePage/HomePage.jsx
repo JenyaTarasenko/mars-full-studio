@@ -8,6 +8,7 @@ import BastCard from '../../components/CardBast/CardBast';
 import TextDecoration from '../../components/Text/TextDecoration/TextDecoration';
 import CardJob from '../../components/CardJob/CardJob';
 import Shedule from '../../components/ schedule/ schedule';
+import Price from '../../components/Price/Price';
 
 function HomePage(){
     return (
@@ -21,6 +22,8 @@ function HomePage(){
         <BastCard />
         <Shedule />
         <CardJob />
+        <TextDecoration  mainKey="price"/>
+        <Price />
 
        
         

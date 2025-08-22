@@ -50,7 +50,8 @@
 
     "textDecoration":{
         "default":"НАШИ",
-        "solutions":"решения"
+        "solutions":"решения",
+        "price":"Цены"
     },
 
 
@@ -78,7 +79,7 @@
         "textOne":"Backend",
         "textTwo":"на Django"
     },
-    
+
     "cardJobFive":{
         "textOne":"Хостинг",
         "textTwo":"и поддержка",

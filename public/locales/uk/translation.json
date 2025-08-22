@@ -48,7 +48,8 @@
     
     "textDecoration":{
         "default":"НАШІ",
-        "solutions":"рішення"
+        "solutions":"рішення",
+        "price":"Ціни"
     },
 
     "cardJobOne":{
