@@ -5,6 +5,10 @@ import MainSection from '../../components/MainSection/MainSection';
 import TechnologiesMain from '../../components/TechnologiesMain/TechnologiesMain';
 import Advantages from '../../components/Advantages/Advantages';
 import BastCard from '../../components/CardBast/CardBast';
+import TextDecoration from '../../components/Text/TextDecoration/TextDecoration';
+import CardJob from '../../components/CardJob/CardJob';
+import Shedule from '../../components/ schedule/ schedule';
+
 function HomePage(){
     return (
         <>
@@ -13,7 +17,12 @@ function HomePage(){
         {/* <ListView /> */}
         <TechnologiesMain />
         <Advantages />
+        <TextDecoration  mainKey="solutions"/>
         <BastCard />
+        <Shedule />
+        <CardJob />
+
+       
         
         </>
     );

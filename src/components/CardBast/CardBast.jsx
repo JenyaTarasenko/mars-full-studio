@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 function BastCard(){
     const { t } = useTranslation();
     return(
-    <div className="w-full flex justify-center section-card-main mt-[200px]">
+    <div className="w-full flex justify-center section-card-main mt-[50px]">
         <div className="overflow-x-auto overflow-y-hidden py-6">
             {/* <!-- карта 1 --> */}
             <div class="flex space-x-4">

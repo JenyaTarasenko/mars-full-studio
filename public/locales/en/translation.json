@@ -42,7 +42,57 @@
         "multi-page-text":"Convenient structure for companies with a large volume of information, services or content.",
         "onlineStores":"Online stores",
         "onlineStoresText":"Full-fledged platforms for online sales with a catalog, shopping cart and payment system."
+    },
+    "textDecoration":{
+        "default":"OUR",
+        "solutions":"solutions"
+    },
+
+    "cardJobOne":{
+        "textOne":"Unique",
+        "textTwo":"design",
+        "description":"Design from scratch — no templates. We create a unique visual style that reflects the character of your brand. Focus on creativity, UX and modern trends allows us to make interfaces not only beautiful, but also convenient for users."
+    },
+
+    "cardJobTwo":{
+        "description":"A site with a full structure and separate sections: home, about the company, services, portfolio, blog, contacts. Suitable for business, corporate projects and online services with a large amount of information.",
+        "textOne":"Adaptive",
+        "textTwo":"layout"
+    },
+
+
+    "cardJobThree":{
+        "textOne":"Frontend",
+        "textTwo":"in React",
+        "description":"We develop a modern, fast and responsive interface using React. Thanks to the component architecture, the site is easily scalable and works quickly even under high load. The design is adaptive and looks great on all devices - from mobile to desktop."
+    },
+
+    "cardJobFour":{
+        "description":"With Django and React, you can implement a lot of features: personal accounts, online payments, chats, filters, smart search, notifications, adaptive forms, admin panels - the choice of functionality is limited by your imagination",
+        "textOne":"Backend",
+        "textTwo":"in Django"
+    },
+
+    "cardJobFive":{
+        "textOne":"Hosting",
+        "textTwo":"and support",
+        "description":"We develop a modern, fast and responsive interface using React. Thanks to the component architecture, the site is easily scalable and works quickly even under high load. The design is adaptive and looks great on all devices - from mobile to desktop."
+    },
+
+
+    "Shedule":{
+        "text":"Effective",
+        "textOne":"solution",
+        "textTwo":"for your business",
+        "item":"We offer a full cycle of web resource development — from design to launch. We help companies effectively move their business online and increase conversions through a well-thought-out structure, adaptive design, and modern technologies",
+        "itemOne":"Web resource development",
+        "itemTwo":"it's not just a website creation, it's a tool for growing your business",
+        "itemCard":"Attracting clients",
+        "itemCardOne":"Ease of interaction",
+        "itemCardTwo":"Optimization of business processes"
     }
+
+
 
 }
 

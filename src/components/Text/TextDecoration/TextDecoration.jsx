@@ -1,14 +1,17 @@
     import { useTranslation } from 'react-i18next';
 
 
-    function TextDecoration(){
+    function TextDecoration({mainKey}){
         const { t } = useTranslation();
 
         return(
-            <div className="section-text-decor flex items-center flex-row gap-3 ml-5 mt-[50px]">
-                <h6 className="font-jost text-zinc-50 text-sm">НАШИ <span className="italic text-xl" style={{color:'#CE664D'}}>цены</span></h6>
-                <img src="/image/text-mars.svg" alt="logo-decor" className="animate-spin-slow"/>
+            <div className="flex items-center flex-col gap-3 ml-5 mt-[150px] justify-start">
+                <div class="flex flex-row gap-5">
+                    <h6 className="font-jost text-zinc-50 sm:text-7xl text-5xl">{t('textDecoration.default')}</h6> 
+                    <img src="/image/text-mars.svg" alt="logo-decor" className="animate-spin-slow"/>
+                </div>
+                <span className="italic sm:text-6xl text-4xl translate-x-[-70px] translate-y-[-35px]" style={{color:'#CE664D'}}>{t(`textDecoration.${mainKey}`)}</span>
             </div>
-        ):
+        );
     }
     export default TextDecoration;
