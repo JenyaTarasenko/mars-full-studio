@@ -1,0 +1,57 @@
+import './style.css';
+import { useTranslation } from 'react-i18next';
+
+function DesignSection({ link }){
+    const { t } = useTranslation();
+    return(
+        <>
+        <div className="flex flex-col items-center justify-center reletive mt-[120px]">
+            {/* card-disign  1*/}
+            <div className="card-tehnology flex flex-col justify-start w-[300px] lg:w-[700px] md:w-[500px]">
+                <h5 className="font-extrabold text-2xl sm:text-3xl text-left font-jost mt-10 text-stone-100">Мы разрабатываем<span className="italic font-light text-orange-700 text-3xl"> по-настоящему уникальные дизайны,</span> которые невозможно спутать с другими.</h5>
+                <img src="/image/tehnology1.svg" alt="logo" className="mt-3 w-[100px]"/>
+                <h6 className="font-jost text-stone-400 mt-5">Наши дизайнеры создают визуальный стиль, который выделяет ваш бизнес среди конкурентов — современный, выразительный и запоминающийся.Каждый элемент продуман: от цветовой палитры до композиции.Наш фирменный стиль узнаваем и помогает сформировать сильный образ бренда в глазах клиента</h6>
+                <img src="/image/des.svg" alt="logo" className="absolute left-1/2 -translate-x-1/2 design-destop z-[-1]"/>
+                <img src="/image/design-mob.svg" alt="logo" className="absolute left-1/2 -translate-x-1/2 design-mob z-[-1] translate-y-[50px] "/>
+                <div className="card-box flex flex-col lg:flex-row mt-10 gap-3 items-center justify-center lg:justify-start ">
+                    <img src="/image/card1.svg" alt="logo" className="transition-transform duration-300 transform hover:scale-105 active:scale-95 w-[310px] h-[200px]"/>
+                    <img src="/image/design-card-2.svg" alt="logo" className="transition-transform duration-300 transform hover:scale-105 active:scale-95 w-[290px] h-[200px]"/>
+                </div>
+            </div> 
+            {/* card-disign  1*/}
+
+            {/* card-disign  2*/}
+            <div className="card-tehnology flex flex-col justify-start w-[300px] lg:w-[700px] md:w-[500px] mt-[120px]">
+                <h5 className="font-extrabold text-2xl sm:text-3xl text-left font-jost mt-10 text-stone-100">Мы создаём — <span className="italic font-light text-orange-700 text-3xl"> frontend на базе React</span> одного из самых мощных инструментов для построения<span className="italic font-light text-orange-700 text-3xl"> динамичных и адаптивных пользовательских интерфейсов,</span>  которые невозможно спутать с другими.</h5>
+                <img src="/image/tehnology1.svg" alt="logo" className="mt-3 w-[100px]"/>
+                <h6 className="font-jost text-stone-400 mt-5">React позволяет реализовывать гибкие и быстрые сайты с интерактивными элементами, плавной навигацией и моментальной загрузкой страниц без перезагрузки.адаптивную верстку для всех устройств, формы и валидацию данных, динамические фильтры, поиск и сортировку ,личные кабинеты, корзины, избранное, подключение к backend API (Django),интерактивные элементы и анимации,темную/светлую тему, уведомления, лоадеры и многое другое.</h6>
+                <img src="/image/frontend-destop.svg" alt="logo" className="absolute left-1/2 -translate-x-1/2 design-destop z-[-1]"/>
+                <img src="/image/mobile-front.svg" alt="logo" className="absolute left-1/2 -translate-x-1/2 design-mob z-[-1] translate-y-[-200px] "/>
+                <div className="card-box flex flex-col lg:flex-row mt-10 gap-3 items-center justify-center lg:justify-start ">
+                    <img src="/image/card-front.svg" alt="logo" className="transition-transform duration-300 transform hover:scale-105 active:scale-95 w-[310px] h-[200px]"/>
+                    <img src="/image/front-card2.svg" alt="logo" className="transition-transform duration-300 transform hover:scale-105 active:scale-95 w-[290px] h-[200px]"/>
+                </div>
+            </div> 
+        
+            {/* card-disign  2*/}
+
+        
+            {/* card-disign  3 */}
+            <div className="card-tehnology flex flex-col justify-start w-[300px] lg:w-[700px] md:w-[500px] mt-[120px]">
+                <h5 className="font-extrabold text-2xl sm:text-3xl text-left font-jost mt-10 text-stone-100">Внутренняя часть наших проектов разработана <span className="italic font-light text-orange-700 text-3xl">на Python  Django одном из самых мощных, масштабируемых и надёжных фреймворков.</span></h5>
+                <img src="/image/tehnology1.svg" alt="logo" className="mt-3 w-[100px]"/>
+                <h6 className="font-jost text-stone-400 mt-5">Django позволяет быстро создавать сложные веб-приложения с чистой архитектурой и понятной структурой кода.Благодаря своей гибкости и масштабируемости Django подходит как для небольших проектов, так и для крупных корпоративных систем.Он включает готовые инструменты для работы с базами данных, админ-панелью, авторизацией и безопасностью.</h6>
+                <img src="/image/backend.svg" alt="logo" className="absolute left-1/2 -translate-x-1/2 design-destop z-[-1]"/>
+                <img src="/image/backend-mobile.svg" alt="logo" className="absolute left-1/2 -translate-x-1/2 design-mob z-[-1] translate-y-[20px] "/>
+                <div className="card-box flex flex-col lg:flex-row mt-10 gap-3 items-center justify-center lg:justify-start ">
+                    <img src="/image/backend-card-destop.svg" alt="logo" className="transition-transform duration-300 transform hover:scale-105 active:scale-95 w-[310px] h-[200px]"/>
+                    <img src="/image/backend-card2.svg" alt="logo" className="transition-transform duration-300 transform hover:scale-105 active:scale-95 w-[290px] h-[200px]"/>
+                </div>
+            </div> 
+            {/* card-disign  3 */}
+
+        </div>
+    </>
+    );
+}
+export default DesignSection;

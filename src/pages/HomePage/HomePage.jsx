@@ -12,6 +12,7 @@ import Price from '../../components/Price/Price';
 import ButtonMain from '../../components/Buttons/ButtonMain/ButtonMain';
 import SectionTextMain from '../../components/SectionTextMain/SectionTextMain';
 import ReviewsSection from '../../components/ReviewsSection/ReviewsSection';
+import DesignSection from '../../components/DesignSection/DesignSection';
 
 function HomePage(){
     return (
@@ -29,6 +30,7 @@ function HomePage(){
             <TextDecoration  mainKey="price"/>
             <Price />
             <ReviewsSection />
+            < DesignSection />
         </>
     );
 } 
