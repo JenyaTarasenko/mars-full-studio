@@ -9,24 +9,26 @@ import TextDecoration from '../../components/Text/TextDecoration/TextDecoration'
 import CardJob from '../../components/CardJob/CardJob';
 import Shedule from '../../components/ schedule/ schedule';
 import Price from '../../components/Price/Price';
+import ButtonMain from '../../components/Buttons/ButtonMain/ButtonMain';
+import SectionTextMain from '../../components/SectionTextMain/SectionTextMain';
+import ReviewsSection from '../../components/ReviewsSection/ReviewsSection';
 
 function HomePage(){
     return (
         <>
-        <Navbar />
-        <MainSection />
-        {/* <ListView /> */}
-        <TechnologiesMain />
-        <Advantages />
-        <TextDecoration  mainKey="solutions"/>
-        <BastCard />
-        <Shedule />
-        <CardJob />
-        <TextDecoration  mainKey="price"/>
-        <Price />
-
-       
-        
+            <Navbar />
+            <MainSection />
+            {/* <ListView /> */}
+            <TechnologiesMain />
+            <Advantages />
+            <TextDecoration  mainKey="solutions"/>
+            <BastCard />
+            <ButtonMain />
+            <Shedule />
+            <CardJob />
+            <TextDecoration  mainKey="price"/>
+            <Price />
+            <ReviewsSection />
         </>
     );
 } 

@@ -92,7 +92,19 @@
         "itemCard":"Attracting clients",
         "itemCardOne":"Ease of interaction",
         "itemCardTwo":"Optimization of business processes"
+    },
+
+
+    "price":{
+        "multiPage":"Multi-page",
+        "magazin":"Online stores",
+        "landingPage":"Landing page"
+    },
+
+    "buttonMain":{
+        "order":"Order"
     }
+    
 
 
 
