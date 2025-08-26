@@ -98,11 +98,34 @@
     "price":{
         "multiPage":"Multi-page",
         "magazin":"Online stores",
-        "landingPage":"Landing page"
+        "landingPage":"Landing page",
+        "multiPageItem":"from"
     },
 
     "buttonMain":{
         "order":"Order"
+    },
+
+    "DesignSectionOne":{
+        "item":"We are developing",
+        "itemOne":"truly unique designs,",
+        "itemTwo":"which cannot be confused with others.",
+        "itemThree":"Our designers create a visual style that sets your business apart from competitors - modern, expressive and memorable. Every element is thought out: from the color palette to the composition. Our corporate style is recognizable and helps to form a strong brand image in the eyes of the client"
+    },
+
+    "DesignSectionTwo":{
+        "item":"We create -",
+        "itemOne":"frontend based on React",
+        "itemTwo":"one of the most powerful tools for building",
+        "itemThree":"dynamic and adaptive user interfaces,",
+        "itemFour":"which cannot be confused with others.",
+        "ItemFive":"React allows you to implement flexible and fast websites with interactive elements, smooth navigation and instant page loading without reloading. adaptive layout for all devices, forms and data validation, dynamic filters, search and sorting, personal accounts, baskets, favorites, connection to the backend API (Django), interactive elements and animations, dark/light theme, notifications, loaders and much more."
+    },
+
+    "DesignSectionThree":{
+        "item":"The interior of our projects is designed",
+        "itemOne":"on Python Django one of the most powerful, scalable and reliable frameworks.",
+        "itemThree":"Django allows you to quickly create complex web applications with a clean architecture and understandable code structure. Due to its flexibility and scalability, Django is suitable for both small projects and large corporate systems. It includes ready-made tools for working with databases, admin panel, authorization and security."
     }
     
 

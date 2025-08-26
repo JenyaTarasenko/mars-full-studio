@@ -12,7 +12,9 @@ function Price(){
                     
                     <img src="/image/elips-center.svg" class="animate-spin-slow-new absolute" style={{marginTop:"820px"}} />
                     <div className="flex items-center  flex-col justify-center absolute translate-y-[400px] gap-3">
-                        <h5 className="font-jost text-6xl italic" style={{color:"#FF3100", fontWeight:"900"}}>от 300 $</h5>
+
+                        <h5 className="font-jost text-6xl italic" style={{color:"#FF3100", fontWeight:"900"}}><span style={{fontSize:"16px", fontWeight:"400"}}>{t('price.multiPageItem')}{" "}</span> 300 $</h5>
+                        {/* <h5 className="font-jost text-6xl italic" style={{color:"#FF3100", fontWeight:"900"}}>от 300 $</h5> */}
                         {/* <h6 className="font-jost text-4xl text-white font-bold">Многостраничные</h6> */}
                         <h6 className="font-jost text-4xl text-blue-200 font-light ">{t('price.multiPage')}</h6>
                     </div>
@@ -21,7 +23,9 @@ function Price(){
                 <div className="flex items-center justify-center">
                     <img src="/image/elips-left.svg" class="animate-spin-slow-new absolute mr-[600px]" style={{marginTop:"820px"}} />
                 <div className="flex items-center  flex-col justify-center absolute translate-y-[400px] translate-x-[300px] gap-3">
-                    <h5 className="font-jost text-4xl italic" style={{color:"#FF3100", fontWeight:"900"}}>от 400 $</h5>
+                    {/* <h5 className="font-jost text-4xl italic" style={{color:"#FF3100", fontWeight:"900"}}>от 400 $</h5> */}
+                          <h5 className="font-jost text-4xl italic" style={{color:"#FF3100", fontWeight:"900"}}><span style={{fontSize:"16px", fontWeight:"400"}}>{t('price.multiPageItem')}{" "}</span>400 $</h5>
+
                     {/* <h6 className="font-jost text-2xl text-white font-bold">Интернет магазины</h6> */}
                     <h6 className="font-jost text-2xl text-blue-200 font-light">{t('price.magazin')}</h6>
                 </div>
@@ -31,7 +35,8 @@ function Price(){
                 <img src="/image/elips-right.svg" class="animate-spin-slow-new absolute ml-[600px]" style={{marginTop:"820px"}} />
             
                 <div className="flex items-center  flex-col justify-center absolute translate-y-[400px] translate-x-[-300px] gap-3">
-                    <h5 className="font-jost text-4xl italic" style={{color:"#FF3100", fontWeight:"900"}}>от 100 $</h5>
+                    <h5 className="font-jost text-4xl italic" style={{color:"#FF3100", fontWeight:"900"}}><span style={{fontSize:"16px", fontWeight:"400"}}>{t('price.multiPageItem')}</span>100 $</h5>
+                    {/* <h5 className="font-jost text-4xl italic" style={{color:"#FF3100", fontWeight:"900"}}>{t('price.landingPageItem')}</h5> */}
                     {/* <h6 className="font-jost text-2xl text-white font-bold">Landing Page</h6> */}
                     <h6 className="font-jost text-2xl text-blue-200 font-light">{t('price.landingPage')}</h6>
                 </div>

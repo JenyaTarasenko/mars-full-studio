@@ -1,8 +1,8 @@
-
 import React, { useState } from "react";
 import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
 import { useTranslation } from "react-i18next";
 import { X, Menu } from "lucide-react"; // иконки
+import { Link } from "react-router-dom";
 
 
 const Navbar = () => {
@@ -14,15 +14,17 @@ const Navbar = () => {
       <div className="flex items-center justify-between relative bg-transparent" >
         {/* Лого слева */}
         <div className="logo-menu px-5">
+          <Link to="/">
             <img src="/image/logo-mars.svg" alt="Logo"/>
+          </Link>
         </div>
 
         {/* Центр меню */}
         <ul className="hidden md:flex gap-10 text-xs  font-light tracking-widest absolute left-1/2 transform -translate-x-1/2 font-jost uppercase">
-          <li><a href="#" className="hover:text-red-500">{t("menu.about")}</a></li>
-          <li><a href="#" className="hover:text-red-500">{t("menu.projects")}</a></li>
-          <li><a href="#" className="hover:text-red-500">{t("menu.prices")}</a></li>
-          <li><a href="#" className="hover:text-red-500">{t("menu.blog")}</a></li>
+          <li><Link to="/about-mars-studio"  className="hover:text-red-500">{t("menu.about")}</Link></li>
+          <li><Link to="" className="hover:text-red-500">{t("menu.projects")}</Link></li>
+          <li><Link to="" className="hover:text-red-500">{t("menu.prices")}</Link></li>
+          <li><Link to=""  className="hover:text-red-500">{t("menu.blog")}</Link></li>
         </ul>
 
         {/* скрываем меню при уменьшении */}
@@ -44,10 +46,10 @@ const Navbar = () => {
       {/* Меню на mobile */}
       {isOpen && (
         <ul className="md:hidden flex flex-col mt-10 gap-10 text-xs font-light items-center">
-            <li><a href="#" className="hover:text-red-500">{t("menu.about")}</a></li>
-            <li><a href="#" className="hover:text-red-500">{t("menu.projects")}</a></li>
-            <li><a href="#" className="hover:text-red-500">{t("menu.prices")}</a></li>
-            <li><a href="#" className="hover:text-red-500">{t("menu.blog")}</a></li>
+            <li><Link to="/about-mars-studio" className="hover:text-red-500">{t("menu.about")}</Link></li>
+            <li><Link to=""  className="hover:text-red-500">{t("menu.projects")}</Link></li>
+            <li><Link to=""  className="hover:text-red-500">{t("menu.prices")}</Link></li>
+            <li><Link to=""  className="hover:text-red-500">{t("menu.blog")}</Link></li>
            {/* Языки в бургере */}
            <li className="mt-4">
             <LanguageSwitcher />

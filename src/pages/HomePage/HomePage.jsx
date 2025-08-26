@@ -13,6 +13,7 @@ import ButtonMain from '../../components/Buttons/ButtonMain/ButtonMain';
 import SectionTextMain from '../../components/SectionTextMain/SectionTextMain';
 import ReviewsSection from '../../components/ReviewsSection/ReviewsSection';
 import DesignSection from '../../components/DesignSection/DesignSection';
+import Footer from '../../components/Footer/Footer';
 
 function HomePage(){
     return (
@@ -31,6 +32,7 @@ function HomePage(){
             <Price />
             <ReviewsSection />
             < DesignSection />
+            <Footer />
         </>
     );
 } 
