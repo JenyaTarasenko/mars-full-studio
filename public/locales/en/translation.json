@@ -32,7 +32,7 @@
         "develop":"We develop unique solutions on React and Django with full functionality for your tasks.",
         "individual":"Customized solution",
         "functional":"Developments from design to UI and server programming as well as individual functionality.",
-        "full":"Full development cycle."
+        "full":"Full development"
     },
 
     "cardBast":{
@@ -126,6 +126,12 @@
         "item":"The interior of our projects is designed",
         "itemOne":"on Python Django one of the most powerful, scalable and reliable frameworks.",
         "itemThree":"Django allows you to quickly create complex web applications with a clean architecture and understandable code structure. Due to its flexibility and scalability, Django is suitable for both small projects and large corporate systems. It includes ready-made tools for working with databases, admin panel, authorization and security."
+    },
+
+    "AboutMain":{
+        "mainText":"About Us",
+        "mainDescription":"We are a full-cycle studio Mars, a studio where ideas come to life. Our team is hungry for non-standard projects that challenge conventional solutions. We work 'turnkey': from a sketch on paper to a ready-made web application. The designers in our team think in images and feelings of the user, and the developers see beauty even in algorithms. Together we transform creativity and technology into integral digital products - stylish, convenient and effective. Our projects are not just pleasing to the eye, they work for you: attract clients, solve problems and bring results.",
+        "mainDescriptionItem":"We stand out from the competition with our personalized approach, bold interfaces and attention to detail. In our work, we use advanced technologies - React and Django, which allow us to create fast, reliable and scalable solutions for both startups and large companies."
     }
     
 

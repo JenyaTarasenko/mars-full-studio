@@ -56,7 +56,7 @@ function Advantages(){
         <div className="flex items-center justify-center mt-20 advantages-mobile flex-col">    
             <div>
                 <img src="/image/crug-left.svg" alt="Логотип" className="object-contain z-1 relative" />
-                    <div className="absolute font-jost w-[200px] text-white mt-[-450px] ml-[50px]">
+                    <div className="absolute font-jost w-[200px] text-white mt-[-450px] ml-[50px] text-center">
                     <h4 style={{fontSize:"14px"}}>{t('advantage.solution')}</h4>
                 </div>
                 <h5 className="absolute font-jost w-[100px] text-white mt-[-180px]  ml-[100px] text-3xl text-center pulse-glow" style={{textAlign:"center"}}>{t('advantage.description')}</h5>
@@ -72,7 +72,7 @@ function Advantages(){
 
             <div className="mt-[100px]">
                 <img src="/image/crug-right.svg" alt="Логотип" className="object-contain z-1 relative" />
-                <div className="absolute font-jost w-[200px] text-white mt-[-480px] ml-[80px]">
+                <div className="absolute font-jost w-[200px] text-white mt-[-480px] ml-[80px] text-center">
                     <h4 style={{fontSize:"14px"}}>{t('advantage.functional')}</h4>
                 </div>
                 <h5 className="absolute font-jost w-[100px] text-white mt-[-200px]  ml-[100px] text-3xl text-center pulse-glow flex justify-center items-center" style={{textAlign:"center"}}>{t('advantage.individual')}</h5>
