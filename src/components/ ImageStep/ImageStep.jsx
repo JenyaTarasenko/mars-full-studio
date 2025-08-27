@@ -1,0 +1,19 @@
+import { useTranslation } from 'react-i18next';
+
+function ImageStep(){
+    const { i18n }  = useTranslation();
+
+
+    const logos = {
+        en:"/image/about-en.svg",
+        ru:"/image/about-ru.svg",
+        uk:"/image/about-uk.svg"
+    };
+
+    return(
+        <div className="flex items-center justify-center flex-col relative mt-20">
+            <img src={logos[i18n.language] || logos.en}/>
+        </div>
+    );
+}    
+export default ImageStep;
