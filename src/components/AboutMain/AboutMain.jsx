@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { useTranslation } from 'react-i18next';
 
 function AboutMain({ link }){
@@ -12,20 +13,43 @@ function AboutMain({ link }){
                     <h1 className="font-jost  text-sm font-normal text-zinc-500 mt-2">mars studio</h1>
                 </div>
 
-                <div className="flex justify-start  px-5 sm:px-10 w-[300px] lg:w-[800px] mt-[250px] relative">
-                    {/* <h3 className="font-jost text-rose-300">Мы — студия полного цикла Mars, студия - где идеи оживают.Наша команда и жаждет нестандартных проектов, которые бросают вызов привычным решениям. Мы работаем «под ключ»: от наброска на бумаге до готового веб-приложения. Дизайнеры в нашей команде мыслят образами и чувствами пользователя, а разработчики видят красоту даже в алгоритмах. Вместе мы превращаем креатив и технологию в цельные digital-продукты — стильные, удобные и эффективные.Наши проекты не просто радуют глаз, они работают на вас: привлекают клиентов, решают задачи и приносят результат.</h3> */}
+                {/* <div className="flex justify-start  px-5 sm:px-10 w-[300px] lg:w-[800px] mt-[250px] relative">
                     <h3 className="font-jost text-rose-300">{t('AboutMain.mainDescription')}</h3>
                     <img src="/image/text-mars.svg" alt="logo-decor" className="animate-spin-slow absolute sm:ml-[500px] sm:mt-[300px] ml-[140px] mt-[550px] z-[1]"/>
+                </div> */}
+
+                <div className="flex justify-start px-5 sm:px-10 w-[300px] lg:w-[800px] mt-[250px] relative">
+                    <motion.h3
+                        className="font-jost text-rose-300"
+                        initial={{ opacity: 0, x: -50 }} // старт: прозрачный и сдвинут влево
+                        whileInView={{ opacity: 1, x: 0 }} // конечное состояние
+                        viewport={{ once: true, amount: 0.5 }} // анимация один раз при попадании в поле видимости
+                        transition={{ duration: 1 }} // длительность 1 секунда
+                    >{t('AboutMain.mainDescription')}</motion.h3>
+
+                    <img
+                        src="/image/text-mars.svg"
+                        alt="logo-decor"
+                        className="animate-spin-slow absolute sm:ml-[500px] sm:mt-[300px] ml-[140px] mt-[550px] z-[1]"
+                    />
                 </div>
 
-                <div className="flex justify-end mt-[250px] relative ">
+                {/* <div className="flex justify-end mt-[250px] relative ">
                     <div className="w-[300px] lg:w-[500px] px-5 relative z-[10]">
-                        {/* <h4 className="font-jost text-rose-300 ">Мы выделяемся на фоне конкурентов благодаря индивидуальному подходу, смелым интерфейсам и вниманию к деталям. В своей работе мы используем передовые технологии — React и Django, которые позволяют создавать быстрые, надёжные и масштабируемые решения как для стартапов, так и для крупных компаний.</h4> */}
                         <h4 className="font-jost text-rose-300 ">{t('AboutMain.mainDescriptionItem')}</h4>
                     </div>
                     <img src="/image/shlem.svg" alt="logo-decor" className="absolute mr-[5px] sm:mr-[250px]  mt-[-50px] z-[1]"/>
-
-                </div>
+                </div> */}
+                <div className="flex justify-end mt-[250px] relative ">
+                    <motion.div
+                        className="w-[300px] lg:w-[500px] px-5 relative z-[10]"
+                        initial={{ opacity: 0 }}        // изначально прозрачный
+                        whileInView={{ opacity: 1 }}    // становится полностью видимым
+                        viewport={{ once: true, amount: 0.5 }} // анимация один раз при попадании в экран
+                        transition={{ duration: 1 }}    // длительность анимации 1 секунда
+                    ><h4 className="font-jost text-rose-300">{t('AboutMain.mainDescriptionItem')}</h4></motion.div>
+                    <img src="/image/shlem.svg" alt="logo-decor" className="absolute mr-[5px] sm:mr-[250px]  mt-[-50px] z-[1]"/>
+                </div> 
             </div>
         </div>
     );

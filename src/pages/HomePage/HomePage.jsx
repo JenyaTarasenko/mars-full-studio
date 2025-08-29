@@ -14,6 +14,7 @@ import SectionTextMain from '../../components/SectionTextMain/SectionTextMain';
 import ReviewsSection from '../../components/ReviewsSection/ReviewsSection';
 import DesignSection from '../../components/DesignSection/DesignSection';
 import Footer from '../../components/Footer/Footer';
+import CardPrice from '../../components/CardPrice/CardPrice';
 
 function HomePage(){
     return (
@@ -31,7 +32,8 @@ function HomePage(){
             <TextDecoration  mainKey="price"/>
             <Price />
             <ReviewsSection />
-            < DesignSection />
+            <DesignSection />
+            <CardPrice />
             <Footer />
         </>
     );
