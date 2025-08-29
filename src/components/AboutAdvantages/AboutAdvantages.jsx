@@ -6,7 +6,7 @@ function AboutAdvantages(){
 
     return(
         <>
-            <div className="flex items-center justify-center flex-col lg:flex-row mt-[200px]">
+            <div className="flex items-center justify-center flex-col lg:flex-row mt-[700px] lg:mt-[200px]">
                 <img src="/image/aboutastro.png" alt="astronaut" className="h-[400px] lg:translate-x-[-150px] translate-x-[0px] z-[-1] sm:w-[300px] opacity-60"/>
                 <div className="flex flex-col font-jost  font-normal text-left w-[300px]">
                     <h5 className="font-jost text-xl text-blue-200 px-5">Abot studio</h5>

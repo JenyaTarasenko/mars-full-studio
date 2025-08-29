@@ -7,6 +7,9 @@ import AboutAdvantages from '../../components/AboutAdvantages/AboutAdvantages';
 import AboutCardAdvantages from '../../components/AboutCardAdvantages/AboutCardAdvantages';
 import ImageStep from '../../components/ ImageStep/ImageStep';
 import TextDecoration from '../../components/Text/TextDecoration/TextDecoration';
+import CardStep from '../../components/CardStep/CardStep';
+import MarsSectionText from '../../components/MarsSectionText/MarsSectionText';
+import TextLittleSection from '../../components/TextLittleSection/TextLittleSection';
 
 
 function  AboutPage(){
@@ -14,11 +17,14 @@ function  AboutPage(){
         <>
             <Navbar />
             <AboutMain />
-            <Advantages />
+            {/* <Advantages /> */}
             <AboutAdvantages />
             <AboutCardAdvantages />
             <TextDecoration  mainKey="weekdays" />
             <ImageStep />
+            <MarsSectionText text1="MarsSectionText.aboutText" text2="MarsSectionText.aboutDescription"/>
+            <CardStep />
+            <TextLittleSection text1="TextLittleSection.aboutText" text2="TextLittleSection.aboutDescription" />
             <Footer />
         </>
     )

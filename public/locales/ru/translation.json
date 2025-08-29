@@ -154,5 +154,16 @@
         "descriptionTwo":"Инновации",
         "title":"СИЛЬНЫЙ ДИЗАЙН КОТОРЫЙ ВЫДЕЛЯЕТ ВАС СРЕДИ КОНКУРЕНТОВ",
         "titleTwo":"дизайн"
+    },
+
+    "MarsSectionText":{
+        "aboutText":"Шаги работы с клиентами",
+        "aboutDescription":"Креативное партнёрство с клиентами"
+    },
+
+    "TextLittleSection":{
+        "aboutText":"Наша",
+        "aboutDescription":"команда"
+
     }
 }
