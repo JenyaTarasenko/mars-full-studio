@@ -150,11 +150,35 @@
         "descriptionTwo":"Innovation",
         "title":"STRONG DESIGN THAT SETS YOU OUT FROM YOUR COMPETITORS",
         "titleTwo":"design"
-    }
+    },
     
+    "MarsSectionText":{
+        "aboutText":"Steps of working with clients",
+        "aboutDescription":"Creative partnerships with clients"
+    },
 
-
-
+    "CardStep":{
+        "CardOne":"We discuss the goals, objectives and expectations of the project, and collect all the necessary information.",
+        "CardOneText":"Meeting with the client",
+        "CardOneItem":"goals",
+        "CardTwo":"We create prototypes and determine the style of the future project.",
+        "CardTwoText":"Visual concept",
+        "CardTwoItem":"concept",
+        "CardThree":"We discuss the goals, objectives and expectations of the project, and collect all the necessary information.",
+        "CardThreeText":"Dialogue",
+        "CardThreeItem":"strategy",
+        "CardFour":"We design and implement React frontend and other technologies",
+        "CardFourTextOne":"Programming",
+        "CardFourTextTwo":"visual part",
+        "CardFourItem":"logics",
+        "CardFive":"Setting up databases, authorization and Django DRF logic",
+        "CardFiveTextOne":"Programming",
+        "CardFiveTextTwo":"internal part",
+        "CardFiveItem":"functional",
+        "CardSix":"We support the server part for free and ensure stable operation of the site.",
+        "CardSixText":"Free birth support",
+        "CardSixItem":"support"
+    }
 }
 
 

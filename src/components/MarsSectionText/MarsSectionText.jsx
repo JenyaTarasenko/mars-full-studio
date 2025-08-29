@@ -2,14 +2,27 @@
 import { useTranslation } from 'react-i18next';
 // npm install framer-motion  библиотека анимации
 import { motion } from "framer-motion";
+import { useMemo } from "react";
 
 function MarsSectionText({text1, text2}){
     const { t } = useTranslation();
 
+    const images = [
+        "/image/randommars.svg",
+        "/image/randommars1.svg",
+        "/image/randommars6.svg",
+        "/image/randommars3.svg",
+    ]
+
+    const randomImage = useMemo(() => {
+        const index = Math.floor(Math.random() * images.length);
+        return images[index];
+    }, []);
+
     return(
         <>
         <div className="flex items-center mt-[200px] flex-col">
-            <img src="/image/mars-text.svg" alt="mars-image" className='w-[300px]'/>
+            <img src={randomImage} alt="mars-image" className='w-[300px]'/>
             <motion.h6
                 initial={{ x: -100, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}

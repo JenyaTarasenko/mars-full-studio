@@ -10,6 +10,7 @@ import TextDecoration from '../../components/Text/TextDecoration/TextDecoration'
 import CardStep from '../../components/CardStep/CardStep';
 import MarsSectionText from '../../components/MarsSectionText/MarsSectionText';
 import TextLittleSection from '../../components/TextLittleSection/TextLittleSection';
+import AboutTeam from '../../components/AboutTeam/AboutTeam';
 
 
 function  AboutPage(){
@@ -25,6 +26,7 @@ function  AboutPage(){
             <MarsSectionText text1="MarsSectionText.aboutText" text2="MarsSectionText.aboutDescription"/>
             <CardStep />
             <TextLittleSection text1="TextLittleSection.aboutText" text2="TextLittleSection.aboutDescription" />
+            <AboutTeam />
             <Footer />
         </>
     )
