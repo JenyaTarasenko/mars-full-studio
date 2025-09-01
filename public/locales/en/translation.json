@@ -154,7 +154,9 @@
     
     "MarsSectionText":{
         "aboutText":"Steps of working with clients",
-        "aboutDescription":"Creative partnerships with clients"
+        "aboutDescription":"Creative partnerships with clients",
+        "HomeReviewText":"Feedback from our clients",
+        "HomeReviewDescription":"What our clients say about us"
     },
 
     "CardStep":{
@@ -178,6 +180,50 @@
         "CardSix":"We support the server part for free and ensure stable operation of the site.",
         "CardSixText":"Free birth support",
         "CardSixItem":"support"
+    },
+
+
+    "cardPrice":{
+        "CardOne":"Landing page",
+        "CardOneDesign":"Unique design",
+        "CardOneContent":"Structured content",
+        "CardOneLoadingOne":"Fast loading in any",
+        "CardOneLoadingTwo":"point of the world",
+        "CardOneElementOne":"Interactive elements",
+        "CardOneElementTwo":"buttons, forms, social networks",
+        "CardOneAnimationOne":"Animations",
+        "CardOneAnimationTwo":"decorative elements",
+        "CardOneProtectionOne":"HTTPS protection, protection",
+        "CardOneProtectionTwo":"from spam and vulnerabilities",
+        "CardOneSupport":"Free support",
+        "CardTwo":"Multi-page",
+        "CardTwoDesign":"Unique design",
+        "CardTwoPages":"Many sections and pages.",
+        "CardTwoLoadOne":"Fast loading in any",
+        "CardTwoLoadTwo":"point of the world",
+        "CardTwoСabinet":"User's personal account",
+        "CardTwoFormOne":"Feedback forms - applications,",
+        "CardTwoFormTwo":"subscriptions, call back",
+        "CardTwoLanguage":"Multilingualism",
+        "CardTwoSocOne":"Integrations - social networks",
+        "CardTwoSocTwo":"maps, messengers",
+        "CardTwoProtectionOne":"HTTPS protection,",
+        "CardTwoProtectionTwo":"from spam and vulnerabilities",
+        "CardTwoSupport":"Free support",
+        "CardThree":"Online stores",
+        "CardThreeDesign":"Unique design",
+        "CardThreeCategoryOne":"Product catalog - with categories, filters,",
+        "CardThreeCategoryTwo":"sorting and cards.",
+        "CardThreeSearchOne":"Search by products - fast",
+        "CardThreeSearchTwo":"access to the desired product",
+        "CardThreeBasketOne":"Shopping Cart - Add,",
+        "CardThreeBasketTwo":"editing and deleting products.",
+        "CardThreeCabinet":"User's personal account",
+        "CardThreePaiment":"Payment systems",
+        "CardThreeProtectionOne":"HTTPS protectio,",
+        "CardThreeProtectionTwo":"from spam and vulnerabilities",
+        "CardThreeSupport":"Free support"
+
     }
 }
 

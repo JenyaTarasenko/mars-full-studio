@@ -5,7 +5,7 @@ function ReviewsSection(){
     const { t } = useTranslation();
     return(
         <>
-            <div className="w-full overflow-x-hidden flex justify-center items-center max-w-[1000px] mx-auto mt-[100px] lg:mt-[800px] relative">
+            <div className="w-full overflow-x-hidden flex justify-center items-center max-w-[1000px] mx-auto mt-[100px] relative">
                 <div className="inline-flex gap-20 px-4 slider">
                     <div className="card-review flex items-center flex-col w-[280px] h-[340px] bg-[#D9D9D9]/[0.03] border border-[#D9D9D9]/[0.1]" style={{borderRadius:"40px"}}>
                     

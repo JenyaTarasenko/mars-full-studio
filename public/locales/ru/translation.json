@@ -158,7 +158,10 @@
 
     "MarsSectionText":{
         "aboutText":"Шаги работы с клиентами",
-        "aboutDescription":"Креативное партнёрство с клиентами"
+        "aboutDescription":"Креативное партнёрство с клиентами",
+        "HomeReviewText":"Отзывы наших клиентов",
+        "HomeReviewDescription":"Что говорят о нас наши клиенты"
+       
     },
 
     "TextLittleSection":{
@@ -188,5 +191,49 @@
         "CardSix":"Бесплатно поддерживаем серверную часть и обеспечиваем стабильную работу сайта.",
         "CardSixText":"Бесплатная роддержка",
         "CardSixItem":"поддержка"
+    },
+
+
+    "cardPrice":{
+        "CardOne":"Одностраничные",
+        "CardOneDesign":"Уникальный дизайн",
+        "CardOneContent":"Структурированный контент",
+        "CardOneLoadingOne":"Быстрая загрузка в любой",
+        "CardOneLoadingTwo":"точке мира",
+        "CardOneElementOne":"Интерактивные элементы",
+        "CardOneElementTwo":"кнопки,формы,соц.сети",
+        "CardOneAnimationOne":"Анимации",
+        "CardOneAnimationTwo":"декоративные элементы",
+        "CardOneProtectionOne":"Защита НTTPS, защита",
+        "CardOneProtectionTwo":"от спама и уязвимостей",
+        "CardOneSupport":"Бесплатная поддержка",
+        "CardTwo":"Многостраничные",
+        "CardTwoDesign":"Уникальный дизайн",
+        "CardTwoPages":"Множество разделов и страниц.",
+        "CardTwoLoadOne":"Быстрая загрузка в любой",
+        "CardTwoLoadTwo":"точке мира",
+        "CardTwoСabinet":"Личный кабинет пользователя",
+        "CardTwoFormOne":"Формы обратной связи — заявки,",
+        "CardTwoFormTwo":"подписки, обратный звонок",
+        "CardTwoLanguage":"Мультиязычность",
+        "CardTwoSocOne":"Интеграции — соцсети",
+        "CardTwoSocTwo":"карты, мессенджеры",
+        "CardTwoProtectionOne":"Защита НTTPS, защита",
+        "CardTwoProtectionTwo":"от спама и уязвимостей",
+        "CardTwoSupport":"Бесплатная поддержка",
+        "CardThree":"Интернет магазины",
+        "CardThreeDesign":"Уникальный дизайн",
+        "CardThreeCategoryOne":"Каталог товаров — с категориями, фильтрами,",
+        "CardThreeCategoryTwo":"сортировкой и карточками.",
+        "CardThreeSearchOne":"Поиск по товарам — быстрый",
+        "CardThreeSearchTwo":"доступ к нужному продукту",
+        "CardThreeBasketOne":"Корзина покупок — добавление,",
+        "CardThreeBasketTwo":"редактирование и удаление товаров.",
+        "CardThreeCabinet":"Личный кабинет пользователя",
+        "CardThreePaiment":"Системы оплаты",
+        "CardThreeProtectionOne":"Защита НTTPS, защита ",
+        "CardThreeProtectionTwo":"от спама и уязвимостей",
+        "CardThreeSupport":"Бесплатная поддержка"
+
     }
 }

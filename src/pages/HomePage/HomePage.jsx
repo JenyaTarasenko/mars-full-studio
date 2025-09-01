@@ -15,6 +15,7 @@ import ReviewsSection from '../../components/ReviewsSection/ReviewsSection';
 import DesignSection from '../../components/DesignSection/DesignSection';
 import Footer from '../../components/Footer/Footer';
 import CardPrice from '../../components/CardPrice/CardPrice';
+import MarsSectionText from '../../components/MarsSectionText/MarsSectionText';
 
 function HomePage(){
     return (
@@ -31,9 +32,11 @@ function HomePage(){
             <CardJob />
             <TextDecoration  mainKey="price"/>
             <Price />
+            <CardPrice />
+            <MarsSectionText text1="MarsSectionText.HomeReviewText" text2="MarsSectionText.HomeReviewDescription"/>
             <ReviewsSection />
             <DesignSection />
-            <CardPrice />
+           
             <Footer />
         </>
     );

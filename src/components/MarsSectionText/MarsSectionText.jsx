@@ -11,7 +11,7 @@ function MarsSectionText({text1, text2}){
         "/image/randommars.svg",
         "/image/randommars1.svg",
         "/image/randommars6.svg",
-        "/image/randommars3.svg",
+        // "/image/randommars3.svg",
     ]
 
     const randomImage = useMemo(() => {

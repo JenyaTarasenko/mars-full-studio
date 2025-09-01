@@ -157,7 +157,9 @@
 
     "MarsSectionText":{
         "aboutText":"Кроки роботи з клієнтами",
-        "aboutDescription":"Креативне партнерство із клієнтами"
+        "aboutDescription":"Креативне партнерство із клієнтами",
+        "HomeReviewText":"Відгуки наших клієнтів",
+        "HomeReviewDescription":"Що кажуть про нас наші клієнти"
     },
 
 
@@ -182,6 +184,49 @@
         "CardSix":"Безкоштовно підтримуємо серверну частину та забезпечуємо стабільну роботу сайту.",
         "CardSixText":"Безкоштовна підтримка",
         "CardSixItem":"підтримка"
+    },
+
+    "cardPrice":{
+        "CardOne":"Односторінкові",
+        "CardOneDesign":"Унікальний дизайн",
+        "CardOneContent":"Структурований контент",
+        "CardOneLoadingOne":"Швидке завантаження в будь-який",
+        "CardOneLoadingTwo":"точці світу",
+        "CardOneElementOne":"Інтерактивні елементи",
+        "CardOneElementTwo":"кнопки, форми, соц.мережі",
+        "CardOneAnimationOne":"Анімації",
+        "CardOneAnimationTwo":"декоративні елементи",
+        "CardOneProtectionOne":"Захист НTTPS,",
+        "CardOneProtectionTwo":"від спаму та вразливостей",
+        "CardOneSupport":"Безкоштовна підтримка",
+        "CardTwo":"Багатосторінкові",
+        "CardTwoDesign":"Унікальний дизайн",
+        "CardTwoPages":"Безліч розділів та сторінок.",
+        "CardTwoLoadOne":"Швидке завантаження в будь-який",
+        "CardTwoLoadTwo":"точці світу",
+        "CardTwoСabinet":"Особистий кабінет користувача",
+        "CardTwoFormOne":"Форми зворотного зв'язку - заявки,",
+        "CardTwoFormTwo":"підписки, зворотній дзвінок",
+        "CardTwoLanguage":"Мультимовність",
+        "CardTwoSocOne":"Інтеграції - соцмережі",
+        "CardTwoSocTwo":"картки, месенджери",
+        "CardTwoProtectionOne":"Захист НTTPS,",
+        "CardTwoProtectionTwo":"від спаму та вразливостей",
+        "CardTwoSupport":"Безкоштовна підтримка",
+        "CardThree":"Інтернет магазини",
+        "CardThreeDesign":"Унікальний дизайн",
+        "CardThreeCategoryOne":"Каталог товарів — з категоріями, фільтрами,",
+        "CardThreeCategoryTwo":"сортуванням та картками.",
+        "CardThreeSearchOne":"Пошук по товарах",
+        "CardThreeSearchTwo":"доступ до потрібного продукту",
+        "CardThreeBasketOne":"Кошик покупок — додавання,",
+        "CardThreeBasketTwo":"редагування та видалення товарів.",
+        "CardThreeCabinet":"Особистий кабінет користувача",
+        "CardThreePaiment":"Системи оплати",
+        "CardThreeProtectionOne":"Захист НTTPS",
+        "CardThreeProtectionTwo":"від спаму та вразливостей",
+        "CardThreeSupport":"Безкоштовна підтримка"
+
     }
     
 
