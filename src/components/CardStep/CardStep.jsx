@@ -25,7 +25,7 @@ function CardStep(){
                 <h6 className="font-jost text-blue-100 font-light sm:text-2xl text-xl px-10 mt-5 absolute w-300px uppercase translate-y-[50px] sm:translate-y-[150px]-">{t('CardStep.CardTwo')}</h6>
                 {/* <h6 className="font-jost text-zinc-300 font-normal text-lg px-10 mt-20 absolute w-200px mb-5 translate-y-[190px]">Визуальная концепция</h6> */}
                 <h6 className="font-jost text-zinc-300 font-normal text-lg px-10 mt-20 absolute w-200px mb-5 translate-y-[190px]">{t('CardStep.CardTwoText')}</h6>
-                <div class="flex justify-between items-center w-full mt-[300px] releteve">
+                <div className="flex justify-between items-center w-full mt-[300px] releteve">
                     {/* <p className="font-jost  text-red-600 font-bold text-xs uppercase tracking-widest px-10">концепция</p> */}
                     <p className="font-jost  text-red-600 font-bold text-xs uppercase tracking-widest px-10">{t('CardStep.CardTwoItem')}</p>
                     <p className="font-jost text-red-600 font-bold text-xs uppercase tracking-widest px-10">02</p>

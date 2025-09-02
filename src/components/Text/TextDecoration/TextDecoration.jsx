@@ -6,7 +6,7 @@
 
         return(
             <div className="flex items-center flex-col gap-3 ml-5 mt-[150px] justify-start">
-                <div class="flex flex-row gap-5">
+                <div className="flex flex-row gap-5">
                     <h6 className="font-jost text-zinc-50 sm:text-7xl text-5xl">{t('textDecoration.default')}</h6> 
                     <img src="/image/text-mars.svg" alt="logo-decor" className="animate-spin-slow"/>
                 </div>

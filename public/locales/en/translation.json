@@ -50,8 +50,9 @@
         "default":"OUR",
         "solutions":"solutions",
         "price":"price",
-        "weekdays":"weekdays"
-
+        "weekdays":"weekdays",
+        "homeText":"Our",
+        "homeDescription":"projects"
     },
 
     "cardJobOne":{
@@ -170,6 +171,13 @@
         "HomeReviewDescription":"What our clients say about us",
         "HomeText":"We know how to solve",
         "HomeDescription":"your business tasks"
+    },
+
+    "TextLittleSection":{
+        "aboutText":"Our",
+        "aboutDescription":"team",
+        "homeText":"Our",
+        "homeDescription":"projects"
     },
 
 

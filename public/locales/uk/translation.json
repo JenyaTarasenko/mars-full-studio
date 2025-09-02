@@ -164,6 +164,13 @@
         "HomeDescription":"ваші бізнес завдання"
     },
 
+    "TextLittleSection":{
+        "aboutText":"Наша",
+        "aboutDescription":"команда",
+        "homeText":"Наші",
+        "homeDescription":"проєкти"
+    },
+
 
     "CardStep":{
         "CardOne":"Обговорюємо цілі, завдання та очікування від проекту, збираємо всю необхідну інформацію.",

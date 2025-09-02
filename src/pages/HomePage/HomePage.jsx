@@ -23,17 +23,17 @@ function HomePage(){
         <>
             <Navbar />
             <MainSection />
-            {/* <ListView /> */}
             <TechnologiesMain />
             <Advantages />
             <MarsSectionText text1="MarsSectionText.HomeText" text2="MarsSectionText.HomeDescription"/>
-            {/* <TextLittleSection text1="TextLittleSection.homeText" text2="TextLittleSection.homeDescription" /> */}
             <HomeServices />
             <TextDecoration  mainKey="solutions"/>
             <BastCard />
             <ButtonMain />
             <Shedule />
             <CardJob />
+            <TextLittleSection text1="TextLittleSection.homeText" text2="TextLittleSection.homeDescription" />
+            <ListView />
             <TextDecoration  mainKey="price"/>
             <Price />
             <CardPrice />

@@ -63,7 +63,7 @@ function Advantages(){
             </div>
 
             <div className="mt-[100px]">
-                <img src="/image/crug-center.svg" alt="Логотип" class="object-contain z-1 relative" />
+                <img src="/image/crug-center.svg" alt="Логотип" className="object-contain z-1 relative" />
                 <div className="absolute font-jost w-[200px] text-white mt-[-430px] ml-[80px]">
                     <h4 style={{fontSize:"14px"}}>{t('advantage.develop')}</h4>
                 </div>

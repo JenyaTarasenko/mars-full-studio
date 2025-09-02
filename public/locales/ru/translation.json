@@ -169,9 +169,9 @@
 
     "TextLittleSection":{
         "aboutText":"Наша",
-        "aboutDescription":"команда"
-     
-
+        "aboutDescription":"команда",
+        "homeText":"Наши",
+        "homeDescription":"проекты"
     },
 
     "CardStep":{

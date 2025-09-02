@@ -9,7 +9,7 @@ function BastCard(){
     <div className="w-full flex justify-center section-card-main mt-[50px]">
         <div className="overflow-x-auto overflow-y-hidden py-6">
             {/* <!-- карта 1 --> */}
-            <div class="flex space-x-4">
+            <div className="flex space-x-4">
             {/* <!-- карта 1 --> */}
             <div className="card-main w-[280px] h-[210px] flex  flex-col  text-white relative shrink-0">
 

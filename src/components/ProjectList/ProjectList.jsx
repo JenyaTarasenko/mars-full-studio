@@ -1,4 +1,4 @@
-
+import './style.css';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom'; // для отображения ссылки на детальную страницу 
 import {fetchProjects} from '../../../src/utils/api';
@@ -37,33 +37,62 @@ function ListView(){
     //     .catch(err => console.error(err))
     // },[]);
     useEffect(() => {
-        fetchProjects().then(setProjects);
+        fetchProjects().then(setProjects).catch(console.error);
     }, []);
    
+    // return(
+    //     <>
+    //         <div className="p-4 text-white mt-[100px]">
+    //             {projects.length === 0 ? (
+    //                 <p>Нет проектов</p>
+    //             ) : (
+    //                 <ul className="text-white">
+    //                 {projects.map((project) => (
+    //                     <li key={project.id}>
+                            
+    //                         <Link to={`/projects/${project.slug}`}><strong>{getTranslated(project, 'name')} {getTranslated(project, 'description')}</strong></Link>
+    //                     </li>
+    //                 ))}
+    //                 </ul>
+                    
+    //             )}
+    //         </div>
+           
+    //     </>
+    // );
     return(
         <>
-            <div className="p-4 text-white mt-[100px]">
+            <div className="w-full overflow-x-hidden flex justify-center items-center max-w-[1000px] mx-auto relative mt-[200px]">
                 {projects.length === 0 ? (
-                    <p>Нет проектов</p>
+                    <p className="text-white">Нет проектов</p>
                 ) : (
-                    <ul className="text-white">
+                <div className="inline-flex gap-20 px-4 slider">
                     {projects.map((project) => (
-                        // <li key={project.id}>
-                        // <strong>{project.name}</strong> – {project.description}
-                        // </li>
-                        <li key={project.id}>
-                            {/* <strong>{i18n.language.startsWith('ru') ? project.name_ru : project.name_en}</strong> –{' '}
-                            {i18n.language.startsWith('ru') ? project.description_ru : project.description_en} */}
-                            <Link to={`/projects/${project.slug}`}><strong>{getTranslated(project, 'name')} {getTranslated(project, 'description')}</strong></Link>
-                        </li>
+
+                        <Link to={`/projects/${project.slug}`}><div
+                        key={project.id} 
+                        className="card-projects w-[600px] h-[360px]  bg-cover bg-center flex flex-col hover:scale-105 active:scale-100"
+                        style={{ backgroundImage: `url(${'/image/project-card.svg'})` }}>
+
+                            <div class="mt-[150px] ml-[50px]">
+                                <h5 className="font-jost text-xl text-stone-100 line-clamp-1">
+                                    {project ? getTranslated(project, 'name'): "No project name"}
+                                </h5>
+                                <h6 className="font-jost text-sm text-blue-200 w-[500px] line-clamp-2 mt-2">
+                                    {getTranslated(project, 'description')}
+                                </h6>
+                            </div>
+
+                        </div></Link>
                     ))}
-                    </ul>
-                    
-                )}
+                </div>
+            )}
             </div>
-           
-        </>
-    );
-}
+    
+    </>
+    )
+} 
+
+
 
 export default ListView;

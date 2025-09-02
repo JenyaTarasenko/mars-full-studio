@@ -15,7 +15,7 @@ function ReviewsSection(){
                         </div>
                         <img src="/image/rew-decor.svg" alt="image-review" className="absolute"/>
 
-                        <div classN="flex flex-col font-jost ">
+                        <div className="flex flex-col font-jost ">
                         <p className="text-sm text-stone-100 ml-5 mt-5 font-light">Стивен спилберг</p>
                         <h6 className="text-base font-normal text-blue-200 px-5 mt-10">Быстрые и эффективные, идеально подходят для презентации одного продукта или услуги. </h6>
                         <img src="/image/star.svg" alt="image-review" className="mt-5 w-[100px] px-5"/>
@@ -57,7 +57,7 @@ function ReviewsSection(){
                         </div>
                         <img src="/image/rew-decor.svg" alt="image-review" className="absolute"/>
 
-                        <div classN="flex flex-col font-jost ">
+                        <div className="flex flex-col font-jost ">
                         <p className="text-sm text-stone-100 ml-5 mt-5 font-light">Стивен спилберг</p>
                         <h6 className="text-base font-normal text-blue-200 px-5 mt-10">Быстрые и эффективные, идеально подходят для презентации одного продукта или услуги. </h6>
                         <img src="/image/star.svg" alt="image-review" className="mt-5 w-[100px] px-5"/>
