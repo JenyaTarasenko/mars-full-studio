@@ -9,7 +9,7 @@ function DesignSection(){
             {/* card-disign  1*/}
             <div className="card-tehnology flex flex-col justify-start w-[300px] lg:w-[700px] md:w-[500px]">
                 {/* <h5 className="font-extrabold text-2xl sm:text-3xl text-left font-jost mt-10 text-stone-100">Мы разрабатываем<span className="italic font-light text-orange-700 text-4xl"> по-настоящему уникальные дизайны,</span> которые невозможно спутать с другими.</h5> */}
-                <h5 className="font-extrabold text-2xl sm:text-3xl text-left font-jost mt-10 text-stone-100">{t('DesignSectionOne.item')}<span className="italic font-light text-orange-700 text-4xl"> {t('DesignSectionOne.itemOne')}</span> {t('DesignSectionOne.itemTwo')}</h5>
+                <h5 className="font-extrabold text-2xl sm:text-3xl text-left font-jost mt-10 text-stone-100">{t('DesignSectionOne.item')}<span className="font-light text-orange-700 text-4xl"> {t('DesignSectionOne.itemOne')}</span> {t('DesignSectionOne.itemTwo')}</h5>
                 <img src="/image/design-card.svg" alt="logo" className="mt-3 w-[100px]"/>
                 {/* <h6 className="font-jost text-stone-400 mt-5">Наши дизайнеры создают визуальный стиль, который выделяет ваш бизнес среди конкурентов — современный, выразительный и запоминающийся.Каждый элемент продуман: от цветовой палитры до композиции.Наш фирменный стиль узнаваем и помогает сформировать сильный образ бренда в глазах клиента</h6> */}
                 <h6 className="font-jost text-stone-400 mt-5">{t('DesignSectionOne.itemThree')}</h6>
@@ -25,7 +25,7 @@ function DesignSection(){
             {/* card-disign  2*/}
             <div className="card-tehnology flex flex-col justify-start w-[300px] lg:w-[700px] md:w-[500px] mt-[120px]">
             {/* <h5 className="font-extrabold text-2xl sm:text-3xl text-left font-jost mt-10 text-stone-100">Мы создаём — <span className="italic font-light text-orange-700 text-4xl"> frontend на базе React</span> одного из самых мощных инструментов для построения<span className="italic font-light text-orange-700 text-4xl"> динамичных и адаптивных пользовательских интерфейсов,</span>  которые невозможно спутать с другими.</h5> */}
-                <h5 className="font-extrabold text-2xl sm:text-3xl text-left font-jost mt-10 text-stone-100">{t('DesignSectionTwo.item')}<span className="italic font-light text-orange-700 text-4xl">{" "}{t('DesignSectionTwo.itemOne')}{" "}</span>{t('DesignSectionTwo.itemTwo')}{" "}<span className="italic font-light text-orange-700 text-4xl">{t('DesignSectionTwo.itemThree')}{" "}</span>{t('DesignSectionTwo.itemFour')}</h5>
+                <h5 className="font-extrabold text-2xl sm:text-3xl text-left font-jost mt-10 text-stone-100">{t('DesignSectionTwo.item')}<span className="font-light text-orange-700 text-4xl">{" "}{t('DesignSectionTwo.itemOne')}{" "}</span>{t('DesignSectionTwo.itemTwo')}{" "}<span className="font-light text-orange-700 text-4xl">{t('DesignSectionTwo.itemThree')}{" "}</span>{t('DesignSectionTwo.itemFour')}</h5>
                 <img src="/image/design-card1.svg" alt="logo" className="mt-3 w-[100px]"/>
                 {/* <h6 className="font-jost text-stone-400 mt-5">React позволяет реализовывать гибкие и быстрые сайты с интерактивными элементами, плавной навигацией и моментальной загрузкой страниц без перезагрузки.адаптивную верстку для всех устройств, формы и валидацию данных, динамические фильтры, поиск и сортировку ,личные кабинеты, корзины, избранное, подключение к backend API (Django),интерактивные элементы и анимации,темную/светлую тему, уведомления, лоадеры и многое другое.</h6> */}
                 <h6 className="font-jost text-stone-400 mt-5">{t('DesignSectionTwo.ItemFive')}</h6>
@@ -43,7 +43,7 @@ function DesignSection(){
             {/* card-disign  3 */}
             <div className="card-tehnology flex flex-col justify-start w-[300px] lg:w-[700px] md:w-[500px] mt-[120px]">
                 {/* <h5 className="font-extrabold text-2xl sm:text-3xl text-left font-jost mt-10 text-stone-100">Внутренняя часть наших проектов разработана <span className="italic font-light text-orange-700 text-4xl">на Python  Django одном из самых мощных, масштабируемых и надёжных фреймворков.</span></h5> */}
-                <h5 className="font-extrabold text-2xl sm:text-3xl text-left font-jost mt-10 text-stone-100">{t('DesignSectionThree.item')} <span className="italic font-light text-orange-700 text-4xl">{t('DesignSectionThree.itemOne')}</span></h5>
+                <h5 className="font-extrabold text-2xl sm:text-3xl text-left font-jost mt-10 text-stone-100">{t('DesignSectionThree.item')} <span className="font-light text-orange-700 text-4xl">{t('DesignSectionThree.itemOne')}</span></h5>
                 <img src="/image/tehnology1.svg" alt="logo" className="mt-3 w-[100px]"/>
                 {/* <h6 className="font-jost text-stone-400 mt-5">Django позволяет быстро создавать сложные веб-приложения с чистой архитектурой и понятной структурой кода.Благодаря своей гибкости и масштабируемости Django подходит как для небольших проектов, так и для крупных корпоративных систем.Он включает готовые инструменты для работы с базами данных, админ-панелью, авторизацией и безопасностью.</h6> */}
                 <h6 className="font-jost text-stone-400 mt-5">{t('DesignSectionThree.itemThree')}</h6>

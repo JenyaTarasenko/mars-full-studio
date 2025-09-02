@@ -35,6 +35,7 @@
         "full":"Full development"
     },
 
+
     "cardBast":{
         "text":"Landing page",
         "solution":"Fast and effective, ideal for presenting a single product or service.",
@@ -43,6 +44,8 @@
         "onlineStores":"Online stores",
         "onlineStoresText":"Full-fledged platforms for online sales with a catalog, shopping cart and payment system."
     },
+
+
     "textDecoration":{
         "default":"OUR",
         "solutions":"solutions",
@@ -103,9 +106,11 @@
         "multiPageItem":"from"
     },
 
+
     "buttonMain":{
         "order":"Order"
     },
+
 
     "DesignSectionOne":{
         "item":"We are developing",
@@ -113,6 +118,7 @@
         "itemTwo":"which cannot be confused with others.",
         "itemThree":"Our designers create a visual style that sets your business apart from competitors - modern, expressive and memorable. Every element is thought out: from the color palette to the composition. Our corporate style is recognizable and helps to form a strong brand image in the eyes of the client"
     },
+
 
     "DesignSectionTwo":{
         "item":"We create -",
@@ -123,11 +129,13 @@
         "ItemFive":"React allows you to implement flexible and fast websites with interactive elements, smooth navigation and instant page loading without reloading. adaptive layout for all devices, forms and data validation, dynamic filters, search and sorting, personal accounts, baskets, favorites, connection to the backend API (Django), interactive elements and animations, dark/light theme, notifications, loaders and much more."
     },
 
+
     "DesignSectionThree":{
         "item":"The interior of our projects is designed",
         "itemOne":"on Python Django one of the most powerful, scalable and reliable frameworks.",
         "itemThree":"Django allows you to quickly create complex web applications with a clean architecture and understandable code structure. Due to its flexibility and scalability, Django is suitable for both small projects and large corporate systems. It includes ready-made tools for working with databases, admin panel, authorization and security."
     },
+
 
     "AboutMain":{
         "mainText":"About Us",
@@ -135,11 +143,13 @@
         "mainDescriptionItem":"We stand out from the competition with our personalized approach, bold interfaces and attention to detail. In our work, we use advanced technologies - React and Django, which allow us to create fast, reliable and scalable solutions for both startups and large companies."
     },
 
+
     "AboutAdvantages":{
         "text":"Our team has many years of experience in developing websites of varying complexity and functionality - from simple one-page sites to full-fledged web resources with a unique design and well-thought-out structure. We do not use templates and standard solutions - each project is individual and created from scratch, for the tasks of a specific client.Our websites are not only visually appealing, but also easy to use, load quickly, are adapted to all devices and meet modern web development standards. We use the best UX/UI practices, clean code and reliable technologies so that your website works stably, is visible in search and helps to develop your business online.",
         "description":"Each of our projects is unique: we don’t just develop websites, we create effective business solutions, well-thought-out strategies and digital products that set you apart from your competitors. Our goal is not just an online presence, but a real result: increased recognition, customer acquisition and strengthening your position in the market.We analyze your business, understand your audience, and build customized solutions that help you conquer a niche and strengthen your competitive advantages.",
         "item":"Our websites are easily scalable and have no limitations in functionality - they grow with your business. We focus on results: customer growth, increased recognition and increased competitive advantages.Our studio keeps up with modern technologies, constantly studying new developments in design and programming, using innovative tools that help create effective and modern solutions. With us, your project is not just a web resource, but a tool for business growth and development."
     },
+
 
     "AboutCardAdvantages":{
         "textOne":"We bring each project to perfection",
@@ -152,12 +162,16 @@
         "titleTwo":"design"
     },
     
+
     "MarsSectionText":{
         "aboutText":"Steps of working with clients",
         "aboutDescription":"Creative partnerships with clients",
         "HomeReviewText":"Feedback from our clients",
-        "HomeReviewDescription":"What our clients say about us"
+        "HomeReviewDescription":"What our clients say about us",
+        "HomeText":"We know how to solve",
+        "HomeDescription":"your business tasks"
     },
+
 
     "CardStep":{
         "CardOne":"We discuss the goals, objectives and expectations of the project, and collect all the necessary information.",
@@ -224,6 +238,27 @@
         "CardThreeProtectionTwo":"from spam and vulnerabilities",
         "CardThreeSupport":"Free support"
 
+    },
+
+    "HomeServices":{
+        "description":"We provide development services",
+        "descriptionTwo":"internet sites for your needs.",
+        "Items":"Our priority is the uniqueness of each project,",
+        "ItemsTwo":"unlimited functionality and strong design,",
+        "ItemsText":"that makes your business stand out from the competition"
+    },
+
+    "AboutTeam":{
+        "DesignerText":"Our studio's web designer develops interfaces that combine aesthetics, functionality and modern technological approaches. Each project receives an individual style, thanks to which your site or application will become convenient, bright and recognizable among competitors",
+        "DesignerTextTwo":"Creating modern interfaces that correspond to current trends and use the latest technologies in design. His work makes your sites and applications unique, convenient and memorable, distinguishing them from many similar solutions.",
+        "FrontendText":"Our front-end developer creates user interfaces taking into account all the latest technologies and current trends in front-end development. His solutions make each interface unique, easy to use and easily scalable. In a creative web studio, he turns ideas into interactive, unique digital products that stand out from the competition and give users an unforgettable experience.",
+        "FrontendTextTwo":"Mars Studio - develops web interfaces where ease of use is combined with modern design, and each project becomes a tool for the growth and success of your business.",
+        "BackendText":"Backend development is one of the most important parts of a website. It is invisible to the user's eyes, but it is the one that holds the entire resource together. The backend provides protection, functionality, scalability, interaction, and speed of the website. This is the 'magic' that makes a digital product reliable, efficient, and ready to grow with your business",
+        "BackendTextTwo":"The Mars team uses advanced technologies to ensure security, fast loading, high speed of operation and advanced functionality of web resources. We create sites and applications that are reliable, efficient and ready for scaling, providing users with convenience and comfort on any device"
+    },
+
+    "ButtonRed":{
+        "aboutPrice":"Order a website"
     }
 }
 

@@ -21,6 +21,7 @@ const Navbar = () => {
 
         {/* Центр меню */}
         <ul className="hidden md:flex gap-10 text-xs  font-light tracking-widest absolute left-1/2 transform -translate-x-1/2 font-jost uppercase">
+          <li><Link to="/"  className="hover:text-red-500">{t("menu.home")}</Link></li>
           <li><Link to="/about-mars-studio"  className="hover:text-red-500">{t("menu.about")}</Link></li>
           <li><Link to="" className="hover:text-red-500">{t("menu.projects")}</Link></li>
           <li><Link to="" className="hover:text-red-500">{t("menu.prices")}</Link></li>
@@ -46,6 +47,7 @@ const Navbar = () => {
       {/* Меню на mobile */}
       {isOpen && (
         <ul className="md:hidden flex flex-col mt-10 gap-10 text-xs font-light items-center">
+           <li><Link to="/"  className="hover:text-red-500">{t("menu.home")}</Link></li>
             <li><Link to="/about-mars-studio" className="hover:text-red-500">{t("menu.about")}</Link></li>
             <li><Link to=""  className="hover:text-red-500">{t("menu.projects")}</Link></li>
             <li><Link to=""  className="hover:text-red-500">{t("menu.prices")}</Link></li>

@@ -9,7 +9,7 @@ function AboutAdvantages(){
             <div className="flex items-center justify-center flex-col lg:flex-row mt-[700px] lg:mt-[200px]">
                 <img src="/image/aboutastro.png" alt="astronaut" className="h-[400px] lg:translate-x-[-150px] translate-x-[0px] z-[-1] sm:w-[300px] opacity-60"/>
                 <div className="flex flex-col font-jost  font-normal text-left w-[300px]">
-                    <h5 className="font-jost text-xl text-blue-200 px-5">Abot studio</h5>
+                    {/* <h5 className="font-jost text-xl text-blue-200 px-5">Abot studio</h5> */}
                     {/* <h6 className="font-jost text-sm sm:w-[500px] w-[300px] px-5 text-zinc-100 mt-10">Наша команда имеет многолетний опыт в разработке интернет-сайтов различной сложности и функциональности — от простых одностраничников до полноценных веб-ресурсов с уникальным дизайном и продуманной структурой.Мы не используем шаблоны и типовые решения — каждый проект индивидуален и создаётся с нуля, под задачи конкретного клиента.Наши сайты не только визуально привлекательны, но и удобны в использовании, быстро загружаются, адаптированы под все устройства и соответствуют современным стандартам веб-разработки.Мы применяем лучшие практики UX/UI, чистый код и надёжные технологии, чтобы ваш сайт работал стабильно, был заметен в поиске и помогал развивать бизнес онлайн.</h6> */}
                     <h6 className="font-jost text-sm sm:w-[500px] w-[300px] px-5 text-zinc-100 mt-10">{t('AboutAdvantages.text')}</h6>
                 </div>

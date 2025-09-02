@@ -29,7 +29,7 @@ function Advantages(){
             <h4 className="text-[14px]">{t('advantage.functional')}</h4>
         </div>
 
-        <h5 className="absolute font-jost w-[300px] text-white mt-[150px] ml-[140px] text-3xl pulse-glow flex justify-center items-center">
+        <h5 className="absolute font-jost w-[300px] text-white mt-[150px] text-3xl pulse-glow flex justify-center items-center">
             {t('advantage.full')}
         </h5>
     </div>

@@ -16,7 +16,8 @@ import DesignSection from '../../components/DesignSection/DesignSection';
 import Footer from '../../components/Footer/Footer';
 import CardPrice from '../../components/CardPrice/CardPrice';
 import MarsSectionText from '../../components/MarsSectionText/MarsSectionText';
-
+import HomeServices from '../../components/HomeServices/HomeServices';
+import TextLittleSection from '../../components/TextLittleSection/TextLittleSection';
 function HomePage(){
     return (
         <>
@@ -25,6 +26,9 @@ function HomePage(){
             {/* <ListView /> */}
             <TechnologiesMain />
             <Advantages />
+            <MarsSectionText text1="MarsSectionText.HomeText" text2="MarsSectionText.HomeDescription"/>
+            {/* <TextLittleSection text1="TextLittleSection.homeText" text2="TextLittleSection.homeDescription" /> */}
+            <HomeServices />
             <TextDecoration  mainKey="solutions"/>
             <BastCard />
             <ButtonMain />
@@ -36,6 +40,7 @@ function HomePage(){
             <MarsSectionText text1="MarsSectionText.HomeReviewText" text2="MarsSectionText.HomeReviewDescription"/>
             <ReviewsSection />
             <DesignSection />
+          
            
             <Footer />
         </>
