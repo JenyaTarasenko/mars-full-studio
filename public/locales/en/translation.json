@@ -267,6 +267,48 @@
 
     "ButtonRed":{
         "aboutPrice":"Order a website"
+    },
+
+
+    "DetailCard":{
+        "Design":"Design",
+        "DesignText":"Our studio uses Figma to develop modern web interfaces, as well as Illustrator and Photoshop to create and process graphics.",
+        "Frontend":"Frontend",
+        "FrontendText":"We develop interfaces using React, HTML, CSS, Vite, React Hooks API",
+        "Backend":"Backend",
+        "BackendText":"We develop the server part using Python and Django, DRF, with a PostgreSQL, SQLite database",
+        "Server":"Server",
+        "ServerText":"We deploy websites on PythonAnywhere hosting, configure SSL certificates for secure connections and provide support"
+    },
+
+    "RulesSection":{
+        "Text":"The rules we follow",
+        "TextOne":"Our studio develops unique web interfaces — from simple solutions to complex and highly loaded projects. We create strong designs, user-friendly interfaces and reliable online stores, corporate and multi-page sites that help businesses stand out and grow.",
+        "TextTwo":"We make a design that is impossible to confuse, only an individual approach and development from scratch for your business, so that the site becomes a unique tool, and not just a page on the Internet. Our sites are made with unique, inimitable solutions",
+        "CardItem":"Idea",
+        "CardItemText":"customer",
+        "CardItemTwo":"We accept",
+        "CardItemTwoText":"crazy ideas",
+        "CardItemThree":"Our",
+        "CardItemThreeText":"implementation",
+        "CardItemFour":"Unique",
+        "CardItemFourText":"design adaptability",
+        "CardItemFive":"Modern",
+        "CardItemFiveText":"technologies",
+        "CardItemSix":"We implement",
+        "CardItemSixOne":"with the help of the latest",
+        "CardItemSixTwo":"technologies"
+
+    },
+
+
+    "NumberDetail":{
+        "description":"Increase in attendance",
+        "descriptionText":"site in 3 months",
+        "Items":"Increase conversion",
+        "ItemsText":"applications and sales",
+        "Text":"Engagement thanks to",
+        "TextOne":"interface and functionality"
     }
 }
 
