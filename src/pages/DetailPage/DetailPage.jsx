@@ -5,15 +5,16 @@ import Footer from '../../components/Footer/Footer';
 import DetailCard from '../../components/DetailCard/DetailCard';
 import RulesSection from '../../components/RulesSection/RulesSection';
 import NumberDetail from '../../components/NumberDetail/NumberDetail';
+import MarsSectionText from '../../components/MarsSectionText/MarsSectionText';
 
 function DetailPage(){
     return (
         <>
         <Navbar />
         <DetailList />
-        <DetailCard />
         <RulesSection />
-        <NumberDetail />
+        <MarsSectionText text1="MarsSectionText.DetailText" text2="MarsSectionText.DetailDescription"/>
+        <DetailCard />
         <Footer />
         </>
     );

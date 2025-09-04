@@ -11,10 +11,25 @@ const DetailList =()=>{
     const [error, setError] = useState(null);
     const { i18n } = useTranslation();
 
+    // const getTranslated = (project, field) => {
+    //     // const lang = i18n.language.startsWith('ru') ? 'ru' : 'en';
+    //     const Lang = i18n.language.startsWith('ru') 
+    //     ? 'ru'
+    //     : i18n.language.startsWith('uk')
+    //     ? 'uk'
+    //     : ('en');
+    //     return project[`${field}_${lang}`];
+    // };
+
     const getTranslated = (project, field) => {
-        const lang = i18n.language.startsWith('ru') ? 'ru' : 'en';
+        const lang = i18n.language.startsWith('ru')
+            ? 'ru'
+            : i18n.language.startsWith('uk')
+            ? 'uk'
+            : 'en';
         return project[`${field}_${lang}`];
     };
+    
 
    useEffect(()=>{
     fetchProjects()
@@ -81,7 +96,8 @@ const DetailList =()=>{
                 </div>
                 <div className="flex-1 flex justify-end w-full lg:mt-[300px] mt-[100px] relative">
                     <img src="/image/A.svg" alt="mars" className="w-[200px] mt-[-120px] absolute z-[1] mr-[100px] lg:mr-[500px]" />
-                    <h4 className="font-jost text-lg sm:text-xl text-white max-w-[900px] text-left sm:px-10 px-5 z-[10]">Мы создаём интерфейсы, которые<span class="text-cyan-300 text-l"> привлекают внимание и помогают бренду выделяться среди конкурентов.</span> В работе используем современные технологии программирования, такие как React, чтобы разрабатывать лёгкие, быстрые и стабильные интерфейсы. Каждый проект адаптирован под любые устройства, а оптимизированная архитектура обеспечивает быструю загрузку и комфортное взаимодействие с сайтом.</h4>
+                    <h4 className="font-jost text-lg sm:text-xl text-white max-w-[900px] text-left sm:px-10 px-5 z-[10]">Каждый сайт, созданный студией Mars — это <span class="text-cyan-200 text-xl font-light">индивидуальное решение, не похожее на другие. </span>Перед разработкой мы внимательно<span class="text-cyan-200 text-xl font-light"> анализируем рынок и изучаем конкурентов,</span> чтобы понять их сильные стороны. Это позволяет нам создавать проекты, которые <span class="text-cyan-200 text-xl font-light">становятся лучше, удобнее и привлекательнее — </span>как с точки зрения функционала, так и с визуальной стороны.</h4>
+                    {/* <h4 className="font-jost text-lg sm:text-xl text-white max-w-[900px] text-left sm:px-10 px-5 z-[10]">Каждый сайт, созданный студией Mars — это <span class="text-cyan-200 text-xl font-light">индивидуальное решение, не похожее на другие. </span>Перед разработкой мы внимательно<span class="text-cyan-200 text-xl font-light"> анализируем рынок и изучаем конкурентов,</span> чтобы понять их сильные стороны. Это позволяет нам создавать проекты, которые <span class="text-cyan-200 text-xl font-light">становятся лучше, удобнее и привлекательнее — </span>как с точки зрения функционала, так и с визуальной стороны.</h4> */}
                 </div>
                 {/* <div className="flex-1 flex justify-start w-full ">
                     <h4 className="font-jost text-lg sm:text-xl font-normal text-white  max-w-[900px] text-left sm:px-10 px-5">Наши сайты работают на Django Python— это позволяет делать не просто страницы, а полноценные инструменты для бизнеса: удобное управление, онлайн-оплаты, чаты, личные кабинеты и многое другое. Mars studio создает не просто страницы, а удобные инструменты для бизнеса.А благодаря использованию защищённых серверов с доступом по всему миру, ваш сайт всегда будет стабильно работать и оставаться в безопасности.</h4>
@@ -96,10 +112,10 @@ const DetailList =()=>{
             <div className="w-full sm:h-[1200px] h-[800px] bg-[url('/image/bg-detail1.png')] bg-cover bg-center flex flex-col items-center mt-20">
                 <div className="flex flex-col items-center justify-center">
                     <div className="flex items-center justify-center">
-                        <h6 className="font-jost text-cyan-100 text-3xl sm:text-5xl">Прототип<br />будущего сайта</h6>
+                        <h6 className="font-jost text-cyan-200 text-3xl sm:text-5xl">Прототип<br />будущего сайта</h6>
                     </div>
                     <div className="flex flex-col lg:items-start lg:justify-start items-center justify-center w-full mt-20">
-                        <h6 className="font-jost text-zinc-200  text-sm max-w-[700px] px-10">{getTranslated(project, 'text_prototip')}</h6>
+                        <h6 className="font-jost text-cyan-100  text-sm max-w-[700px] px-10">{getTranslated(project, 'text_prototip')}</h6>
                     </div>
 
                     <div className="flex flex-col lg:items-end lg:justify-end items-center justify-center w-full mt-20">
@@ -112,17 +128,24 @@ const DetailList =()=>{
             <div className="w-full h-[1300px] bg-[url('/image/bg-detail2.svg')] bg-cover bg-center flex flex-col items-center gap-20">
                 <div className="flex flex-col items-center justify-center gap-10">
                     <div className="flex items-center justify-center">
-                        <h6 className="font-jost text-cyan-100 text-3xl sm:text-5xl">Сайт<br />который получился</h6>
+                        <h6 className="font-jost text-cyan-200 text-3xl sm:text-5xl">Сайт<br />который получился</h6>
                     </div>
                     <div classN="flex flex-col lg:items-end lg:justify-end items-center justify-center w-full mt-20">
                         <img src={project. image_prototip_end} alt="logo-decor" className="w-[600px] h-[300px] object-cover z-[1] px-5"/>
                     </div>
                     <div className="flex flex-col lg:items-start lg:justify-start items-center justify-center w-full mt-5">
-                        <h6 className="font-jost text-zinc-200  text-sm max-w-[700px] px-10">{getTranslated(project, 'text_prototip_end')}</h6>
+                        <h6 className="font-jost text-cyan-100   text-sm max-w-[700px] px-10">{getTranslated(project, 'text_prototip_end')}</h6>
                     </div>
                     <div className="flex flex-col lg:items-end lg:justify-end items-center justify-center w-full mt-10">
-                        <h6 className="font-jost text-zinc-200  text-sm max-w-[500px] px-10">Ми - дизайн студія Mars створюємо сайти під ключ для вашого бізнесу та стартапу, з урахуванням усіх аспектів розвитку вашого онлайн-присутності.Наша команда має багаторічний досвід у розробці, рекламі та дизайні, що дозволяє нам створювати не просто сайти, а ефективні інструменти для вашого бізнесу. Ми допоможемо вам пройти весь цикл розробки – від ідеї до запуску сайту та його подальшої підтримки.З нами ваш сайт буде не тільки красивим, а й максимально зручним для користувачів, оптимізованим для пошукових систем та адаптованим до всіх пристроїв. Ми знаємо, як створити сайт, який працюватиме на вас і принесе максимальний результат.Вибір нас – це вибір професіоналів, які розуміють, що саме потрібно для успішного розвитку вашого бізнесу в Інтернеті</h6>
-                    </div>                
+                        <h6 className="font-jost text-white text-sm max-w-[500px] px-10">Вся магия начинается с дизайна в Figma — мы создаём прототип будущего сайта, его «скелет». После утверждения макета проект переходит в этап фронтенд-разработки: интерфейс реализуется на React — современном фреймворке для создания адаптивных и быстрых решений с любым уровнем функционала.Затем к работе подключается бэкенд на Django. Здесь мы объединяем дизайн и функционал: тестируем систему, настраиваем API через DRF, обеспечиваем стабильную работу сайта.Финальный этап — это серверная часть: подключение домена, установка SSL-сертификата и размещение сайта на надёжном хостинге. В результате вы получаете готовый ресурс, который открывается в любой точке мира — быстро, безопасно и без ограничений</h6>
+                        
+                    </div>
+                    <div>
+                        <a href="" className='block hidden sm:block'><div className="flex items-center justify-center px-4 py-2 text-white rounded-full mt-[30px] font-jost font-light hover:border-red-500 border border-white" style={{width: "180px", height: "40px"}}>
+                        <span className="font-normal">смотреть проект</span>
+                        </div></a>
+                    </div>
+            
                 </div>
             </div>
             {/*block 4*/}

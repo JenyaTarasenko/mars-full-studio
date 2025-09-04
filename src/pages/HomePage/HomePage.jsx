@@ -18,6 +18,10 @@ import CardPrice from '../../components/CardPrice/CardPrice';
 import MarsSectionText from '../../components/MarsSectionText/MarsSectionText';
 import HomeServices from '../../components/HomeServices/HomeServices';
 import TextLittleSection from '../../components/TextLittleSection/TextLittleSection';
+import QuestionsSection from '../../components/QuestionsSection/QuestionsSection';
+
+
+
 function HomePage(){
     return (
         <>
@@ -40,8 +44,8 @@ function HomePage(){
             <MarsSectionText text1="MarsSectionText.HomeReviewText" text2="MarsSectionText.HomeReviewDescription"/>
             <ReviewsSection />
             <DesignSection />
-          
-           
+            <MarsSectionText text1="MarsSectionText.HomeQuestionText" text2="MarsSectionText.HomeQuestionDescription"/>
+            <QuestionsSection />
             <Footer />
         </>
     );

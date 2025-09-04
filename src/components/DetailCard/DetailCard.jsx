@@ -5,7 +5,7 @@ function DetailCard(){
 
     return(
         <>
-            <div className="w-full flex justify-center section-card-main mt-10">
+            <div className="w-full flex justify-center section-card-main mt-20">
 
                 <div className="overflow-x-auto overflow-y-hidden py-6">
               

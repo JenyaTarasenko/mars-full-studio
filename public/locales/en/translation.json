@@ -170,7 +170,11 @@
         "HomeReviewText":"Feedback from our clients",
         "HomeReviewDescription":"What our clients say about us",
         "HomeText":"We know how to solve",
-        "HomeDescription":"your business tasks"
+        "HomeDescription":"your business tasks",
+        "HomeQuestionText":"Frequently asked questions",
+        "HomeQuestionDescription":"to our studio",
+        "DetailText":"Steps",
+        "DetailDescription":"execution of work"
     },
 
     "TextLittleSection":{
@@ -309,6 +313,26 @@
         "ItemsText":"applications and sales",
         "Text":"Engagement thanks to",
         "TextOne":"interface and functionality"
+    },
+    "Question":{
+        "CardOne":"How long does it take",
+        "CardOneItem":"website development?",
+        "CardOneDescription":"On average, from 2 to 6 weeks, depending on the complexity and number of pages. A one-page Landing page takes from 4 days to 6 days, which includes: design, programming, server part",
+        "CardTwo":"How much does a website cost?",
+        "CardTwoDescription":"The cost is calculated individually. A one-page site is cheaper from $100, multi-page sites from $200, an online store is more expensive from $300. We select a solution for your budget.",
+        "CardThree":"Is it possible to improve the site?",
+        "CardThreeItem":"after launch?",
+        "CardThreeDescription":"Yes, we can always add new features, change the design or expand the functionality. Our studio will be happy to provide you with services for the revision or expansion, or a complete relaunch of your site.",
+        "CardFour":"Will the site work on phones?",
+        "CardFourDescription":"Of course! All our sites are responsive and display perfectly on smartphones and tablets.",
+        "CardFive":"What about support?",
+        "CardFiveItem":"and security?",
+        "CardFiveDescription":"We host websites on reliable servers with protection and provide technical support if necessary. Your website will open equally quickly anywhere in the world",
+        "CardSix":"Is it possible to connect payment?",
+        "CardSixItem":"chat or maps?",
+        "CardSixDescription":"Yes, we integrate convenient services — from online payment to chats and maps, cool animations and various features. Everything works right on the site.",
+        "CardSevenText":"What if I already have a website?",
+        "CardSevenDescription":"We can update an existing site, improve the design, speed up the work and add new functions, all this will be done taking into account our technologies with which we work"
     }
 }
 

@@ -71,7 +71,7 @@ function ListView(){
 
                         <Link to={`/projects/${project.slug}`}><div
                         key={project.id} 
-                        className="card-projects w-[600px] h-[360px]  bg-cover bg-center flex flex-col hover:scale-105 active:scale-100"
+                        className="card-projects w-[600px] h-[360px]  bg-cover bg-center flex flex-col hover:scale-105 active:scale-100 overflow-hidden"
                         style={{ backgroundImage: `url(${'/image/project-card.svg'})` }}>
 
                             <div class="mt-[150px] ml-[50px]">
