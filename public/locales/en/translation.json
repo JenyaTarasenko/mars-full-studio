@@ -333,6 +333,22 @@
         "CardSixDescription":"Yes, we integrate convenient services — from online payment to chats and maps, cool animations and various features. Everything works right on the site.",
         "CardSevenText":"What if I already have a website?",
         "CardSevenDescription":"We can update an existing site, improve the design, speed up the work and add new functions, all this will be done taking into account our technologies with which we work"
+    },
+
+    "DetailList":{
+        "Text":"Every website created by Mars studio is",
+        "TextOne":"an individual solution that is unlike any other.",
+        "TextTwo":"Before development, we carefully",
+        "TextThree":"We analyze the market and study competitors,",
+        "TextFour":"to understand their strengths. This allows us to create projects that",
+        "TextFive":"become better, more convenient and more attractive -",
+        "TextSix":"both from a functional and visual point of view.",
+        "PrototipText":"Prototype",
+        "PrototipTextItem":"future site",
+        "PrototipTextOne":"Website",
+        "PrototipTextTwo":"which turned out",
+        "SectionDescription":"All the magic starts with the design in Figma — we create a prototype of the future website, its “skeleton”. After the layout is approved, the project moves to the front-end development stage: the interface is implemented on React — a modern framework for creating adaptive and fast solutions with any level of functionality. Then the backend on Django is connected to the work. Here we combine design and functionality: we test the system, set up the API via DRF, ensure stable operation of the site. The final stage is the server part: connecting the domain, installing the SSL certificate and placing the site on a reliable hosting. As a result, you get a ready-made resource that opens anywhere in the world — quickly, safely and without restrictions",
+        "ButtoText":"view project"
     }
 }
 
