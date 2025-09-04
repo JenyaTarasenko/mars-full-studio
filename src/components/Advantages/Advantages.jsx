@@ -1,5 +1,6 @@
 import './style.css';
 import { useTranslation } from 'react-i18next';
+import { motion } from "framer-motion";
 
 
 function Advantages(){
@@ -9,25 +10,52 @@ function Advantages(){
     <div className="flex items-center justify-center mt-20 advantages-destop relative">
         <img src="/image/crug-destop.svg" alt="Логотип" className="object-contain z-[1]" />
     
-        <div className="absolute font-jost w-[200px] text-white translate-x-[-400px] translate-y-[-200px] text-sm">
+        {/* <div className="absolute font-jost w-[200px] text-white translate-x-[-400px] translate-y-[-200px] text-sm">
             <h4>{t('advantage.solution')}</h4> 
-        </div>
+        </div> */}
+          <motion.div
+            className="absolute font-jost w-[200px] text-white translate-x-[-400px] translate-y-[-200px] text-sm"
+            initial={{ opacity: 0 }}              // изначально прозрачный
+            whileInView={{ opacity: 4 }}          // плавно проявляется
+            viewport={{ once: true, amount: 0.3 }}// once: true — 1 раз при первом показе
+            transition={{ duration: 3, ease: "easeOut" }} // плавность (2 сек)
+            >
+            <h4>{t("advantage.solution")}</h4>
+        </motion.div>
+       
 
         <h5 className="absolute font-jost w-[100px] text-white mt-[150px] mr-[670px] text-3xl text-center pulse-glow flex justify-center items-center">
             {t('advantage.description')}
         </h5>
 
-        <div className="absolute font-jost w-[200px] text-white mt-[-400px] ml-[700px]">
+        <motion.div
+            className="absolute font-jost w-[200px] text-white mt-[-400px] ml-[700px]"
+            initial={{ opacity: 0 }}              // изначально прозрачный
+            whileInView={{ opacity: 4 }}          // плавно проявляется
+            viewport={{ once: true, amount: 0.3 }}// once: true — 1 раз при первом показе
+            transition={{ duration: 3, ease: "easeOut" }} // плавность (2 сек)
+            >
+            <h4>{t('advantage.develop')}</h4>
+        </motion.div>
+        {/* <div className="absolute font-jost w-[200px] text-white mt-[-400px] ml-[700px]">
             <h4 className="text-[14px]">{t('advantage.develop')}</h4>
-        </div>
+        </div> */}
 
         <h5 className="absolute font-jost w-[100px] text-white mt-[150px] ml-[690px] text-3xl pulse-glow flex justify-center items-center">
             {t('advantage.individual')}
         </h5>
-
-        <div className="absolute font-jost w-[200px] text-white mt-[-520px]">
+        <motion.div
+            className="absolute font-jost w-[200px] text-white mt-[-520px]"
+            initial={{ opacity: 0 }}              // изначально прозрачный
+            whileInView={{ opacity: 4 }}          // плавно проявляется
+            viewport={{ once: true, amount: 0.3 }}// once: true — 1 раз при первом показе
+            transition={{ duration: 3, ease: "easeOut" }} // плавность (2 сек)
+            >
+            <h4>{t('advantage.functional')}</h4>
+        </motion.div>
+        {/* <div className="absolute font-jost w-[200px] text-white mt-[-520px]">
             <h4 className="text-[14px]">{t('advantage.functional')}</h4>
-        </div>
+        </div> */}
 
         <h5 className="absolute font-jost w-[300px] text-white mt-[150px] text-3xl pulse-glow flex justify-center items-center">
             {t('advantage.full')}
@@ -56,25 +84,46 @@ function Advantages(){
         <div className="flex items-center justify-center mt-20 advantages-mobile flex-col">    
             <div>
                 <img src="/image/crug-left.svg" alt="Логотип" className="object-contain z-1 relative" />
-                    <div className="absolute font-jost w-[200px] text-white mt-[-450px] ml-[50px] text-center">
-                    <h4 style={{fontSize:"14px"}}>{t('advantage.solution')}</h4>
-                </div>
+                    <motion.div className="absolute font-jost w-[200px] text-white mt-[-450px] ml-[50px] text-center"
+                        whileInView={{ opacity: 1 }} 
+                        initial={{ opacity: 0 }}          
+                        viewport={{ once: true, amount: 0.3 }}
+                        transition={{ duration: 3, ease: "easeOut" }}
+                    >
+                        <h4 style={{fontSize:"14px"}}>{t('advantage.solution')}</h4>
+                    </motion.div>
                 <h5 className="absolute font-jost w-[100px] text-white mt-[-180px]  ml-[100px] text-3xl text-center pulse-glow" style={{textAlign:"center"}}>{t('advantage.description')}</h5>
             </div>
 
             <div className="mt-[100px]">
                 <img src="/image/crug-center.svg" alt="Логотип" className="object-contain z-1 relative" />
-                <div className="absolute font-jost w-[200px] text-white mt-[-430px] ml-[80px]">
+                {/* <div className="absolute font-jost w-[200px] text-white mt-[-430px] ml-[80px]">
                     <h4 style={{fontSize:"14px"}}>{t('advantage.develop')}</h4>
-                </div>
+                </div> */}
+                <motion.div className="absolute font-jost w-[200px] text-white mt-[-430px] ml-[50px] text-center"
+                    whileInView={{ opacity: 1 }} 
+                    initial={{ opacity: 0 }}          
+                    viewport={{ once: true, amount: 0.3 }}
+                    transition={{ duration: 3, ease: "easeOut" }}
+                >
+                    <h4 style={{fontSize:"14px"}}>{t('advantage.develop')}</h4>
+                </motion.div> 
                 <h5 className="absolute font-jost w-[100px] text-white mt-[-200px] ml-[100px] text-3xl text-center pulse-glow flex justify-center items-center" style={{textAlign:"center"}}>{t('advantage.full')}</h5>
             </div>
 
             <div className="mt-[100px]">
                 <img src="/image/crug-right.svg" alt="Логотип" className="object-contain z-1 relative" />
-                <div className="absolute font-jost w-[200px] text-white mt-[-480px] ml-[80px] text-center">
+                {/* <div className="absolute font-jost w-[200px] text-white mt-[-480px] ml-[80px] text-center">
                     <h4 style={{fontSize:"14px"}}>{t('advantage.functional')}</h4>
-                </div>
+                </div> */}
+                <motion.div className="absolute font-jost w-[200px] text-white mt-[-480px] ml-[80px] text-center"
+                 whileInView={{ opacity: 1 }} 
+                 initial={{ opacity: 0 }}          
+                 viewport={{ once: true, amount: 0.3 }}
+                 transition={{ duration: 3, ease: "easeOut" }}
+                >
+                    <h4 style={{fontSize:"14px"}}>{t('advantage.functional')}</h4>
+                </motion.div>
                 <h5 className="absolute font-jost w-[100px] text-white mt-[-200px]  ml-[100px] text-3xl text-center pulse-glow flex justify-center items-center" style={{textAlign:"center"}}>{t('advantage.individual')}</h5>
             </div>
         </div>
