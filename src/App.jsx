@@ -7,6 +7,8 @@ import HomePage from './pages/HomePage/HomePage';
 import AboutPage from './pages/AbautPage/AboutPage';
 import DetailPage from './pages/DetailPage/DetailPage';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// компонент для того чтобы страница начиналась с верху 
+import ScrollToTop from './components/scrollTotop/ScrollTotop';
 
 function App() {
 
@@ -16,6 +18,7 @@ function App() {
       {/* <Navbar />
       <ListView /> */}
       <Router>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about-mars-studio"  element={<AboutPage />} />

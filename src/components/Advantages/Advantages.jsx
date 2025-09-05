@@ -81,7 +81,7 @@ function Advantages(){
             <h5 className="absolute font-jost w-[300px]  text-white mt-[150px] ml-[30px] text-3xl pulse-glow flex justify-center items-center" style={{textAlign: "center"}}>{t('advantage.full')}</h5>
         </div> */}
       
-        <div className="flex items-center justify-center mt-20 advantages-mobile flex-col">    
+        {/* <div className="flex items-center justify-center mt-20 advantages-mobile flex-col">    
             <div>
                 <img src="/image/crug-left.svg" alt="Логотип" className="object-contain z-1 relative" />
                     <motion.div className="absolute font-jost w-[200px] text-white mt-[-450px] ml-[50px] text-center"
@@ -97,9 +97,7 @@ function Advantages(){
 
             <div className="mt-[100px]">
                 <img src="/image/crug-center.svg" alt="Логотип" className="object-contain z-1 relative" />
-                {/* <div className="absolute font-jost w-[200px] text-white mt-[-430px] ml-[80px]">
-                    <h4 style={{fontSize:"14px"}}>{t('advantage.develop')}</h4>
-                </div> */}
+               
                 <motion.div className="absolute font-jost w-[200px] text-white mt-[-430px] ml-[50px] text-center"
                     whileInView={{ opacity: 1 }} 
                     initial={{ opacity: 0 }}          
@@ -113,9 +111,7 @@ function Advantages(){
 
             <div className="mt-[100px]">
                 <img src="/image/crug-right.svg" alt="Логотип" className="object-contain z-1 relative" />
-                {/* <div className="absolute font-jost w-[200px] text-white mt-[-480px] ml-[80px] text-center">
-                    <h4 style={{fontSize:"14px"}}>{t('advantage.functional')}</h4>
-                </div> */}
+               
                 <motion.div className="absolute font-jost w-[200px] text-white mt-[-480px] ml-[80px] text-center"
                  whileInView={{ opacity: 1 }} 
                  initial={{ opacity: 0 }}          
@@ -126,7 +122,81 @@ function Advantages(){
                 </motion.div>
                 <h5 className="absolute font-jost w-[100px] text-white mt-[-200px]  ml-[100px] text-3xl text-center pulse-glow flex justify-center items-center" style={{textAlign:"center"}}>{t('advantage.individual')}</h5>
             </div>
+        </div> */}
+
+        <div className="flex items-center justify-center mt-20 advantages-mobile flex-col">    
+            <div class="flex relative">
+                <img src="/image/crug-left.svg" alt="Логотип" className="object-contain z-1 " />
+                
+                    <motion.div className="absolute font-jost w-[200px] text-white translate-y-[-50px] text-left translate-x-[30px] "
+                        whileInView={{ opacity: 1 }} 
+                        initial={{ opacity: 0 }}          
+                        viewport={{ once: true, amount: 0.3 }}
+                        transition={{ duration: 3, ease: "easeOut" }}
+                    >
+                        <h4 style={{fontSize:"14px"}}>{t('advantage.solution')}</h4>
+                    </motion.div>
+                <motion.h5 
+                    className="absolute font-jost w-[100px] text-white translate-y-[250px] translate-x-[90px]  text-3xl text-center pulse-glow" 
+                    style={{ textAlign: "center" }}
+                    initial={{ opacity: 0 }}           // изначально невидимый
+                    whileInView={{ opacity: 1 }}       // проявляется при попадании в экран
+                    viewport={{ once: true, amount: 0.5 }} // срабатывает один раз, когда 50% блока видно
+                    transition={{ duration: 2, ease: "easeOut" }} // плавность
+                >
+                    {t('advantage.description')}
+                </motion.h5>
+            </div>
+
+            <div className="mt-[100px] flex relative">
+                <img src="/image/crug-center.svg" alt="Логотип" className="object-contain z-1" />
+               
+                <motion.div className="absolute font-jost w-[200px] text-white translate-y-[-50px] text-center translate-x-[50px]"
+                    whileInView={{ opacity: 1 }} 
+                    initial={{ opacity: 0 }}          
+                    viewport={{ once: true, amount: 0.3 }}
+                    transition={{ duration: 3, ease: "easeOut" }}
+                >
+                    <h4 style={{fontSize:"14px"}}>{t('advantage.develop')}</h4>
+                </motion.div> 
+                <motion.h5 className="absolute font-jost w-[100px] text-white text-3xl text-center pulse-glow flex justify-center items-center  translate-y-[220px] translate-x-[100px]"
+                    style={{textAlign:"center"}}
+                    whileInView={{ opacity: 1 }} 
+                    initial={{ opacity: 0 }}          
+                    viewport={{ once: true, amount: 0.3 }}
+                    transition={{ duration: 3, ease: "easeOut" }}
+                >
+                    {t('advantage.full')}
+                </motion.h5>
+            </div>
+
+            <div className="mt-[100px] relative">
+                <img src="/image/crug-right.svg" alt="Логотип" className="object-contain z-1" />
+               
+                <motion.div className="absolute font-jost w-[200px] text-white text-right translate-y-[-500px] translate-x-[50px]"
+                    whileInView={{ opacity: 1 }} 
+                    initial={{ opacity: 0 }}          
+                    viewport={{ once: true, amount: 0.3 }}
+                    transition={{ duration: 3, ease: "easeOut" }}
+                >
+                    <h4 style={{fontSize:"14px"}}>{t('advantage.functional')}</h4>
+                </motion.div>
+                <motion.h5 
+                className="absolute font-jost w-[100px] text-white mt-[-200px]  ml-[100px] text-3xl text-center pulse-glow flex justify-center items-center"
+                    style={{textAlign:"center"}}
+                    whileInView={{ opacity: 1 }} 
+                    initial={{ opacity: 0 }}          
+                    viewport={{ once: true, amount: 0.3 }}
+                    transition={{ duration: 3, ease: "easeOut" }}
+                >
+                {t('advantage.individual')}
+                </motion.h5>
+            </div>
         </div>
+
+       
+
+        
   
     </>
     );

@@ -62,7 +62,7 @@ function ListView(){
     // );
     return(
         <>
-            <div className="w-full overflow-x-hidden flex justify-center items-center max-w-[1000px] mx-auto relative mt-[200px]">
+            <div id="project-list" className="w-full overflow-x-hidden flex justify-center items-center max-w-[1000px] mx-auto relative mt-[200px]">
                 {projects.length === 0 ? (
                     <p className="text-white">Нет проектов</p>
                 ) : (
