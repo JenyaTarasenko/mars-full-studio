@@ -157,6 +157,57 @@ function CardPrice(){
                 <img src="/image/300$.svg" alt="elips" className='absolute z-[-1] translate-y-[50px] translate-x-[0] w-[300px]'/>
 
             </div>
+
+            <div className="card-price w-[300px] h-[650px] flex flex-col items-center relative transform transition-transform duration-300 hover:scale-105">
+
+                <h6 className="font-jost text-orange-400 mt-20 text-2xl text-center">Поддержка и развитие</h6>
+
+                <div className="flex justify-start items-center mt-10 w-full pl-10 flex-row gap-5">
+                    <p className="font-jost text-red-800 mt-2 text-xl font-black">1</p>
+                    <p className="font-jost text-orange-100 mt-2 text-sm">Техническое сопровождение</p>
+                    {/* <p class="font-jost text-orange-100 mt-2 text-sm"> Уникальный дизайн</p> */}
+                </div>
+                <div className="flex justify-start items-center mt-3 w-full pl-10 flex-row gap-5">
+                    <p className="font-jost text-red-800 mt-2 text-xl font-black">2</p>
+                    <p className="font-jost text-orange-100 mt-2 text-sm">Обновление дизайна</p>
+                    {/* <p class="font-jost text-orange-100 mt-2 text-sm">Каталог товаров — с категориями, фильтрами,<br />сортировкой и карточками.</p> */}
+                </div>
+                <div className="flex justify-start items-center mt-3 w-full pl-10 flex-row gap-5">
+                    <p className="font-jost text-red-800 mt-2 text-xl font-black">3</p>
+                    {/* <p class="font-jost text-orange-100 mt-2 text-sm">Поиск по товарам — быстрый <br />доступ к нужному продукту</p> */}
+                    <p className="font-jost text-orange-100 mt-2 text-sm">Обновление контента</p>
+                </div>
+                <div className="flex justify-start items-center mt-3 w-full pl-10 flex-row gap-5">
+                    <p className="font-jost text-red-800 mt-2 text-xl font-black">4</p>
+                    <p className="font-jost text-orange-100 mt-2 text-sm">Оптимизация скорости</p>
+                    {/* <p class="font-jost text-orange-100 mt-2 text-sm">Корзина покупок — добавление,<br />редактирование и удаление товаров.</p> */}
+                </div>
+                <div className="flex justify-start items-center mt-3 w-full pl-10 flex-row gap-5">
+                    <p className="font-jost text-red-800 mt-2 text-xl font-black">5</p>
+                    <p className="font-jost text-orange-100 mt-2 text-sm">Масштабирование проекта</p>
+                    {/* <p class="font-jost text-orange-100 mt-2 text-sm">Личный кабинет пользователя</p> */}
+                </div>
+
+                <div className="flex justify-start items-center mt-3 w-full pl-10 flex-row gap-5">
+                    <p className="font-jost text-red-800 mt-2 text-xl font-black">6</p>
+                    {/* <p class="font-jost text-orange-100 mt-2 text-sm">Системы оплаты</p> */}
+                    <p className="font-jost text-orange-100 mt-2 text-sm">Внедрение новых фишек</p>
+                </div>
+                
+                <div className="flex justify-start items-center mt-3 w-full pl-10 flex-row gap-5">
+                    <p className="font-jost text-red-800 mt-2 text-xl font-black">7</p>
+                    <p className="font-jost text-orange-100 mt-2 text-sm">Аналитика и отчётность</p>
+                    {/* <p class="font-jost text-orange-100 mt-2 text-sm">Защита НTTPS, защита <br/> от спама и уязвимостей</p> */}
+                </div>
+                <div className="flex justify-start items-center mt-3 w-full pl-10 flex-row gap-5">
+                    <p className="font-jost text-red-800 mt-2 text-xl font-black">8</p>
+                    {/* <p class="font-jost text-orange-100 mt-2 text-sm">Бесплатная поддержка</p> */}
+                    <p className="font-jost text-orange-100 mt-2 text-sm">Мониторинг работы сайта 24/7</p>
+                </div>
+                <img src="/image/price-card5.svg" alt="elips" className='absolute z-[-1] translate-y-[360px] translate-x-[40px]'/>
+                <img src="/image/200$.svg" alt="elips" className='absolute z-[-1] translate-y-[50px] translate-x-[0] w-[300px]'/>
+
+            </div>
            
         </div>
     );

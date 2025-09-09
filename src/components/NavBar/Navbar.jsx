@@ -2,13 +2,46 @@ import React, { useState } from "react";
 import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
 import { useTranslation } from "react-i18next";
 import { X, Menu } from "lucide-react"; // иконки
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+
+// npm install react-router-hash-link    библиотека для прокрутки на секцию id="/#project-list"
+import { HashLink } from "react-router-hash-link";
 
 
 const Navbar = () => {
   const { t } = useTranslation(); 
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation(); // Получаем текущий путь для проверки ховер меню
 
+
+  const isActiveLink =(path)=>{
+
+    // для главной
+    if (path === "/" && location.pathname === "/" && !location.hash) return true;
+
+    // Для обычных страниц
+    if (path !== "/" && location.pathname.startsWith(path)) return true;
+
+
+    // Для HashLink (якорных ссылок /#project-list)
+    if (path === "/#project-list" && location.pathname === "/" && location.hash === "#project-list") {
+      return true;
+    }
+    if (path == "/#price" && location.pathname === "/" && location.hash === "#price"){
+      return true
+    }
+    return false;
+  };
+
+   // Функция для получения класса активной ссылки
+  const getLinkClass = (path) => {
+  const baseClass = "hover:text-red-500 transition-colors duration-200";
+  const activeClass = "text-red-500 font-medium"; // Стиль для активной ссылки
+    
+    return isActiveLink(path) 
+      ? `${baseClass} ${activeClass}`
+      : baseClass;
+  };
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 text-white py-5 backdrop-blur-xl bg-black/30 border-b border-white/10 shadow-2xl">
       <div className="flex items-center justify-between relative bg-transparent" >
@@ -21,15 +54,13 @@ const Navbar = () => {
 
         {/* Центр меню */}
         <ul className="hidden md:flex gap-10 text-xs  font-light tracking-widest absolute left-1/2 transform -translate-x-1/2 font-jost uppercase">
-          <li><Link to="/"  className="hover:text-red-500">{t("menu.home")}</Link></li>
-          <li><Link to="/about-mars-studio"  className="hover:text-red-500">{t("menu.about")}</Link></li>
+          <li><Link to="/"  className={getLinkClass("/")}>{t("menu.home")}</Link></li>
+          <li><Link to="/about-mars-studio"  className={getLinkClass("/about-mars-studio")}>{t("menu.about")}</Link></li>
 
-          <li 
-          className="hover:text-red-500"
-          >
-          {t("menu.projects")}</li>
-          
-          <li><Link to="" className="hover:text-red-500">{t("menu.prices")}</Link></li>
+          <li><HashLink smooth to="/#project-list" className={getLinkClass("/#project-list")}>{t("menu.projects")}</HashLink></li>
+
+          <li><HashLink smooth to="/#price" className={getLinkClass("/#price")}>{t("menu.prices")}</HashLink></li>
+          {/* <li><Link to="" className="hover:text-red-500">{t("menu.prices")}</Link></li> */}
           <li><Link to=""  className="hover:text-red-500">{t("menu.blog")}</Link></li>
         </ul>
 
@@ -52,12 +83,12 @@ const Navbar = () => {
       {/* Меню на mobile */}
       {isOpen && (
         <ul className="md:hidden flex flex-col mt-10 gap-10 text-xs font-light items-center">
-           <li><Link to="/"  className="hover:text-red-500">{t("menu.home")}</Link></li>
-            <li><Link to="/about-mars-studio" className="hover:text-red-500">{t("menu.about")}</Link></li>
-            <li className="hover:text-red-500">
-              {t("menu.projects")}
-            </li>
-            <li><Link to=""  className="hover:text-red-500">{t("menu.prices")}</Link></li>
+           <li><Link to="/"  className={getLinkClass("/")}>{t("menu.home")}</Link></li>
+            <li><Link to="/about-mars-studio" className={getLinkClass("/about-mars-studio")}>{t("menu.about")}</Link></li>
+            {/* <li className="hover:text-red-500">{t("menu.projects")}</li> */}
+            <li><HashLink smooth to="/#project-list" className={getLinkClass("/#project-list")}>{t("menu.projects")}</HashLink></li>
+            {/* <li><Link to=""  className="hover:text-red-500">{t("menu.prices")}</Link></li> */}
+            <li><HashLink smooth to="/#price" className={getLinkClass("/#price")}>{t("menu.prices")}</HashLink></li>
             <li><Link to=""  className="hover:text-red-500">{t("menu.blog")}</Link></li>
            {/* Языки в бургере */}
            <li className="mt-4">

@@ -13,7 +13,15 @@ function DesignSection(){
                 <h5 className="font-extrabold text-2xl sm:text-3xl text-left font-jost mt-10 text-stone-100">{t('DesignSectionOne.item')}<span className="font-light text-orange-700 text-4xl"> {t('DesignSectionOne.itemOne')}</span> {t('DesignSectionOne.itemTwo')}</h5>
                 <img src="/image/design-card.svg" alt="logo" className="mt-3 w-[100px]"/>
                 {/* <h6 className="font-jost text-stone-400 mt-5">Наши дизайнеры создают визуальный стиль, который выделяет ваш бизнес среди конкурентов — современный, выразительный и запоминающийся.Каждый элемент продуман: от цветовой палитры до композиции.Наш фирменный стиль узнаваем и помогает сформировать сильный образ бренда в глазах клиента</h6> */}
-                <h6 className="font-jost text-stone-400 mt-5">{t('DesignSectionOne.itemThree')}</h6>
+                <motion.h6 
+                    className="font-jost text-stone-400 mt-5"
+                    initial={{ opacity: 0, x: -100 }} // невидим и сдвинут влево
+                    whileInView={{ opacity: 1, x: 0 }} // плавно появляется и возвращается на место
+                    viewport={{ once: true, amount: 0.3 }} // анимация запускается один раз
+                    transition={{ duration: 1.2, ease: "easeOut" }} // плавность
+                >
+                    {t('DesignSectionOne.itemThree')}
+                </motion.h6>
                 <img src="/image/des.svg" alt="logo" className="absolute left-1/2 -translate-x-1/2 design-destop z-[-1]"/>
                 <img src="/image/design-mob.svg" alt="logo" className="absolute left-1/2 -translate-x-1/2 design-mob z-[-1] translate-y-[50px] "/>
                 <div className="card-box flex flex-col lg:flex-row mt-10 gap-3 items-center justify-center lg:justify-start ">
@@ -29,7 +37,15 @@ function DesignSection(){
                 <h5 className="font-extrabold text-2xl sm:text-3xl text-left font-jost mt-10 text-stone-100">{t('DesignSectionTwo.item')}<span className="font-light text-orange-700 text-4xl">{" "}{t('DesignSectionTwo.itemOne')}{" "}</span>{t('DesignSectionTwo.itemTwo')}{" "}<span className="font-light text-orange-700 text-4xl">{t('DesignSectionTwo.itemThree')}{" "}</span>{t('DesignSectionTwo.itemFour')}</h5>
                 <img src="/image/design-card1.svg" alt="logo" className="mt-3 w-[100px]"/>
                 {/* <h6 className="font-jost text-stone-400 mt-5">React позволяет реализовывать гибкие и быстрые сайты с интерактивными элементами, плавной навигацией и моментальной загрузкой страниц без перезагрузки.адаптивную верстку для всех устройств, формы и валидацию данных, динамические фильтры, поиск и сортировку ,личные кабинеты, корзины, избранное, подключение к backend API (Django),интерактивные элементы и анимации,темную/светлую тему, уведомления, лоадеры и многое другое.</h6> */}
-                <h6 className="font-jost text-stone-400 mt-5">{t('DesignSectionTwo.ItemFive')}</h6>
+                <motion.h6 className="font-jost text-stone-400 mt-5"
+                 
+                 initial={{ opacity: 0, x: -100 }} // невидим и сдвинут влево
+                 whileInView={{ opacity: 1, x: 0 }} // плавно появляется и возвращается на место
+                 viewport={{ once: true, amount: 0.3 }} // анимация запускается один раз
+                 transition={{ duration: 1.2, ease: "easeOut" }} // плавность
+                >
+                    {t('DesignSectionTwo.ItemFive')}
+                </motion.h6>
                 <img src="/image/frontend-destop.svg" alt="logo" className="absolute left-1/2 -translate-x-1/2 design-destop z-[-1] mt-[100px]"/>
                 <img src="/image/mobile-front.svg" alt="logo" className="absolute left-1/2 -translate-x-1/2 design-mob z-[-1] translate-y-[-200px] "/>
                 <div className="card-box flex flex-col lg:flex-row mt-10 gap-3 items-center justify-center lg:justify-start ">
@@ -47,7 +63,15 @@ function DesignSection(){
                 <h5 className="font-extrabold text-2xl sm:text-3xl text-left font-jost mt-10 text-stone-100">{t('DesignSectionThree.item')} <span className="font-light text-orange-700 text-4xl">{t('DesignSectionThree.itemOne')}</span></h5>
                 <img src="/image/tehnology1.svg" alt="logo" className="mt-3 w-[100px]"/>
                 {/* <h6 className="font-jost text-stone-400 mt-5">Django позволяет быстро создавать сложные веб-приложения с чистой архитектурой и понятной структурой кода.Благодаря своей гибкости и масштабируемости Django подходит как для небольших проектов, так и для крупных корпоративных систем.Он включает готовые инструменты для работы с базами данных, админ-панелью, авторизацией и безопасностью.</h6> */}
-                <h6 className="font-jost text-stone-400 mt-5">{t('DesignSectionThree.itemThree')}</h6>
+                <motion.h6 
+                    className="font-jost text-stone-400 mt-5"
+                    initial={{ opacity: 0, x: -100 }} // невидим и сдвинут влево
+                    whileInView={{ opacity: 1, x: 0 }} // плавно появляется и возвращается на место
+                    viewport={{ once: true, amount: 0.3 }} // анимация запускается один раз
+                    transition={{ duration: 1.2, ease: "easeOut" }} // плавность
+                >
+                    {t('DesignSectionThree.itemThree')}
+                </motion.h6>
                 <img src="/image/backend.svg" alt="logo" className="absolute w-full design-destop z-[-1] mt-[100px]"/>
                 <img src="/image/backend-mobile.svg" alt="logo" className="absolute left-1/2 -translate-x-1/2 design-mob z-[-1] translate-y-[20px] "/>
                 <div className="card-box flex flex-col lg:flex-row mt-10 gap-3 items-center justify-center lg:justify-start ">

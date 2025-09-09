@@ -5,7 +5,7 @@ function Price(){
     const { t } = useTranslation();
     return(
         <>
-            <div className="flex items-center justify-center relative section-price-elips-destop flex-row">
+            <div id="price" className="flex items-center justify-center relative section-price-elips-destop flex-row">
             <img src="/image/astric.svg" className="absolute mt-[200px] w-[200px] animate-float" />
             
                 <div className="flex items-center justify-center">

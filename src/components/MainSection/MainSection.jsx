@@ -27,7 +27,15 @@ function MainSection(){
 
             {/* <img src="/image/Mars-big.svg" alt="Image" className="absolute w-full md:w-1/2 object-contain z-0 mt-[100px] main-logo-big" /> */}
             <h1 className="mt-[150px] md:w-[570px] font-extrabold px-2 text-3xl sm:text-5xl text-center font-jost">{t('main.title')}{' '}<span className="font-normal text-orange-700 text-5xl sm:text-6xl">{' '}{t('main.titlePart1')}</span>{' '}{t('main.titlePart2')}</h1> 
-            <h2 className="mt-[40px] text-center font-jost text-zinc-500  md:w-[570px] transition duration-300 hover:text-shadow-[0_0_6px_rgba(255,165,0,0.7)] cursor-pointer">{t('main.description')}</h2>
+            <motion.h2 
+                className="mt-[40px] text-center font-jost text-zinc-400  md:w-[570px] transition duration-300 hover:text-shadow-[0_0_6px_rgba(255,165,0,0.7)] cursor-pointer"
+                initial={{ opacity: 0, scale: 0.95 }}   // немного меньше и невидим
+                whileInView={{ opacity: 1, scale: 1 }}  // появляется и возвращается в норму
+                viewport={{ once: true, amount: 0.4 }}  // запускается один раз, когда видно 40%
+                transition={{ duration: 1.2, ease: "easeOut" }} // плавность
+            >
+                {t('main.description')}
+            </motion.h2>
             <img src="/image/krestic.svg"
             alt="mars-image-decor"
             className="absolute mt-[120px] mr-[200px]" />
