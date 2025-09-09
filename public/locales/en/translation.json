@@ -361,6 +361,10 @@
         "PrototipTextTwo":"which turned out",
         "SectionDescription":"All the magic starts with the design in Figma — we create a prototype of the future website, its “skeleton”. After the layout is approved, the project moves to the front-end development stage: the interface is implemented on React — a modern framework for creating adaptive and fast solutions with any level of functionality. Then the backend on Django is connected to the work. Here we combine design and functionality: we test the system, set up the API via DRF, ensure stable operation of the site. The final stage is the server part: connecting the domain, installing the SSL certificate and placing the site on a reliable hosting. As a result, you get a ready-made resource that opens anywhere in the world — quickly, safely and without restrictions",
         "ButtoText":"view project"
+    },
+
+    "seo":{
+        "HomeTitle":"Mars-website development"
     }
 }
 
