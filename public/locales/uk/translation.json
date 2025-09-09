@@ -165,7 +165,9 @@
         "HomeQuestionText":"Часті питання",
         "HomeQuestionDescription":"до нашої студії",
         "DetailText":"Кроки",
-        "DetailDescription":"виконання роботи"
+        "DetailDescription":"виконання роботи",
+        "aboutTextBast":"Our studio",
+        "aboutDescriptionBast":"complex web development"
     },
 
     "TextLittleSection":{
@@ -238,7 +240,17 @@
         "CardThreePaiment":"Системи оплати",
         "CardThreeProtectionOne":"Захист НTTPS",
         "CardThreeProtectionTwo":"від спаму та вразливостей",
-        "CardThreeSupport":"Безкоштовна підтримка"
+        "CardThreeSupport":"Безкоштовна підтримка",
+
+        "CardFourText":"Підтримка та розвиток",
+        "CardFourTechnic":"Технічний супровід",
+        "CardFourDesign":"Оновлення дизайну",
+        "CardFourContant":"Оновлення контенту",
+        "CardFourSpeed":"Оптимізація швидкості",
+        "CardFourScaling":"Масштабування проекту",
+        "CardFourFeach":"Впровадження нових фішок",
+        "CardFourAnalotic":"Аналітика та звітність",
+        "CardFourMonitoring":"Моніторинг роботи сайту 24/7"
 
     },
 

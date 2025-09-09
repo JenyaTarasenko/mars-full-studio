@@ -6,6 +6,7 @@ import DetailCard from '../../components/DetailCard/DetailCard';
 import RulesSection from '../../components/RulesSection/RulesSection';
 import NumberDetail from '../../components/NumberDetail/NumberDetail';
 import MarsSectionText from '../../components/MarsSectionText/MarsSectionText';
+import SocialFixed from '../../components/SocialFixed/SocialFixed';
 
 function DetailPage(){
     return (
@@ -15,6 +16,7 @@ function DetailPage(){
         <RulesSection />
         <MarsSectionText text1="MarsSectionText.DetailText" text2="MarsSectionText.DetailDescription"/>
         <DetailCard />
+        <SocialFixed />
         <Footer />
         </>
     );

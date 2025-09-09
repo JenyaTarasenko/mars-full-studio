@@ -11,6 +11,7 @@ import CardStep from '../../components/CardStep/CardStep';
 import MarsSectionText from '../../components/MarsSectionText/MarsSectionText';
 import TextLittleSection from '../../components/TextLittleSection/TextLittleSection';
 import AboutTeam from '../../components/AboutTeam/AboutTeam';
+import SocialFixed from '../../components/SocialFixed/SocialFixed';
 
 
 function  AboutPage(){
@@ -28,6 +29,7 @@ function  AboutPage(){
             <CardStep />
             <TextLittleSection text1="TextLittleSection.aboutText" text2="TextLittleSection.aboutDescription" />
             <AboutTeam />
+            <SocialFixed />
             <Footer />
         </>
     )

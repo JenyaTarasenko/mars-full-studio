@@ -164,11 +164,12 @@
         "HomeText":"Умеем решать",
         "HomeDescription":"ваши бизнесс задачи",
         "aboutTextBast":"Наша студия",
-        "aboutDescriptionBast":"комплексная веб-разработка",
+        "aboutDescriptionBast":"комплексна веб-розробка",
         "HomeQuestionText":"Часто задаваемые вопросы",
         "HomeQuestionDescription":"к нашей студии",
         "DetailText":"Шаги",
         "DetailDescription":"выполнения работы"
+        
     },
 
     "TextLittleSection":{
@@ -241,7 +242,17 @@
         "CardThreePaiment":"Системы оплаты",
         "CardThreeProtectionOne":"Защита НTTPS, защита ",
         "CardThreeProtectionTwo":"от спама и уязвимостей",
-        "CardThreeSupport":"Бесплатная поддержка"
+        "CardThreeSupport":"Бесплатная поддержка",
+
+        "CardFourText":"Поддержка и развитие",
+        "CardFourTechnic":"Техническое сопровождение",
+        "CardFourDesign":"Обновление дизайна",
+        "CardFourContant":"Обновление контента",
+        "CardFourSpeed":"Оптимизация скорости",
+        "CardFourScaling":"Масштабирование проекта",
+        "CardFourFeach":"Внедрение новых фишек",
+        "CardFourAnalotic":"Аналитика и отчётность",
+        "CardFourMonitoring":"Мониторинг работы сайта 24/7"
 
     },
 

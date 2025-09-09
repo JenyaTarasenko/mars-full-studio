@@ -19,6 +19,7 @@ import MarsSectionText from '../../components/MarsSectionText/MarsSectionText';
 import HomeServices from '../../components/HomeServices/HomeServices';
 import TextLittleSection from '../../components/TextLittleSection/TextLittleSection';
 import QuestionsSection from '../../components/QuestionsSection/QuestionsSection';
+import SocialFixed from '../../components/SocialFixed/SocialFixed';
 
 
 
@@ -47,6 +48,7 @@ function HomePage(){
             <DesignSection />
             <MarsSectionText text1="MarsSectionText.HomeQuestionText" text2="MarsSectionText.HomeQuestionDescription"/>
             <QuestionsSection />
+            <SocialFixed />
             <Footer />
         </>
     );

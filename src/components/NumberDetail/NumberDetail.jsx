@@ -26,7 +26,7 @@ function NumberDetail(){
     // }, [inView, value]);
 
     const ref = useRef(null);
-    const inView = useInView(ref, { once: true, amount: 0.5 });
+    const inView = useInView(ref, { once: true, amount: 0.1 });
   
     // Три MotionValue для трёх чисел
     const value1 = useMotionValue(0);

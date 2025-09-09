@@ -174,7 +174,9 @@
         "HomeQuestionText":"Frequently asked questions",
         "HomeQuestionDescription":"to our studio",
         "DetailText":"Steps",
-        "DetailDescription":"execution of work"
+        "DetailDescription":"execution of work",
+        "aboutTextBast":"Наша студія",
+        "aboutDescriptionBast":"complex web development"
     },
 
     "TextLittleSection":{
@@ -248,7 +250,17 @@
         "CardThreePaiment":"Payment systems",
         "CardThreeProtectionOne":"HTTPS protectio,",
         "CardThreeProtectionTwo":"from spam and vulnerabilities",
-        "CardThreeSupport":"Free support"
+        "CardThreeSupport":"Free support",
+
+        "CardFourText":"Support and development",
+        "CardFourTechnic":"Technical support",
+        "CardFourDesign":"Design update",
+        "CardFourContant":"Content update",
+        "CardFourSpeed":"Speed ​​optimization",
+        "CardFourScaling":"Scaling the project",
+        "CardFourFeach":"Implementation of new features",
+        "CardFourAnalotic":"Analytics and reporting",
+        "CardFourMonitoring":"Monitoring of the site operation 24/7"
 
     },
 
