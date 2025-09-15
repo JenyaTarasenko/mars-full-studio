@@ -24,6 +24,7 @@ import SocialFixed from '../../components/SocialFixed/SocialFixed';
 import { Helmet } from '@dr.pogodin/react-helmet';
 // перевод на всю страницу  для seo
 import { useTranslation } from "react-i18next";
+import Bast from '../../components/Bast/Bast';
 
 
 
@@ -123,6 +124,7 @@ function HomePage(){
             <MarsSectionText text1="MarsSectionText.HomeQuestionText" text2="MarsSectionText.HomeQuestionDescription"/>
             <QuestionsSection />
             <SocialFixed />
+            <Bast />
             <Footer />
         </>
     );

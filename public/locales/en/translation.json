@@ -365,6 +365,19 @@
 
     "seo":{
         "HomeTitle":"Mars-website development"
+    },
+
+    "Bast":{
+        "TextOne":"Our studio works with any type of business — from small startups and bold pioneers to large companies and large-scale projects. We offer services for the implementation of creative web technologies: from simple landing pages for testing ideas and promoting a product online to complex and ambitious solutions that have a significant impact on the development of businesses and entire industries.",
+        "TextTwo":"Our goal is to create modern web products that do more than just perform a task, but stand out from the competition with their creativity and unconventional approach to problem solving. We implement the most advanced web development technologies to keep up with the times and form new standards in the digital environment. Today, the border between a person and the digital world is becoming thinner. We create solutions that allow the user to interact with the digital environment easily, intuitively and with maximum comfort.",
+        "TextThree":"Our priority is to make digital technologies accessible to any business and help companies compete effectively in the market. We implement innovative solutions that open up new opportunities to attract customers and strengthen brand positions."
+    },
+
+    "ReviewsSection":{
+        "CardOneName":"Hands of Mercy",
+        "CardOneText":"We are truly grateful for the amazing website created for our charity.",
+        "CardTwoText":"Cool design, modern and functional website that helps in developing our business in Toronto, very pleased with the result",
+        "CardThreeText":"Bright and strong design, the site works very quickly, thanks to the Mars team."
     }
 }
 
