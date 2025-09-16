@@ -35,73 +35,58 @@ function HomePage(){
     return (
         <>
             <Helmet>
-            
                 {/* 🔹 Основные теги SEO */}
-                {/* <title>Mars design studio</title> */}
                 <title>{t("seo.HomeTitle")}</title>
-
-                <meta
-                name="description"
-                content={t("seo.HomeDescription")} />
-                {/* // content="Марс Студия-создание современных сайтов с уникальным дизайном — от лендингов до интернет-магазинов и многостраничных проектов." /> */}
-                <meta
-                name="keywords"
-                content={t("seo.HomeKeyWords")} 
-                // content="веб-студия, создание сайтов, разработка сайтов, разработка веб-приложений, дизайн сайтов, UX/UI дизайн, SEO оптимизация, продвижение сайтов, заказ сайта, React, Django, HTML, CSS, JavaScript, лендинг, одностраничный сайт, многостраничный сайт, интернет-магазин, корпоративный сайт, сайт для бизнеса, уникальный дизайн, адаптивный сайт, современный сайт, создание сайта под ключ"
-                />
+                <meta name="description" content={t("seo.HomeDescription")} />
+                <meta name="keywords" content={t("seo.HomeKeyWords")} />
                 <meta name="author" content="Mars Studio" />
                 <meta name="robots" content="index, follow" />
 
-                {/* 🔹 Open Graph (для соцсетей: Facebook, LinkedIn, Viber и т.д.) */}
-                <meta property="og:title" content="Марс Студия — Разработка сайтов" />
-                <meta
-                property="og:description"
-                content="Создаем современные сайты и дизайн. SEO и маркетинг для вашего бизнеса."
-                />
+                {/* 🔹 Open Graph */}
+                <meta property="og:title" content={t("seo.HomeTitle")} />
+                <meta property="og:description" content={t("seo.HomeDescription")} />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://www.web-mars.com/" />
-                {/* <meta property="og:image" content="https://mars-studio.com/preview.jpg" /> */}
-                <meta property="og:locale" content="ru_RU" />
+                <meta property="og:image" content="https://www.web-mars.com/favicon/mars-image.png" />
                 <meta property="og:site_name" content="Mars Studio" />
 
-                {/* 🔹 Twitter Cards (для X/Twitter) */}
+                 {/* 🔹 для мультиязычного сео */}
+                <meta property="og:locale" content="ru_RU" />
+                <meta property="og:locale:alternate" content="uk_UA" />
+                <meta property="og:locale:alternate" content="en_US" />
+
+
+
+                {/* 🔹 Twitter */}
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Марс Студия — Разработка сайтов" />
-                <meta
-                name="twitter:description"
-                content={t("seo.HomeDescription")}
-                />
-                {/* <meta name="twitter:image" content="https://mars-studio.com/preview.jpg" /> */}
-                <meta name="twitter:site" content="@marsstudio" />
+                <meta name="twitter:title" content={t("seo.HomeTitle")} />
+                <meta name="twitter:description" content={t("seo.HomeDescription")} />
+                <meta name="twitter:image" content="https://www.web-mars.com/images/seo-card.jpg" />
 
-                {/* 🔹 Favicons (иконки сайта) */}
-                <link rel="icon" href="/favicon.ico" />
-                <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-                <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-                <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-
-                {/* 🔹 Canonical (правильный URL страницы) */}
+                {/* 🔹 Canonical */}
                 <link rel="canonical" href="https://www.web-mars.com/" />
 
-                {/* 🔹 Дополнительно для SEO */}
+                <link rel="alternate" href="https://www.web-mars.com/" hreflang="x-default" />
+
+
+                {/* 🔹 Технические */}
                 <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
                 <meta name="theme-color" content="#000000" />
 
-                {/* 🔹 Структурированные данные (JSON-LD) */}
+                {/* 🔹 Структурированные данные */}
                 <script type="application/ld+json">{`
-                {
+                    {
                     "@context": "https://schema.org",
                     "@type": "Organization",
                     "name": "Mars Studio",
                     "url": "https://www.web-mars.com/",
-                   
-                    ]
-                }
+                    "logo": "https://www.web-mars.com/favicon/fa512.png"
+                    }
                 `}</script>
-        
             </Helmet>
+
             <Navbar />
             <MainSection />
             <TechnologiesMain />

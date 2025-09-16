@@ -364,7 +364,15 @@
     },
 
     "seo":{
-        "HomeTitle":"Mars-website development"
+        "HomeTitle":"Mars - turnkey website development",
+        "HomeDescription":"Mars Studio - creation of modern websites with unique design - from landing pages to online stores and multi-page projects.",
+        "HomeKeyWords":"Web studio, website creation, website development, web application development, website design, UX/UI design, SEO optimization, website promotion, website order, React, Django, HTML, CSS, JavaScript, landing, one-page website, multi-page website, online store, corporate website, website for business, unique design, adaptive website, modern website, turnkey website creation",
+        "AboutTitle":"Mars Studio — About Us | Django + React Web Studio",
+        "AboutDescription":"Mars Studio is a team of experts in web development on Django and React. We create unique websites and applications, implement modern technologies and provide a full cycle of support",
+        "AboutKeyWords":"Mars Studio is a full-cycle web studio: Django + React, UI/UX, SEO, support.",
+        "DetailTitle":"Mars Studio — Projects | Web Studio Django + React",
+        "DetailDescription":"Mars Studio — development of multi-page sites, one-page, online stores, individual design Django, React, UI-UX"
+
     },
 
     "Bast":{

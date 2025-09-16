@@ -43,7 +43,13 @@ function Bast(){
                 </div>
 
                 <div className="">
-                <h5 className="text-base text-white  text-left max-w-[400px] p-5">{t('Bast.TextThree')}</h5>
+                <motion.h5 
+                    initial={{ opacity: 0, y: 50 }} // невидим и сдвинут вниз
+                    whileInView={{ opacity: 1, y: 0 }} // плавно появляется и возвращается на место
+                    viewport={{ once: true, amount: 0.3 }} // анимация запускается один раз
+                    transition={{ duration: 1.2, ease: "easeOut" }} // плавность
+                    className="text-base text-white  text-left max-w-[400px] p-5"
+                    >{t('Bast.TextThree')}</motion.h5>
                     {/* <h5 className="text-base text-white  text-left max-w-[400px] p-5">Наш приоритет — сделать цифровые технологии доступными для любого бизнеса и помочь компаниям эффективно конкурировать на рынке. Мы внедряем инновационные решения, которые открывают новые возможности для привлечения клиентов и укрепления позиций бренда.</h5> */}
                 </div>
                 
