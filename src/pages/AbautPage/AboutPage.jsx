@@ -53,7 +53,7 @@ function  AboutPage(){
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:title" content={t("seo.HomeTitle")} />
                 <meta name="twitter:description" content={t("seo.HomeDescription")} />
-                <meta name="twitter:image" content="https://www.web-mars.com/images/seo-card.jpg" />
+                <meta name="twitter:image" content="https://www.web-mars.com/favicon/mars-image.png" />
 
                 {/* 🔹 Canonical */}
                 <link rel="canonical" href="https://www.web-mars.com/" />

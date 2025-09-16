@@ -18,4 +18,5 @@ class StudioMarsSerializer(serializers.ModelSerializer):
             'image_prototip',
             'image_prototip_end',
             'slug',
+            'url',
         ]

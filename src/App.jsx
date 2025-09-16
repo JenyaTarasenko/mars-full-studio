@@ -10,6 +10,7 @@ import DetailPage from './pages/DetailPage/DetailPage';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // компонент для того чтобы страница начиналась с верху 
 import ScrollToTop from './components/scrollTotop/ScrollTotop';
+import NotFound from './pages/NotFound/NotFound';
 
 function App() {
 
@@ -27,6 +28,8 @@ function App() {
             NavBar и ProjectDetail на django он ссылается на url views  */}
             <Route path="/projects/:slug" element={<DetailPage />} />
             {/*страница нью */}
+            {/* Любой другой путь → NotFound */}
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </Router>
       </HelmetProvider>

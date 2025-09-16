@@ -221,7 +221,11 @@ const DetailList =()=>{
                         
                     </div>
                     <div>
-                        <a href="" className='block hidden sm:block'><div className="flex items-center justify-center px-4 py-2 text-white rounded-full mt-[30px] font-jost font-light hover:border-red-500 border border-white" style={{width: "180px", height: "40px"}}>
+                        <a 
+                        href={project.url} 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className='block hidden sm:block'><div className="flex items-center justify-center px-4 py-2 text-white rounded-full mt-[30px] font-jost font-light hover:border-red-500 border border-white" style={{width: "180px", height: "40px"}}>
                             {/* <span className="font-normal">смотреть проект</span> */}
                             <span className="font-normal">{t('DetailList.ButtoText')}</span>
                         </div></a>

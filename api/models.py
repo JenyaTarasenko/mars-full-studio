@@ -23,6 +23,8 @@ class StudioMars(models.Model):
     image_prototip_end = models.ImageField(upload_to='image-studio/')
     #  уникальные слаги для урл
     slug = models.SlugField(unique=True, blank=True)
+    #   урл проекта
+    url = models.URLField("URL", max_length=500, blank=True, null=True)
     
     def save(self, *args, **kwargs):
         if not self.slug:

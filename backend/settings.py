@@ -31,6 +31,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
+    'django.contrib.sitemaps', #sitemaps.py  будет файл api.sitemaps  проверитть по адрессу http://127.0.0.1:8001/sitemap.xml
 
     'corsheaders',
     'rest_framework', #DRF
