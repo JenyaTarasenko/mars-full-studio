@@ -14,16 +14,18 @@ DEBUG = False
 # DEBUG = True
 # ALLOWED_HOSTS = ["*"]
 
+ALLOWED_HOSTS = ['www.web-mars.com', 'web-mars.com', 'jDreamer.pythonanywhere.com']
 
-ALLOWED_HOSTS = [
+
+# ALLOWED_HOSTS = [
     
-    'web-mars.com',
-    'https://www.web-mars.com',
-    'http://localhost:5173',
-    '127.0.0.1', 
-    'localhost',
-    # # 'JenyaTarasenko.pythonanywhere.com',
-]
+#     'web-mars.com',
+#     'https://www.web-mars.com',
+#     'http://localhost:5173',
+#     '127.0.0.1', 
+#     'localhost',
+#     # # 'JenyaTarasenko.pythonanywhere.com',
+# ]
 
 INSTALLED_APPS = [
         
