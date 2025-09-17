@@ -16,7 +16,13 @@ i18n
       escapeValue: false, // Не экранировать HTML
     },
     backend: {
-      loadPath: '/locales/{{lng}}/translation.json', // Путь к файлам
+      // этот вариант одинаково работает как при локал и при сборке 
+      loadPath:
+        import.meta.env.MODE === 'development'
+          ? '/locales/{{lng}}/translation.json'
+          : '/static/locales/{{lng}}/translation.json'
+      // loadPath: '/static/locales/{{lng}}/translation.json', // при сборке
+      // loadPath: '/locales/{{lng}}/translation.json', // Путь при разработке 
     },
     detection: {
       order: ['localStorage', 'navigator'],
