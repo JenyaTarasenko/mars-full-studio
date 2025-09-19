@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { useTranslation } from 'react-i18next';
+import R from "../../assets/image/R.svg";
+import bast from "../../assets/image/bast.svg";
 
 function Bast(){
     const { t } = useTranslation();
@@ -7,7 +9,7 @@ function Bast(){
     return(
         <>
         <div className="flex items-center justify-center min-h-screen mt-40">
-            <div className="bg-cover bg-center  h-[1200px] w-[750px] flex items-center justify-center flex-col z-[1]" style={{ backgroundImage: "url('/image/bast.svg')" }}>
+            <div className="bg-cover bg-center  h-[1200px] w-[750px] flex items-center justify-center flex-col z-[1]" style={{ backgroundImage: `url(${bast})`  }}>
                 <div className="">
                     <motion.h5 
                         initial={{ opacity: 0, x: 100 }} // невидим и сдвинут влево
@@ -23,7 +25,7 @@ function Bast(){
 
                 <div className="relative">
                 <motion.img
-                        src="/image/R.svg"
+                        src={R}
                         alt="logo-card-style"
                         className="absolute translate-x-[150px] sm:translate-x-[300px] lg:translate-y-[140px] translate-y-[-40px] sm:translate-y-[60px] w-[120px] z-[-1] opacity-75"
                         initial={{ rotate: 0 }}             // стартовое положение

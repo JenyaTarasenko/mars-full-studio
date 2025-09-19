@@ -1,5 +1,12 @@
 import './style.css';
 import { useTranslation } from 'react-i18next';
+import StarIcon from "../../assets/image/star-icon.svg";
+import ElipsCard from "../../assets/image/elips-card.svg";
+import grai from "../../assets/image/grai.svg";
+import TextDecor from "../../assets/image/text-decor.svg";
+import RacketIcon from "../../assets/image/racket-icon.svg";
+import planat from "../../assets/image/planat.svg";
+
 
 
 
@@ -15,8 +22,10 @@ function BastCard(){
 
                 {/* <!-- ikon --> */}
                 <div className="icon-main-card flex items-center flex-row justify-between absolute top-0 left-0 w-full px-2 mt-2">
-                    <img src="/image/star-icon.svg" alt="logo-card-style" className="animate-spin-slow"/>
-                    <img src="/image/elips-card.svg" alt="logo-card-style"/>
+                    <img src={StarIcon} alt="logo-card-style" className="animate-spin-slow"/>
+                    {/* <img src="/image/star-icon.svg" alt="logo-card-style" className="animate-spin-slow"/> */}
+                    <img src={ElipsCard} alt="logo-card-style"/>
+                    {/* <img src="/image/elips-card.svg" alt="logo-card-style"/> */}
                 </div>
                 {/* <!-- ikon --> */}
 
@@ -31,11 +40,11 @@ function BastCard(){
                     <h6 className="font-jost font-light text-sm text-zinc-400">{t('cardBast.solution')}</h6>
                 </div>
 
-                <img src="/image/grai.svg"
+                <img src={grai}
                 alt="Лого"
                 className="absolute ml-[50px]" style={{opacity:"60%"}}/>
 
-                <img src="/image/text-decor.svg"
+                <img src={TextDecor}
                 alt="Лого"
                 className="absolute ml-[255px] mt-[50px]"/>
 
@@ -48,8 +57,8 @@ function BastCard(){
 
                 {/* <!-- ikon --> */}
                 <div className="icon-main-card flex items-center flex-row justify-between absolute top-0 left-0 w-full px-2 mt-2">
-                    <img src="/image/racket-icon.svg" alt="logo-card-style" className="animate-spin-slow"/>
-                    <img src="/image/elips-card.svg" alt="logo-card-style"/>
+                    <img src={RacketIcon} alt="logo-card-style" className="animate-spin-slow"/>
+                    <img src={ElipsCard} alt="logo-card-style"/>
                 </div>
                 {/* <!-- ikon --> */}
 
@@ -63,11 +72,11 @@ function BastCard(){
                     <h6 className="font-jost font-light text-sm text-zinc-400">{t('cardBast.multi-page-text')}</h6>
                 </div>
 
-                <img src="/image/grai.svg"
+                <img src={grai}
                 alt="Лого"
                 className="absolute ml-[50px]" style={{opacity:"60%"}}/>
 
-                <img src="/image/text-decor.svg"
+                <img src={TextDecor}
                 alt="Лого"
                 className="absolute ml-[255px] mt-[50px]"/>
 
@@ -80,8 +89,8 @@ function BastCard(){
 
                 {/* <!-- ikon --> */}
                 <div className="icon-main-card flex items-center flex-row justify-between absolute top-0 left-0 w-full px-2 mt-2">
-                    <img src="/image/planat.svg" alt="logo-card-style" className="animate-spin-slow"/>
-                    <img src="/image/elips-card.svg" alt="logo-card-style"/>
+                    <img src={planat} alt="logo-card-style" className="animate-spin-slow"/>
+                    <img src={ElipsCard} alt="logo-card-style"/>
                 </div>
                 {/* <!-- ikon --> */}
 
@@ -95,11 +104,11 @@ function BastCard(){
                     <h6 className="font-jost font-light text-sm text-zinc-400">{t('cardBast.onlineStoresText')}</h6>
                 </div>
 
-                <img src="/image/grai.svg"
+                <img src={grai}
                 alt="Лого"
                 className="absolute ml-[50px]" style={{opacity:"60%"}}/>
 
-                <img src="/image/text-decor.svg"
+                <img src={TextDecor}
                 alt="Лого"
                 className="absolute ml-[255px] mt-[50px]"/>
 

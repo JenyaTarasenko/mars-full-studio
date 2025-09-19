@@ -1,0 +1,10 @@
+<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<circle cx="14" cy="14" r="14" fill="white" fill-opacity="0.06"/>
+<rect x="8" y="7" width="13" height="13" fill="url(#pattern0_643_33)"/>
+<defs>
+<pattern id="pattern0_643_33" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_643_33" transform="scale(0.0212766)"/>
+</pattern>
+<image id="image0_643_33" width="47" height="47" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC8AAAAvCAYAAABzJ5OsAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD/0lEQVR4nO2X+U8TURDH9w/QX/UPUGlDIhB1WRSrAmIUtyjiHTyiqHjGI3hFgsoPeKCS+IMKUaNRo9FoovEWb2OM9xGNwrblauXoARRKC+2YmWplU7quBV1W+5LvDzs7++Yz++bNvmU0o9L7a7jJpRqOt2kTeOjr0nC8TZPAl0SPndGPQXClgbThJJHAlzAajrcqDaINbwWsTFdDMZcIl1mWtIJLCtgzMpOgrHQQ6fqhwaJJhmziYcguPSkq6+8mwHS9QGiBjSFt53QB+/wsHTTcGkCqvTZQNMHgIh4GndSTonL0EXhtOPBYKgiNyuRSA/bktFQo3DSMVJA7XDRB1EI9RK3iSZopCsJrVSZG1fCzufGgVjE/NqgaxSgNIETgWfWJURpAiMCz6hPz78PHx4J55VIQuDhZk5rSUsCyYQ18zV0LVZl6+UBcnD9OfGzvwTfu2w04zDmLJP2MKTpouXUDwOeDrsP16oWsJGwlh8i/es703oE3jR8D3iYHeIwCGEYOCw2eNArcQgUFd94vg/odeVC3NReaLp4H8Hqh02GXTKCSnwA+lwvaP36QvcK/hG++dIGALGuWS/o5zp4mv8b9e4LuYSlgAq6Xz0M+7yy7TT41C+fKLjNJ+JqsmTSh8/5dyUlwRbwtLdD+/l3Iem26cI6Sq5rGByeXs5juNV++JBtcGj4+lmrV5/FQQNOEcVC/M69b36qpaRTcfuJoyECW9avJ5+vGdeJ7XBy4yz+Dt9UJpknJVD512zb3DB4nIKBjpXTdeGCv/81lTA7yrZ49zV8yxUUhA5mXZ5NPXf5Wkb1hb6HoWdvRI7Thjcmjw4M36OKhw2KGjvo6MI5NIJv1YLEffsaUXoM3puhoI3uqKsGQOIJsuHo4cKXDgse3TYHytgRsfwK+6fs+sKxd+TN2T+Cxfn3udnC9eyPafL0NXz0rA3ydndD66IH4xfUEnloWAPVb552bAbnLv5C97enjgM1x7gx1mnDg254/83/A3r4WxfGYDGRvfXgvYLOfPN5tFwuCd71+BXJHp80KptQxUD1zKl3j6oSEx16P8N87idsgyI6D+w/3oaya705SZYMbDztEy9UrIZ9vKCyg57GnCxJxerxhfxcehR8o7NWV6ROD7uFbw47ibW4GQyLb9+DNK5bQ1xjPQDUL5gTsmMyP+m4s2vXLOHYl4FH1Bfng6+ggP0+lCdwV5ZQQDsepE7KOuvY/AV+7aB60PX0ChtHSy44nRzykYatt//SRziu12fNlxRBwBVct85+lZJws/4M/KbZvilEaQIjAs+oTozSAEIFn1SdG1fAVI2KsSkMIYQi5Eb5EaRAhLA09zHyIju4nsDFH1LICfs6hh5H7G5nPjEK+3cZYAAAAAElFTkSuQmCC"/>
+</defs>
+</svg>

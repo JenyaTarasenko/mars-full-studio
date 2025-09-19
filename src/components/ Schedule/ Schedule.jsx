@@ -4,6 +4,10 @@ import { useTranslation } from 'react-i18next';
 import { motion, useMotionValue, useTransform, useInView } from "framer-motion";
 // import { useRef } from 'react';
 import { useRef, useEffect, useState } from 'react';
+import Shedule1 from "../../assets/image/Shedule.svg";
+import Shedule2 from "../../assets/image/Shedule1.svg";
+import Shedule3 from "../../assets/image/Shedule2.svg";
+import RockStyle from "../../assets/image/rock-style.svg";
 
 function Shedule(){
     const { t } = useTranslation();
@@ -54,22 +58,22 @@ function Shedule(){
                     <span style={{color:"#D34725"}} className="font-extralight">{t('Shedule.itemOne')}{" "}{" "}</span>{t('Shedule.itemTwo')}
                 </motion.h6>
                 <div className="flex flex-row px-5 gap-5 mt-5 items-center">
-                    <img src="/image/Shedule.svg" alt="logo-image" className='w-[25px]'/>
+                    <img src={Shedule1} alt="logo-image" className='w-[25px]'/>
                     {/* <span className="font-jost text-blue-200 text-sm">Привлечении клиентов</span> */}
                     <span className="font-jost text-zinc-500 text-sm">{t('Shedule.itemCard')}</span>
                 </div>
                 <div className="flex flex-row px-5 gap-5 mt-2 items-center">
-                    <img src="/image/Shedule1.svg" alt="logo-image" className='w-[25px]'/>
+                    <img src={Shedule2} alt="logo-image" className='w-[25px]'/>
                     <span className="font-jost text-zinc-500 text-sm">{t('Shedule.itemCardOne')}</span>
                     {/* <span className="font-jost text-blue-200 text-sm">Удобстве взаимодействия</span> */}
                 </div>
                 <div className="flex flex-row px-5 gap-5 mt-2 items-center">
-                    <img src="/image/Shedule2.svg" alt="logo-image" className='w-[25px]'/>
+                    <img src={Shedule3} alt="logo-image" className='w-[25px]'/>
                     {/* <span className="font-jost text-blue-200  text-sm">Оптимизации бизнес-процессов</span> */}
                     <span className="font-jost text-zinc-500  text-sm">{t('Shedule.itemCardTwo')}</span> 
                     
                 </div>
-                <img src="/image/rock-style.svg" alt="Лого" className="absolute ml-0 mt-[-90px] sm:ml-[255px] "/>
+                <img src={RockStyle} alt="Лого" className="absolute ml-0 mt-[-90px] sm:ml-[255px] "/>
             </div> 
             
             <div className="schedule-card-two w-[300px] sm:w-[600px] lg:w-[300px] h-[380px] flex flex-row items-end  justify-center gap-4">

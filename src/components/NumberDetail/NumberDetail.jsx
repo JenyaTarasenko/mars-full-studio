@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 // import AnimatedNumber from '../AnimatedNumber/AnimatedNumber';
 import { motion, useMotionValue, useTransform, useInView, animate } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
+import Cifra  from "../../assets/image/cifra-text.svg";
 
 function NumberDetail(){
     const { t } = useTranslation();
@@ -62,7 +63,7 @@ function NumberDetail(){
         <>
         <div ref={ref} className="flex flex-col mt-20 lg:flex-row items-center justify-center gap-5">
             <div className="flex items-center justify-center relative flex-col">
-                <img src="/image/cifra-text.svg" alt="number" className="w-[280px] z-[-1]" />
+                <img src={Cifra} alt="number" className="w-[280px] z-[-1]" />
                 {/* <AnimatedNumber target={120} suffix="%" duration={2.5}/> */}
                 <motion.p className="font-jost text-red-600 text-7xl font-bold absolute mb-[40px]">+{display1}%</motion.p>
                 {/* <p className="font-jost text-red-600 text-7xl font-bold absolute mb-[40px]">+120%</p> */}
@@ -70,7 +71,7 @@ function NumberDetail(){
                 <p className="font-jost text-zinc-200  text-sm font-light text-center mt-5 tracking-widest">{t('NumberDetail.description')}<br />{t('NumberDetail.descriptionText')}</p>
             </div>
             <div className="flex items-center justify-center relative flex-col">
-                <img src="/image/cifra-text.svg" alt="number" className="w-[280px] z-[-1]" />
+                <img src={Cifra}  alt="number" className="w-[280px] z-[-1]" />
                 <motion.p className="font-jost text-red-600 text-7xl font-bold absolute mb-[40px]">+{display2}%</motion.p>
 
                 {/* <motion.p 
@@ -86,7 +87,7 @@ function NumberDetail(){
             </div>
             <div className="flex items-center justify-center relative flex-col">
                 <motion.p className="font-jost text-red-600 text-7xl font-bold absolute mb-[40px]">+{display3}%</motion.p>
-                <img src="/image/cifra-text.svg" alt="number" className="w-[280px] z-[-1]" />
+                <img src={Cifra} alt="number" className="w-[280px] z-[-1]" />
                 {/* <p className="font-jost text-red-600 text-7xl font-bold absolute mb-[40px]">+75%</p> */}
                 <p className="font-jost text-zinc-200  text-sm font-light text-center mt-5 tracking-widest">{t('NumberDetail.Text')}<br/>{t('NumberDetail.TextOne')}</p>
                 {/* <p className="font-jost text-zinc-200  text-sm font-light text-center mt-5 tracking-widest">Вовлечённость благодаря<br/>интерфейсу и функционалу</p> */}

@@ -3,6 +3,7 @@ import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
 import { useTranslation } from "react-i18next";
 import { X, Menu } from "lucide-react"; // иконки
 import { Link, useLocation } from "react-router-dom";
+import logo from "../../assets/image/logo-mars.svg";
 
 // npm install react-router-hash-link    библиотека для прокрутки на секцию id="/#project-list"
 import { HashLink } from "react-router-hash-link";
@@ -48,7 +49,8 @@ const Navbar = () => {
         {/* Лого слева */}
         <div className="logo-menu px-5">
           <Link to="/">
-            <img src="/image/logo-mars.svg" alt="Logo"/>
+            {/* <img src="/image/logo-mars.svg" alt="Logo"/> */}
+            <img src={logo} alt="Logo-mars-studio"/>
           </Link>
         </div>
 

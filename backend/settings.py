@@ -8,13 +8,18 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-4@5=v@q+7qb%((qf$#3egcq%38pi4so^*=7ee-1n4wsijb^375'
 
 
-DEBUG = False
-
 
 # DEBUG = True
 # ALLOWED_HOSTS = ["*"]
 
-ALLOWED_HOSTS = ['www.web-mars.com', 'web-mars.com', 'jDreamer.pythonanywhere.com']
+
+
+DEBUG = False
+ALLOWED_HOSTS = [
+  'www.web-mars.com', 
+  'web-mars.com', 
+  'jDreamer.pythonanywhere.com'
+]
 
 
 # ALLOWED_HOSTS = [

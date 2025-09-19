@@ -1,4 +1,9 @@
 import { useTranslation } from 'react-i18next';
+import StrelaYellow from "../../assets/image/strelayellow.svg";
+import Cosmic from "../../assets/image/cosmonavt3.png";
+import StrellaGreen from "../../assets/image/strelagreen.svg";
+import StrelaRed from "../../assets/image/strelared.svg";
+
 
 function RulesSection(){
     const { t } = useTranslation();
@@ -16,9 +21,9 @@ function RulesSection(){
             </div>
             <div className="flex-[2] flex justify-center mt-0 lg:mt-10">
                 <div className="w-full h-full flex items-start justify-start flex-col gap-3 relative">
-                    <img src="/image/cosmonavt3.png" alt="astronaut-mars"  className="absolute w-[150px] animate-float mt-[300px]"/>
+                    <img src={Cosmic} alt="astronaut-mars"  className="absolute w-[150px] animate-float mt-[300px]"/>
                     <div className="detail-card w-[290px] h-[400px]  sm:w-[590px] sm:h-[320px]  border border-solid border-orange-600 rounded-[200px] flex items-center justify-center flex-col transform transition-transform duration-300 hover:scale-105">
-                        <img src="/image/strelayellow.svg" alt="arrow"  className="sm:mt-5 mt-0"/>
+                        <img src={StrelaYellow} alt="arrow"  className="sm:mt-5 mt-0"/>
                         <div className="flex justify-center items-center  flex-row gap-5">
                         <h6 className="font-jost text-zinc-50 sm:text-5xl text-2xl text-lg text-right mt-10">{t('RulesSection.CardItem')}<br/>{t('RulesSection.CardItemText')}</h6>
                             {/* <h6 className="font-jost text-zinc-50 sm:text-5xl text-2xl text-lg text-right mt-10">Идея<br/>заказчика</h6> */}
@@ -27,7 +32,7 @@ function RulesSection(){
                         </div>
                     </div>
                     <div className="detail-card w-[290px] h-[400px]  sm:w-[590px] sm:h-[320px]  border border-solid border-orange-600 rounded-[200px] flex items-center justify-center flex-col transform transition-transform duration-300 hover:scale-105">
-                        <img src="/image/strelared.svg" alt="arrow"  className="sm:mt-5 mt-0"/>
+                        <img src={StrelaRed} alt="arrow"  className="sm:mt-5 mt-0"/>
                         <div className="flex justify-center items-center  flex-row gap-5">
                         <h6 className="font-jost text-zinc-50 sm:text-5xl text-2xl text-lg text-right mt-10">{t('RulesSection.CardItemThree')}<br />{t('RulesSection.CardItemThreeText')}</h6>
                             {/* <h6 className="font-jost text-zinc-50 sm:text-5xl text-2xl text-lg text-right mt-10">Наша<br />реализация</h6> */}
@@ -36,7 +41,7 @@ function RulesSection(){
                         </div>
                     </div>
                     <div className="detail-card w-[290px] h-[400px]  sm:w-[590px] sm:h-[320px]  border border-solid border-orange-600 rounded-[200px] flex items-center justify-center flex-col transform transition-transform duration-300 hover:scale-105">
-                        <img src="/image/strelagreen.svg" alt="arrow"  className="sm:mt-5 mt-0"/>
+                        <img src={StrellaGreen} alt="arrow"  className="sm:mt-5 mt-0"/>
                         <div className="flex justify-center items-center  flex-row gap-5">
                         <h6 className="font-jost text-zinc-50 sm:text-5xl text-2xl text-lg text-right mt-10">{t('RulesSection.CardItemFive')}<br/>{t('RulesSection.CardItemFiveText')}</h6>
                             {/* <h6 className="font-jost text-zinc-50 sm:text-5xl text-2xl text-lg text-right mt-10">Современные<br/> технологии</h6> */}

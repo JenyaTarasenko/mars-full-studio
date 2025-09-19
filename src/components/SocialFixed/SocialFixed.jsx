@@ -13,7 +13,7 @@ export default function SocialFixed() {
         <FaTelegramPlane className="text-white w-5 h-5"/>
       </a>
 
-      <a href="https://t.me/jenyatarsenko" className="bg-white/20 backdrop-blur-md p-3 rounded-full shadow-lg hover:bg-white/30 transition-colors transform hover:scale-110">
+      <a href="mailto:mars.studio.dnepr@gmail.com" className="bg-white/20 backdrop-blur-md p-3 rounded-full shadow-lg hover:bg-white/30 transition-colors transform hover:scale-110">
         <FaEnvelope className="text-white w-5 h-5" />
       </a>
     </div>

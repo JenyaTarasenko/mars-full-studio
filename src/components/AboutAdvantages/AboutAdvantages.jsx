@@ -1,5 +1,10 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from "framer-motion";
+import S from "../../assets/image/S.svg";
+import Aboutastro from "../../assets/image/aboutastro.png";
+import AboutText from "../../assets/image/about-text.svg";
+import M from "../../assets/image/M.svg";
+import AboutText2 from "../../assets/image/about-text2svg.svg";
 
 function AboutAdvantages(){
     const { t } = useTranslation();
@@ -8,10 +13,10 @@ function AboutAdvantages(){
     return(
         <>
             <div className="flex items-center justify-center flex-col lg:flex-row mt-[700px] lg:mt-[200px]">
-                <img src="/image/aboutastro.png" alt="astronaut" className="h-[400px] lg:translate-x-[-150px] translate-x-[0px] z-[-1] sm:w-[300px] opacity-60"/>
+                <img src={Aboutastro} alt="astronaut" className="h-[400px] lg:translate-x-[-150px] translate-x-[0px] z-[-1] sm:w-[300px] opacity-60"/>
                 <div className="flex flex-col font-jost  font-normal text-left w-[300px] relative">
                     <motion.img
-                        src="/image/S.svg"
+                        src={S}
                         alt="logo-card-style"
                         className="absolute translate-x-[150px] sm:translate-x-[300px] lg:translate-y-[140px] translate-y-[-40px] sm:translate-y-[60px] w-[120px] z-[-1] opacity-75"
                         initial={{ rotate: 0 }}             // стартовое положение
@@ -35,7 +40,7 @@ function AboutAdvantages(){
             <div className="flex flex-col items-center justify-center mt-[100px]">
                 <div className="flex flex-col gap-20">
                     <div className="flex flex-col lg:flex-row gap-10 items-center justify-center">
-                        <img src="/image/about-text.svg" alt="logo-decor" className="w-[300px] transform transition-transform duration-300 hover:rotate-[-5deg]  active:rotate-0 sm:w-[500px]"/>
+                        <img src={AboutText} alt="logo-decor" className="w-[300px] transform transition-transform duration-300 hover:rotate-[-5deg]  active:rotate-0 sm:w-[500px]"/>
                         {/* <h6 className="font-jost text-sm sm:w-[500px] w-[300px] px-5 text-zinc-100 mt-10">Каждый наш проект уникален: мы не просто разрабатываем сайты, мы создаем эффективные бизнес-решения, продуманные стратегии и цифровые продукты, которые выделяют вас среди конкурентов.Наша цель — не просто присутствие в интернете, а реальный результат: рост узнаваемости, привлечение клиентов и закрепление вашей позиции на рынке. Мы анализируем ваш бизнес, понимаем аудиторию и строим индивидуальные решения, которые помогают завоевать нишу и усилить конкурентные преимущества.</h6> */}
                         <motion.h6 
                         className="font-jost text-sm sm:w-[500px] w-[300px] px-5 text-zinc-100 mt-10"
@@ -60,7 +65,7 @@ function AboutAdvantages(){
                         {t('AboutAdvantages.item')}
                         </motion.h6>
                         <motion.img
-                            src="/image/M.svg"
+                            src={M}
                             alt="logo-card-style"
                             className="absolute translate-x-[150px] sm:translate-x-[300px] lg:translate-y-[140px] translate-y-[-40px] sm:translate-y-[60px] w-[120px] z-[-1] opacity-75"
                             initial={{ rotate: 0 }}             // стартовое положение
@@ -70,7 +75,7 @@ function AboutAdvantages(){
                         />
                             {/* <h6 className="font-jost text-sm sm:w-[500px] w-[300px] px-5 text-zinc-100 mt-10">Наши сайты легко масштабируются и не ограничены в функционале — они растут вместе с вашим бизнесом. Мы ориентируемся на результат: рост клиентов, повышение узнаваемости и усиление конкурентных преимуществ.Наша студия идет в ногу с современными технологиями, постоянно изучает новинки в дизайне и программировании, используя инновационные инструменты, которые помогают создавать эффективные и современные решения.С нами ваш проект — это не просто веб-ресурс, а инструмент роста и развития бизнеса.</h6> */}
                         </div>
-                        <img src="/image/about-text2svg.svg" alt="logo-decor" className="h-[500px] transform transition-transform duration-300 hover:rotate-[-5deg]  active:rotate-0 "/>
+                        <img src={AboutText2} alt="logo-decor" className="h-[500px] transform transition-transform duration-300 hover:rotate-[-5deg]  active:rotate-0 "/>
                     </div>
                 </div>
             </div>

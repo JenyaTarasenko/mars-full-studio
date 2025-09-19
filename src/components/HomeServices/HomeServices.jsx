@@ -1,6 +1,11 @@
 import { useTranslation } from 'react-i18next';
 import ButtonRed from '../Buttons/BunnonRed/ButtonRed';
 import { motion } from "framer-motion";
+import servicesHomeRu from '../../assets/image/servicesHome-ru.svg';
+import servicesHomeEn from '../../assets/image/servicesHome-en.svg';
+import servicesHomeUa from '../../assets/image/servicesHome-ua.svg';
+import R from "../../assets/image/R.svg";
+
 
 function HomeServices(){
 
@@ -8,9 +13,9 @@ function HomeServices(){
     const { i18n }  = useTranslation();
 
     const logos = {
-        en:"/image/servicesHome-en.svg",
-        ru:"/image/servicesHome-ru.svg",
-        uk:"/image/servicesHome-ua.svg"
+        en:servicesHomeEn,
+        uk:servicesHomeUa,
+        ru:servicesHomeRu,
     };
 
 
@@ -32,7 +37,9 @@ function HomeServices(){
                     {/* <h5 class="text-white font-medium text-2xl">Мы предоставляем услуги по разработке translate-x-[300px] <span className='text-zinc-400 font-light text-3xl'>интернет-сайтов под ваши задачи. </span>Наш приоритет — это уникальность каждого проекта,<span className="text-zinc-400 font-light text-3xl"> неограниченный функционал и сильный дизайн,</span> который выделяет ваш бизнес среди конкурентов</h5> */}
                    <ButtonRed link="/about-mars-studio" text={t("ButtonRed.aboutPrice")} />
                    <motion.img
-                    src="/image/R.svg"
+                    // src="/image/R.svg"
+                    src={R}
+                    
                     alt="logo-card-style"
                     className="absolute translate-x-[150px] sm:translate-x-[300px] lg:translate-y-[140px] translate-y-[-40px] sm:translate-y-[60px] w-[120px] z-[-1] opacity-75"
                     initial={{ rotate: 0 }}             // стартовое положение

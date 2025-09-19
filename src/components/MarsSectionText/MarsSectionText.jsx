@@ -3,15 +3,17 @@ import { useTranslation } from 'react-i18next';
 // npm install framer-motion  библиотека анимации
 import { motion } from "framer-motion";
 import { useMemo } from "react";
+import random1 from '../../assets/image/randommars.svg';
+import random2 from '../../assets/image/randommars1.svg';
+import random3 from '../../assets/image/randommars6.svg';
 
 function MarsSectionText({text1, text2}){
     const { t } = useTranslation();
 
     const images = [
-        "/image/randommars.svg",
-        "/image/randommars1.svg",
-        "/image/randommars6.svg",
-        // "/image/randommars3.svg",
+        random1,
+        random2,
+        random3
     ]
 
     const randomImage = useMemo(() => {

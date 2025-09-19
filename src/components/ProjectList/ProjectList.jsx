@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom'; // для отображения ссылки на детальную страницу 
 import {fetchProjects} from '../../../src/utils/api';
 import { useTranslation } from 'react-i18next';
+import projectCard from "../../assets/image/project-card.svg";
 
 
 
@@ -72,7 +73,8 @@ function ListView(){
                         <Link to={`/projects/${project.slug}`}><div
                         key={project.id} 
                         className="card-projects w-[600px] h-[360px]  bg-cover bg-center flex flex-col hover:scale-105 active:scale-100 overflow-hidden"
-                        style={{ backgroundImage: `url(${'/image/project-card.svg'})` }}>
+                        // style={{ backgroundImage: `url(${'/image/project-card.svg'})` }}>
+                        style={{ backgroundImage: `url(${projectCard})` }}>
 
                             <div class="mt-[150px] ml-[50px]">
                                 <h5 className="font-jost text-xl text-stone-100 line-clamp-1">

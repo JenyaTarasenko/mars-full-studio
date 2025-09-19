@@ -1,5 +1,14 @@
 import './style.css';
 import { useTranslation } from 'react-i18next';
+import PriceCard1 from "../../assets/image/price-card1.svg";
+import DollarOne from "../../assets/image/100$.svg";
+import PriceCard2 from "../../assets/image/price-card3.svg";
+import DollarTwo from "../../assets/image/200$.svg";
+import PriceCard3 from "../../assets/image/price-card4.png";
+import DollarThree from "../../assets/image/300$.svg";
+import PriceCard4 from '../../assets/image/price-card5.svg';
+import DollarFour from "../../assets//image/200$.svg";
+
 
 function CardPrice(){
     const { t } = useTranslation();
@@ -46,8 +55,8 @@ function CardPrice(){
                     {/* <p class="font-jost text-orange-100 mt-2 text-sm">Бесплатная поддержка</p> */}
                     <p className="font-jost text-orange-100 mt-2 text-sm">{t('cardPrice.CardOneSupport')}</p>
                 </div>
-                <img src="/image/price-card1.svg" alt="elips" className='absolute z-[-1] translate-y-[330px] translate-x-[-40px]'/>
-                <img src="/image/100$.svg" alt="elips" className='absolute z-[-1] translate-y-[50px] translate-x-[0] w-[300px]'/>
+                <img src={PriceCard1} alt="elips" className='absolute z-[-1] translate-y-[330px] translate-x-[-40px]'/>
+                <img src={DollarOne} alt="elips" className='absolute z-[-1] translate-y-[50px] translate-x-[0] w-[300px]'/>
 
             </div>
 
@@ -101,8 +110,8 @@ function CardPrice(){
                     <p className="font-jost text-orange-100 mt-2 text-sm">{t('cardPrice.CardTwoSupport')}</p>
                     {/* <p class="font-jost text-orange-100 mt-2 text-sm">Бесплатная поддержка</p> */}
                 </div>
-                <img src="/image/price-card3.svg" alt="elips" className='absolute z-[-1] translate-y-[350px] translate-x-[40px]'/>
-                <img src="/image/200$.svg" alt="elips" className='absolute z-[-1] translate-y-[50px] translate-x-[0] w-[300px]'/>
+                <img src={PriceCard2} alt="elips" className='absolute z-[-1] translate-y-[350px] translate-x-[40px]'/>
+                <img src={DollarTwo} alt="elips" className='absolute z-[-1] translate-y-[50px] translate-x-[0] w-[300px]'/>
 
             </div>
             <div className="card-price w-[300px] h-[650px] flex flex-col items-center relative transform transition-transform duration-300 hover:scale-105">
@@ -153,8 +162,8 @@ function CardPrice(){
                     {/* <p class="font-jost text-orange-100 mt-2 text-sm">Бесплатная поддержка</p> */}
                     <p className="font-jost text-orange-100 mt-2 text-sm">{t('cardPrice.CardThreeSupport')}</p>
                 </div>
-                <img src="/image/price-card4.png" alt="elips" className='absolute z-[-1] translate-y-[360px] translate-x-[40px]'/>
-                <img src="/image/300$.svg" alt="elips" className='absolute z-[-1] translate-y-[50px] translate-x-[0] w-[300px]'/>
+                <img src={PriceCard3} alt="elips" className='absolute z-[-1] translate-y-[360px] translate-x-[40px]'/>
+                <img src={DollarThree} alt="elips" className='absolute z-[-1] translate-y-[50px] translate-x-[0] w-[300px]'/>
 
             </div>
 
@@ -206,8 +215,8 @@ function CardPrice(){
                     <p className="font-jost text-orange-100 mt-2 text-sm">{t('cardPrice.CardFourMonitoring')}</p>
                     {/* <p className="font-jost text-orange-100 mt-2 text-sm">Мониторинг работы сайта 24/7</p> */}
                 </div>
-                <img src="/image/price-card5.svg" alt="elips" className='absolute z-[-1] translate-y-[360px] translate-x-[40px]'/>
-                <img src="/image/200$.svg" alt="elips" className='absolute z-[-1] translate-y-[50px] translate-x-[0] w-[300px]'/>
+                <img src={ PriceCard4} alt="elips" className='absolute z-[-1] translate-y-[360px] translate-x-[40px]'/>
+                <img src={DollarFour} alt="elips" className='absolute z-[-1] translate-y-[50px] translate-x-[0] w-[300px]'/>
 
             </div>
            

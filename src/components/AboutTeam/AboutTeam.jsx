@@ -1,5 +1,11 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from "framer-motion";
+import Team1 from "../../assets/image/Team1.png";
+import TelefonTeam from "../../assets/image/telefon-team.png";
+import TeamFront2 from "../../assets/image/team-front2.png";
+import FrontTeam from "../../assets/image/front-team.png";
+import TeamBackend from "../../assets/image/team-backend.png";
+import TeamBackend2 from "../../assets/image/team-backend2.png";
 
 function AboutTeam({ link }){
     const { t } = useTranslation();
@@ -7,7 +13,7 @@ function AboutTeam({ link }){
     return(
         <>
             <div className="flex items-center justify-center flex-col gap-3 lg:flex-row mt-20">
-                <img src="/image/Team1.png" alt="designer" className="w-[300px]"/>
+                <img src={Team1} alt="designer" className="w-[300px]"/>
                 <div className="flex flex-col items-center justify-center relative">
                     <motion.h6 
                         className="font-jost text-zinc-300 font-normal text-sm px-10 max-w-full sm:max-w-[500px]"
@@ -29,7 +35,7 @@ function AboutTeam({ link }){
                     >
                     {t('AboutTeam.DesignerTextTwo')}
                     </motion.h6>
-                    <img src="/image/telefon-team.png" alt="logo-decor" className="h-[400px] absolute z-[-1] opacity-70 translate-y-[100px] sm:translate-y-[0]"/>
+                    <img src={TelefonTeam} alt="logo-decor" className="h-[400px] absolute z-[-1] opacity-70 translate-y-[100px] sm:translate-y-[0]"/>
                 </div>
             </div>
 
@@ -55,13 +61,13 @@ function AboutTeam({ link }){
                     >
                         {t('AboutTeam.FrontendTextTwo')}
                     </motion.h6>
-                    <img src="/image/team-front2.png" alt="logo-decor" className="h-[300px] absolute z-[-1] opacity-70 translate-y-[0]  sm:translate-x-[-150px] translate-x-[-20px]"/>
+                    <img src={TeamFront2} alt="logo-decor" className="h-[300px] absolute z-[-1] opacity-70 translate-y-[0]  sm:translate-x-[-150px] translate-x-[-20px]"/>
                 </div>
-                <img src="/image/front-team.png" alt="logo-decor" className="w-[300px]"/>
+                <img src={FrontTeam} alt="logo-decor" className="w-[300px]"/>
             </div>
             
             <div className="flex items-center justify-center flex-col gap-3 lg:flex-row mt-20">
-                <img src="/image/team-backend.png" alt="logo-decor" className="w-[300px]"/>
+                <img src={TeamBackend} alt="logo-decor" className="w-[300px]"/>
                 <div className="flex flex-col items-center justify-center relative">
                     <motion.h6 
                         className="font-jost text-zinc-300 font-normal text-sm px-10 max-w-full sm:max-w-[500px]"
@@ -83,7 +89,7 @@ function AboutTeam({ link }){
                     >
                     {t('AboutTeam.BackendTextTwo')}
                     </motion.h6>
-                    <img src="/image/team-backend2.png" alt="logo-decor" className="h-[400px] absolute z-[-1] opacity-70 translate-y-[-20px] sm:translate-x-[150px] translate-x-[0] "/>
+                    <img src={TeamBackend2} alt="logo-decor" className="h-[400px] absolute z-[-1] opacity-70 translate-y-[-20px] sm:translate-x-[150px] translate-x-[0] "/>
                 </div>
             </div>
         </>

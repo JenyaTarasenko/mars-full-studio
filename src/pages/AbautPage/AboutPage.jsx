@@ -38,8 +38,8 @@ function  AboutPage(){
                 <meta property="og:title" content={t("seo.AboutTitle")} />
                 <meta property="og:description" content={t("seo.AboutDescription")}  />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://www.web-mars.com/about-mars-studio" />
-                <meta property="og:image" content="https://www.web-mars.com/favicon/mars-image.png" />
+                <meta property="og:url" content="https://www.web-mars.com/about-mars-studio/" />
+                <meta property="og:image" content="https://www.web-mars.com/static/favicon/mars-image.png" />
                 <meta property="og:site_name" content="Mars Studio" />
 
                  {/* 🔹 для мультиязычного сео */}
@@ -53,7 +53,7 @@ function  AboutPage(){
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:title" content={t("seo.HomeTitle")} />
                 <meta name="twitter:description" content={t("seo.HomeDescription")} />
-                <meta name="twitter:image" content="https://www.web-mars.com/favicon/mars-image.png" />
+                <meta name="twitter:image" content="https://www.web-mars.com/static/favicon/mars-image.png" />
 
                 {/* 🔹 Canonical */}
                 <link rel="canonical" href="https://www.web-mars.com/" />
@@ -74,7 +74,19 @@ function  AboutPage(){
                     "@type": "Organization",
                     "name": "Mars Studio",
                     "url": "https://www.web-mars.com/",
-                    "logo": "https://www.web-mars.com/favicon/fa512.png"
+                    "logo": "https://www.web-mars.com/static/favicon/fa512.png",
+                    "description": "Марс Студия-полный цикл разработки интернет сайтов для вашего бизнесса",
+                    "inLanguage": ["ru", "en", "uk"],
+                    "contactPoint": [
+                        {
+                          "@type": "ContactPoint",
+                          "telephone": "+380731606731",
+                          "contactType": "customer service",
+                          "email": "mars.studio.dnepr@gmail.com",
+                          "areaServed": "UA",
+                          "availableLanguage": ["ru", "uk", "en"]
+                        }
+                      ]
                     }
                 `}</script>
             </Helmet>

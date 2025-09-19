@@ -3,21 +3,40 @@ import { useTranslation } from 'react-i18next';
 import ButtonLights from '../Buttons/ButtonLights/ButtonLights';
 import ButtonSecondary from '../Buttons/ButtonSecondary/ButtonSecondary';
 import { motion } from 'framer-motion';  
+import marsBig from '../../assets/image/Mars-big.svg';
+import main from '../../assets/image/bast-main.svg';
+import krestic from '../../assets/image/krestic.svg';
+import grai from "../../assets/image/grai.svg";
+import kosmonavt from "../../assets/image/kosmonavt.svg";
+import BastMain from "../../assets//image/main-section.png";
 
 function MainSection(){
     const { t } = useTranslation();
+    const telegramLink = "https://t.me/jenyatarsenko";
+
+    const handleClick = (e) => {
+        if (!link) { // если link не передан, делаем скролл
+            e.preventDefault();
+            const element = document.getElementById("#/project-list");
+            if (element) {
+                element.scrollIntoView({ behavior: "smooth" });
+            }
+        }
+    }
+
     return(
         <div className="flex flex-col items-center text-white relative mt-[100px]">
-            <img src="/image/main-section.png" alt="Image" className="w-full md:w-1/2  object-contain z-1" />
+            <img src={BastMain} alt="Image" className="w-full md:w-1/2  object-contain z-1" />
 
                 <div className="flex items-center absolute top-4 rounded-full border border-gray-600 px-5 py-2 hover:border-red-500 font-jost gap-2 font-light" style={{fontSize: "14px"}}>
-                    <img src="/image/bast-main.svg" alt="flash-image-mars"/>
+                    <img src={main}  alt="flash-image-mars"/>
                     <span className="font-medium">{t('main.solution')}</span>
                 </div>
               
 
             <motion.img
-                src="/image/Mars-big.svg"
+                src={marsBig}
+                // src="/image/Mars-big.svg"
                 alt="Image"
                 className="absolute w-full md:w-1/2 object-contain z-0 mt-[100px] main-logo-big"
                 initial={{ y: -100, opacity: 0 }}   // старт: выше и невидимая
@@ -36,41 +55,42 @@ function MainSection(){
             >
                 {t('main.description')}
             </motion.h2>
-            <img src="/image/krestic.svg"
+            <img src={krestic}
             alt="mars-image-decor"
             className="absolute mt-[120px] mr-[200px]" />
 
-            <img src="/image/krestic.svg"
+            <img src={krestic}
             alt="mars-image-decor"
             className="absolute mt-[120px] ml-[200px]" />
 
-            <img src="/image/krestic.svg"
+            <img src={krestic}
             alt="mars-image-decor"
             className="absolute mt-[300px] mr-[200px]" />
 
-            <img src="/image/krestic.svg"
+            <img src={krestic}
             alt="mars-image-decor"
             className="absolute mt-[300px] ml-[200px]" />
-            <img src="/image/krestic.svg"
+
+            <img src={krestic}
             alt="mars-image-decor"
             className="absolute mt-[500px] mr-[200px]" />
             
-            <img src="/image/krestic.svg"
+            <img src={krestic}
             alt="mars-image-decor"
             className="absolute mt-[500px] ml-[200px]"/>
 
-            <img src="/image/grai.svg"
+            <img src={grai}
             alt="mars-image-decor"
             className="absolute mt-[300px]"/>
     
 
-            <img src="/image/kosmonavt.svg"
+            <img src={kosmonavt}
             alt="mars-image-decor"
             className="absolute mt-[150px] mr-[20px] animate-float"/>
 
             <div className="flex items-center justify-center  gap-3 mt-5">
-                <ButtonLights />
-                <ButtonSecondary />
+                <ButtonLights  link={telegramLink}/>
+                <ButtonSecondary  link='#project-list' />
             </div>
         </div>
     );

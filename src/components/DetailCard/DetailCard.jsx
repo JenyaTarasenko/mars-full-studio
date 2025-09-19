@@ -1,4 +1,22 @@
 import { useTranslation } from 'react-i18next';
+import ElipsDesign from "../../assets/image/elips-design.svg";
+import CardDesign1 from "../../assets/image/card-design1.svg";
+import CardDesign2 from "../../assets/image/card-design2.svg";
+import CardDesign3 from "../../assets/image/card-design3.svg";
+import One from "../../assets/image/cifra-one.svg";
+import CardDesign6 from "../../assets/image/card-design6.svg";
+import CardDesign4 from "../../assets/image/card-design4.svg";
+import CardDesign5 from "../../assets/image/card-design5.svg";
+import Two from "../../assets/image/cifra-two.svg"
+import CardDesign7 from "../../assets/image/card-design7.svg";
+import CardDesign8 from "../../assets/image/card-design8.svg";
+import CardDesign9 from "../../assets/image/card-design9.svg";
+import Three from "../../assets/image/cifra-three.svg";
+import CardDesign10 from "../../assets/image/card-design10.svg";
+import CardDesign11 from "../../assets/image/card-design11.svg";
+import CardDesign12 from "../../assets/image/card-design12.svg";
+import Four from "../../assets/image/cifra-four.svg";
+
 
 function DetailCard(){
     const { t } = useTranslation();
@@ -14,13 +32,16 @@ function DetailCard(){
                         <div className="card-main w-[280px] h-[300px] flex  flex-col  text-white relative shrink-0 ">
 
                             <div className="flex items-center px-2 translate-x-[235px] translate-y-[10px]">
-                                <img src="/image/elips-design.svg" alt="logo-card-style" className="w-[25px]"/>
+                                <img src={ElipsDesign } alt="logo-card-style" className="w-[25px]"/>
                             </div>
                         
                             <div className="flex items-center flex-row gap-5 mt-[90px] px-5">
-                                <img src="/image/card-design1.svg" />
+                                {/* <img src="/image/card-design1.svg" />
                                 <img src="/image/card-design2.svg" />
-                                <img src="/image/card-design3.svg" />
+                                <img src="/image/card-design3.svg" /> */}
+                                <img src={CardDesign1} className='w-[40px]'/>
+                                <img src={CardDesign2} className='w-[40px]'/>
+                                <img src={CardDesign3} className='w-[40px]'/>
                             </div>
 
                             <div  className="flex items-start pl-4 mt-[30px]">
@@ -31,20 +52,23 @@ function DetailCard(){
                             <h6 className="font-jost font-light text-xs text-zinc-400">{t('DetailCard.DesignText')}</h6>
                                 {/* <h6 className="font-jost font-light text-xs text-zinc-400">Наша студия использует Figma для разработки современных веб-интерфейсов, а также Illustrator и Photoshop для создания и обработки графики..</h6> */}
                             </div>
-                            <img src="/image/cifra-one.svg"
-                            alt="Лого"
+                            <img src={One}
+                                alt="one"
                             className="absolute translate-x-[-45px] translate-y-[-50px]"/>
 
                         </div>
                         
                         <div className="card-main w-[280px] h-[300px] flex  flex-col  text-white relative shrink-0">
                             <div className="flex items-center px-2 translate-x-[235px] translate-y-[10px]">
-                                <img src="/image/elips-design.svg" alt="logo-card-style" className="w-[25px]"/>
+                                <img src={ElipsDesign} alt="logo-card-style" className="w-[25px]"/>
                             </div>
                             <div className="flex items-center flex-row gap-5 mt-[90px] px-5">
-                                <img src="/image/card-design4.svg" />
+                                {/* <img src="/image/card-design4.svg" />
                                 <img src="/image/card-design5.svg" />
-                                <img src="/image/card-design6.svg" />
+                                <img src="/image/card-design6.svg" /> */}
+                                <img src={CardDesign4} className='w-[40px]' />
+                                <img src={CardDesign5} className='w-[40px]'/>
+                                <img src={CardDesign6} className='w-[40px]' />
 
 
                             </div>
@@ -56,19 +80,23 @@ function DetailCard(){
                             <h6 className="font-jost font-light text-xs text-zinc-400">{t('DetailCard.FrontendText')}</h6>
                                 {/* <h6 className="font-jost font-light text-xs text-zinc-400">Мы разрабатываем интерфейсы с использованием React, HTML, CSS, Vite, React Hooks API</h6> */}
                             </div>
-                            <img src="/image/cifra-two.svg"
+                            <img src={Two}
+                            // <img src="/image/cifra-two.svg"
                             alt="Лого"
                             className="absolute translate-x-[-45px] translate-y-[-50px]"/>     
                         </div>
 
                         <div className="card-main w-[280px] h-[300px] flex  flex-col  text-white relative shrink-0">
                             <div className="flex items-center px-2 translate-x-[235px] translate-y-[10px]">
-                                <img src="/image/elips-design.svg" alt="logo-card-style" className="w-[25px]"/>
+                                <img src={ElipsDesign} alt="logo-card-style" className="w-[25px]"/>
                             </div>
                             <div className="flex items-center flex-row gap-5 mt-[90px] px-5">
-                                <img src="/image/card-design7.svg" />
+                                <img src={CardDesign7} className='w-[40px]'/>
+                                <img src={CardDesign8} className='w-[40px]'/>
+                                <img src={CardDesign9} className='w-[40px]'/>
+                                {/* <img src="/image/card-design7.svg" />
                                 <img src="/image/card-design8.svg" />
-                                <img src="/image/card-design9.svg" />
+                                <img src="/image/card-design9.svg" /> */}
                             </div>
                             <div  className="flex items-start pl-4 mt-[30px]">
                                 {/* <h5 className="font-jost">Програмирование</h5> */}
@@ -79,19 +107,23 @@ function DetailCard(){
                             <h6 className="font-jost font-light text-xs text-zinc-400">{t('DetailCard.BackendText')}</h6>
                                 {/* <h6 className="font-jost font-light text-xs text-zinc-400">Мы разрабатываем серверную часть с использованием Python и Django,DRF, с базой данных PostgreSQL, SQLite</h6> */}
                             </div>
-                            <img src="/image/cifra-three.svg"
+                                <img src={Three}
+                            
                             alt="Лого"
                             className="absolute translate-x-[-45px] translate-y-[-50px]"/>         
                         </div>
                     
                         <div className="card-main w-[280px] h-[300px] flex  flex-col  text-white relative shrink-0">
                             <div className="flex items-center px-2 translate-x-[235px] translate-y-[10px]">
-                                <img src="/image/elips-design.svg" alt="logo-card-style" className="w-[25px]"/>
+                                <img src={ElipsDesign} alt="logo-card-style" className="w-[25px]"/>
                             </div>
                             <div className="flex items-center flex-row gap-5 mt-[90px] px-5">
-                                <img src="/image/card-design10.svg" />
+                                <img src={CardDesign10} className='w-[40px]'/>
+                                <img src={CardDesign11} className='w-[40px]'/>
+                                <img src={CardDesign12} className='w-[40px]'/>
+                                {/* <img src="/image/card-design10.svg" />
                                 <img src="/image/card-design11.svg" />
-                                <img src="/image/card-design12.svg" />
+                                <img src="/image/card-design12.svg" /> */}
                             </div>
                             <div  className="flex items-start pl-4 mt-[30px]">
                             <h5 className="font-jost">{t('DetailCard.Server')}</h5>
@@ -101,7 +133,7 @@ function DetailCard(){
                             <h6 className="font-jost font-light text-xs text-zinc-400">{t('DetailCard.ServerText')}</h6>
                                 {/* <h6 className="font-jost font-light text-xs text-zinc-400">Мы развёртываем веб-сайты на хостинге PythonAnywhere, настраиваем SSL-сертификаты для безопасного соединения и предоставляем поддержку</h6> */}
                             </div>
-                            <img src="/image/cifra-four.svg"
+                            <img src={Four}
                             alt="Лого"
                             className="absolute translate-x-[-45px] translate-y-[-50px]"/>
                         </div>
