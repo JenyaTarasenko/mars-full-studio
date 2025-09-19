@@ -15,6 +15,7 @@ import Backend from "../../assets/image/backend.svg";
 import BackendMobile from "../../assets/image/backend-mobile.svg";
 import BackendCardDestop from "../../assets/image/backend-card-destop.svg";
 import BackendCard2 from "../../assets/image/backend-card2.svg";
+import Design from "../../assets/image/design-card.svg";
 
 function DesignSection(){
     const { t } = useTranslation();
@@ -25,7 +26,7 @@ function DesignSection(){
             <div className="card-tehnology flex flex-col justify-start w-[300px] lg:w-[700px] md:w-[500px] relative">
                 {/* <h5 className="font-extrabold text-2xl sm:text-3xl text-left font-jost mt-10 text-stone-100">Мы разрабатываем<span className="italic font-light text-orange-700 text-4xl"> по-настоящему уникальные дизайны,</span> которые невозможно спутать с другими.</h5> */}
                 <h5 className="font-extrabold text-2xl sm:text-3xl text-left font-jost mt-10 text-stone-100">{t('DesignSectionOne.item')}<span className="font-light text-orange-700 text-4xl"> {t('DesignSectionOne.itemOne')}</span> {t('DesignSectionOne.itemTwo')}</h5>
-                <img src="/image/design-card.svg" alt="logo" className="mt-3 w-[100px]"/>
+                <img src={Design} alt="logo" className="mt-3 w-[100px]"/>
                 {/* <h6 className="font-jost text-stone-400 mt-5">Наши дизайнеры создают визуальный стиль, который выделяет ваш бизнес среди конкурентов — современный, выразительный и запоминающийся.Каждый элемент продуман: от цветовой палитры до композиции.Наш фирменный стиль узнаваем и помогает сформировать сильный образ бренда в глазах клиента</h6> */}
                 <motion.h6 
                     className="font-jost text-stone-400 mt-5"

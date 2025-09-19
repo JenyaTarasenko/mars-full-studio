@@ -94,7 +94,7 @@ function  AboutPage(){
             <Navbar />
             <AboutMain />
             {/* <Advantages /> */}
-            <MarsSectionText text1="MarsSectionText.aboutTextBast" text2="MarsSectionText.aboutDescriptionBast"/>
+            {/* <MarsSectionText text1="MarsSectionText.aboutTextBast" text2="MarsSectionText.aboutDescriptionBast"/> */}
             <AboutAdvantages />
             <AboutCardAdvantages />
             <TextDecoration  mainKey="weekdays" />

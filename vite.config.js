@@ -1,5 +1,5 @@
 // // ДЭПЛОЙ
-// // для продакшен добавлят /static и читает с статики собранной 
+// для продакшен добавлят /static и читает с статики собранной 
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 

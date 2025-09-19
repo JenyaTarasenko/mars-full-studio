@@ -84,7 +84,7 @@ const Navbar = () => {
 
       {/* Меню на mobile */}
       {isOpen && (
-        <ul className="md:hidden flex flex-col mt-10 gap-10 text-xs font-light items-center">
+        <ul className="md:hidden flex flex-col mt-10 gap-10 text-base font-light items-center">
            <li><Link to="/"  className={getLinkClass("/")}>{t("menu.home")}</Link></li>
             <li><Link to="/about-mars-studio" className={getLinkClass("/about-mars-studio")}>{t("menu.about")}</Link></li>
             {/* <li className="hover:text-red-500">{t("menu.projects")}</li> */}
