@@ -8,7 +8,7 @@ import StrelaRed from "../../assets/image/strelared.svg";
 function RulesSection(){
     const { t } = useTranslation();
     return(
-        <div className="flex flex-col mt-20 lg:flex-row lg:items-start items-center">
+        <div className="flex flex-col lg:flex-row lg:items-start items-center mt-[-200px]">
             <div className="flex-[1] items-start justify-start w-full h-full">
                 <div className="w-full h-full flex lg:items-start lg:justify-start items-center sm:px-20 px-5 flex-col mb-20">
                 <h6 className="font-jost font-extrabold text-white sm:text-5xl text-3xl ">{t('RulesSection.Text')}</h6>
