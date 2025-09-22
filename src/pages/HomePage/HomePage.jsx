@@ -9,7 +9,7 @@ import TextDecoration from '../../components/Text/TextDecoration/TextDecoration'
 import CardJob from '../../components/CardJob/CardJob';
 import Shedule from '../../components/ schedule/ schedule';
 import Price from '../../components/Price/Price';
-import ButtonMain from '../../components/Buttons/ButtonMain/ButtonMain';
+// import ButtonMain from '../../components/Buttons/ButtonMain/ButtonMain';
 import SectionTextMain from '../../components/SectionTextMain/SectionTextMain';
 import ReviewsSection from '../../components/ReviewsSection/ReviewsSection';
 import DesignSection from '../../components/DesignSection/DesignSection';
@@ -107,12 +107,12 @@ function HomePage(){
             <HomeServices />
             <TextDecoration  mainKey="solutions"/>
             <BastCard />
-            <ButtonMain />
+            {/* <ButtonMain /> */}
             <Shedule />
             <CardJob />
             <TextLittleSection text1="TextLittleSection.homeText" text2="TextLittleSection.homeDescription" />
             <ListView />
-            <TextDecoration  mainKey="price"/>
+            {/* <TextDecoration  mainKey="price"/> */}
             <Price />
             <CardPrice />
             <MarsSectionText text1="MarsSectionText.HomeReviewText" text2="MarsSectionText.HomeReviewDescription"/>

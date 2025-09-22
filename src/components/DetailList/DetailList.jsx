@@ -7,8 +7,8 @@ import MarsSectionText from '../../components/MarsSectionText/MarsSectionText';
 import { motion } from "framer-motion";
 import DetailMain from "../../assets/image/detail-main.png";
 import Moon from "../../assets/image/moon.svg";
-import M from "../../assets/image/M.svg";
-import R from "../../assets/image/R.svg";
+
+
 import BgDetailTwo from "../../assets/image/DetailT.svg";
 import Speral from "../../assets/image/speral.svg";
 
@@ -114,7 +114,7 @@ const DetailList =()=>{
                         </motion.h4>
 
                         <img src={project.image_description} alt="mars" className="w-[500px] h-[300px] px-1 object-cover"  />
-                        <img src={M} alt="mars" className="w-[200px] mt-[-450px] sm:ml-[200px] absolute z-[1] ml-[100px]" />
+
                     </div> 
                         
                     <div className="flex-1 flex flex-col gap-5 mt-5 lg:mt-[100px]">
@@ -136,15 +136,7 @@ const DetailList =()=>{
                 </div>
                 <div className="flex-1 flex justify-end w-full lg:mt-[300px] mt-[100px] relative">
 
-                    <motion.img
-                        src={R}
-                        alt="logo-card-style"
-                        className="absolute mr-10  w-[120px] z-[-1] opacity-75"
-                        initial={{ rotate: 0 }}             // стартовое положение
-                        whileInView={{ rotate: 180 }}       // переворачивается на 180° при попадании в видимую область
-                        viewport={{ once: true, amount: 0.5 }} // срабатывает один раз, когда 50% блока видно
-                        transition={{ duration: 1.5, ease: "easeOut" , delay: 1}} // плавность вращения
-                    />
+        
 
                     <motion.h4 
                         className="font-jost text-lg sm:text-xl text-white max-w-[900px] text-left sm:px-10 px-5 z-[10]"
@@ -213,7 +205,7 @@ const DetailList =()=>{
                         <img src={project. image_prototip_end} alt="logo-decor" className="w-[600px] h-[300px] object-cover z-[1] px-5"/>
                     </div>
                     <div className="flex flex-col lg:items-start lg:justify-start items-center justify-center w-full mt-5 relative">
-                        <img src={Speral} className="absolute w-[300px] z-[-1] animate-spin-slow" />
+                        <img src={Speral} className="absolute w-[300px] z-[-1]" />
                         <h6 className="font-jost text-white  text-sm max-w-[700px] px-10">{getTranslated(project, 'text_prototip_end')}</h6>
                     </div>
                     <div className="flex flex-col lg:items-end lg:justify-end items-center justify-center w-full mt-10">

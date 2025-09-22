@@ -1,9 +1,8 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from "framer-motion";
-import S from "../../assets/image/S.svg";
 import Aboutastro from "../../assets/image/aboutastro.png";
 import AboutText from "../../assets/image/about-text.svg";
-import M from "../../assets/image/M.svg";
+
 import AboutText2 from "../../assets/image/about-text2svg.svg";
 
 function AboutAdvantages(){
@@ -15,15 +14,7 @@ function AboutAdvantages(){
             <div className="flex items-center justify-center flex-col lg:flex-row mt-[700px] lg:mt-[200px]">
                 <img src={Aboutastro} alt="astronaut" className="h-[400px] lg:translate-x-[-150px] translate-x-[0px] z-[-1] sm:w-[300px] opacity-60"/>
                 <div className="flex flex-col font-jost  font-normal text-left w-[300px] relative">
-                    <motion.img
-                        src={S}
-                        alt="logo-card-style"
-                        className="absolute translate-x-[150px] sm:translate-x-[300px] lg:translate-y-[140px] translate-y-[-40px] sm:translate-y-[60px] w-[120px] z-[-1] opacity-75"
-                        initial={{ rotate: 0 }}             // стартовое положение
-                        whileInView={{ rotate: 180 }}       // переворачивается на 180° при попадании в видимую область
-                        viewport={{ once: true, amount: 0.5 }} // срабатывает один раз, когда 50% блока видно
-                        transition={{ duration: 1.5, ease: "easeOut" , delay: 1}} // плавность вращения
-                    />
+                  
                     {/* <h5 className="font-jost text-xl text-blue-200 px-5">Abot studio</h5> */}
                     {/* <h6 className="font-jost text-sm sm:w-[500px] w-[300px] px-5 text-zinc-100 mt-10">Наша команда имеет многолетний опыт в разработке интернет-сайтов различной сложности и функциональности — от простых одностраничников до полноценных веб-ресурсов с уникальным дизайном и продуманной структурой.Мы не используем шаблоны и типовые решения — каждый проект индивидуален и создаётся с нуля, под задачи конкретного клиента.Наши сайты не только визуально привлекательны, но и удобны в использовании, быстро загружаются, адаптированы под все устройства и соответствуют современным стандартам веб-разработки.Мы применяем лучшие практики UX/UI, чистый код и надёжные технологии, чтобы ваш сайт работал стабильно, был заметен в поиске и помогал развивать бизнес онлайн.</h6> */}
                     <motion.h6 
@@ -64,15 +55,7 @@ function AboutAdvantages(){
                         >
                         {t('AboutAdvantages.item')}
                         </motion.h6>
-                        <motion.img
-                            src={M}
-                            alt="logo-card-style"
-                            className="absolute translate-x-[150px] sm:translate-x-[300px] lg:translate-y-[140px] translate-y-[-40px] sm:translate-y-[60px] w-[120px] z-[-1] opacity-75"
-                            initial={{ rotate: 0 }}             // стартовое положение
-                            whileInView={{ rotate: 180 }}       // переворачивается на 180° при попадании в видимую область
-                            viewport={{ once: true, amount: 0.5 }} // срабатывает один раз, когда 50% блока видно
-                            transition={{ duration: 1.5, ease: "easeOut" , delay: 1}} // плавность вращения
-                        />
+                       
                             {/* <h6 className="font-jost text-sm sm:w-[500px] w-[300px] px-5 text-zinc-100 mt-10">Наши сайты легко масштабируются и не ограничены в функционале — они растут вместе с вашим бизнесом. Мы ориентируемся на результат: рост клиентов, повышение узнаваемости и усиление конкурентных преимуществ.Наша студия идет в ногу с современными технологиями, постоянно изучает новинки в дизайне и программировании, используя инновационные инструменты, которые помогают создавать эффективные и современные решения.С нами ваш проект — это не просто веб-ресурс, а инструмент роста и развития бизнеса.</h6> */}
                         </div>
                         <img src={AboutText2} alt="logo-decor" className="h-[500px] transform transition-transform duration-300 hover:rotate-[-5deg]  active:rotate-0 "/>

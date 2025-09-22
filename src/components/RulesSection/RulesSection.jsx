@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import StrelaYellow from "../../assets/image/strelayellow.svg";
-import Cosmic from "../../assets/image/cosmonavt3.png";
+// import Cosmic from "../../assets/image/cosmonavt3.png";
 import StrellaGreen from "../../assets/image/strelagreen.svg";
 import StrelaRed from "../../assets/image/strelared.svg";
 
@@ -8,7 +8,7 @@ import StrelaRed from "../../assets/image/strelared.svg";
 function RulesSection(){
     const { t } = useTranslation();
     return(
-        <div className="flex flex-col lg:flex-row lg:items-start items-center mt-[-200px]">
+        <div className="flex flex-col lg:flex-row lg:items-start items-center mt-[100px]">
             <div className="flex-[1] items-start justify-start w-full h-full">
                 <div className="w-full h-full flex lg:items-start lg:justify-start items-center sm:px-20 px-5 flex-col mb-20">
                 <h6 className="font-jost font-extrabold text-white sm:text-5xl text-3xl ">{t('RulesSection.Text')}</h6>
@@ -21,7 +21,7 @@ function RulesSection(){
             </div>
             <div className="flex-[2] flex justify-center mt-0 lg:mt-10">
                 <div className="w-full h-full flex items-start justify-start flex-col gap-3 relative">
-                    <img src={Cosmic} alt="astronaut-mars"  className="absolute w-[150px] animate-float mt-[300px]"/>
+                    {/* <img src={Cosmic} alt="astronaut-mars"  className="absolute w-[150px] animate-float mt-[300px]"/> */}
                     <div className="detail-card w-[290px] h-[400px]  sm:w-[590px] sm:h-[320px]  border border-solid border-orange-600 rounded-[200px] flex items-center justify-center flex-col transform transition-transform duration-300 hover:scale-105">
                         <img src={StrelaYellow} alt="arrow"  className="sm:mt-5 mt-0"/>
                         <div className="flex justify-center items-center  flex-row gap-5">

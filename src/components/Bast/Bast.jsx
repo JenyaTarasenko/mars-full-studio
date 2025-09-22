@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { useTranslation } from 'react-i18next';
-import R from "../../assets/image/R.svg";
 import bast from "../../assets/image/bast.svg";
 
 function Bast(){
@@ -24,15 +23,7 @@ function Bast(){
                 </div>
 
                 <div className="relative">
-                <motion.img
-                        src={R}
-                        alt="logo-card-style"
-                        className="absolute translate-x-[150px] sm:translate-x-[300px] lg:translate-y-[140px] translate-y-[-40px] sm:translate-y-[60px] w-[120px] z-[-1] opacity-75"
-                        initial={{ rotate: 0 }}             // стартовое положение
-                        whileInView={{ rotate: 180 }}       // переворачивается на 180° при попадании в видимую область
-                        viewport={{ once: true, amount: 0.5 }} // срабатывает один раз, когда 50% блока видно
-                        transition={{ duration: 1.5, ease: "easeOut" , delay: 1}} // плавность вращения
-                    />
+                
                     <motion.h5 
                         initial={{ opacity: 0, x: -100 }} // невидим и сдвинут влево
                         whileInView={{ opacity: 1, x: 0 }} // плавно появляется и возвращается на место

@@ -1,7 +1,7 @@
 @media (max-width: 995px){
-    .advantages-destop{
+    .advantages-desktop {
         display: none !important;
-    }
+    } 
     .advantages-mobile {
 
         display: flex !important;

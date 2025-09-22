@@ -22,7 +22,7 @@ function BastCard(){
 
                 {/* <!-- ikon --> */}
                 <div className="icon-main-card flex items-center flex-row justify-between absolute top-0 left-0 w-full px-2 mt-2">
-                    <img src={StarIcon} alt="logo-card-style" className="animate-spin-slow"/>
+                    <img src={StarIcon} alt="logo-card-style" className=""/>
                     {/* <img src="/image/star-icon.svg" alt="logo-card-style" className="animate-spin-slow"/> */}
                     <img src={ElipsCard} alt="logo-card-style"/>
                     {/* <img src="/image/elips-card.svg" alt="logo-card-style"/> */}
@@ -57,7 +57,7 @@ function BastCard(){
 
                 {/* <!-- ikon --> */}
                 <div className="icon-main-card flex items-center flex-row justify-between absolute top-0 left-0 w-full px-2 mt-2">
-                    <img src={RacketIcon} alt="logo-card-style" className="animate-spin-slow"/>
+                    <img src={RacketIcon} alt="logo-card-style" className=""/>
                     <img src={ElipsCard} alt="logo-card-style"/>
                 </div>
                 {/* <!-- ikon --> */}
@@ -89,7 +89,7 @@ function BastCard(){
 
                 {/* <!-- ikon --> */}
                 <div className="icon-main-card flex items-center flex-row justify-between absolute top-0 left-0 w-full px-2 mt-2">
-                    <img src={planat} alt="logo-card-style" className="animate-spin-slow"/>
+                    <img src={planat} alt="logo-card-style" className=""/>
                     <img src={ElipsCard} alt="logo-card-style"/>
                 </div>
                 {/* <!-- ikon --> */}

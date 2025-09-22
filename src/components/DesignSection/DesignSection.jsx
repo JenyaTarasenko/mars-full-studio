@@ -37,8 +37,8 @@ function DesignSection(){
                 >
                     {t('DesignSectionOne.itemThree')}
                 </motion.h6>
-                <img src={Des} alt="logo" className="absolute left-1/2 -translate-x-1/2 design-destop z-[-1]"/>
-                <img src={DesignMob} alt="logo" className="absolute left-1/2 -translate-x-1/2 design-mob z-[-1] translate-y-[50px] "/>
+                {/* <img src={Des} alt="logo" className="absolute left-1/2 -translate-x-1/2 design-destop z-[-1]"/>
+                <img src={DesignMob} alt="logo" className="absolute left-1/2 -translate-x-1/2 design-mob z-[-1] translate-y-[50px] "/> */}
                 <div className="card-box flex flex-col lg:flex-row mt-10 gap-3 items-center justify-center lg:justify-start ">
                     <img src={Card1} alt="logo" className="transition-transform duration-300 transform hover:scale-105 active:scale-95 w-[310px] h-[200px]"/>
                     <img src={DesignCard} alt="logo" className="transition-transform duration-300 transform hover:scale-105 active:scale-95 w-[290px] h-[200px]"/>
@@ -61,8 +61,8 @@ function DesignSection(){
                 >
                     {t('DesignSectionTwo.ItemFive')}
                 </motion.h6>
-                <img src={FrontendDestop} alt="logo" className="absolute left-1/2 -translate-x-1/2 design-destop z-[-1] mt-[100px]"/>
-                <img src={MobileFront} alt="logo" className="absolute left-1/2 -translate-x-1/2 design-mob z-[-1] translate-y-[-200px] "/>
+                {/* <img src={FrontendDestop} alt="logo" className="absolute left-1/2 -translate-x-1/2 design-destop z-[-1] mt-[100px]"/>
+                <img src={MobileFront} alt="logo" className="absolute left-1/2 -translate-x-1/2 design-mob z-[-1] translate-y-[-200px] "/> */}
                 <div className="card-box flex flex-col lg:flex-row mt-10 gap-3 items-center justify-center lg:justify-start ">
                     <img src={CardFront} alt="logo" className="transition-transform duration-300 transform hover:scale-105 active:scale-95 w-[310px] h-[200px]"/>
                     <img src={FrontCard2} alt="logo" className="transition-transform duration-300 transform hover:scale-105 active:scale-95 w-[290px] h-[200px]"/>
@@ -87,8 +87,8 @@ function DesignSection(){
                 >
                     {t('DesignSectionThree.itemThree')}
                 </motion.h6>
-                <img src={Backend} alt="logo" className="absolute w-full design-destop z-[-1] mt-[100px]"/>
-                <img src={BackendMobile} alt="logo" className="absolute left-1/2 -translate-x-1/2 design-mob z-[-1] translate-y-[20px] "/>
+                {/* <img src={Backend} alt="logo" className="absolute w-full design-destop z-[-1] mt-[100px]"/>
+                <img src={BackendMobile} alt="logo" className="absolute left-1/2 -translate-x-1/2 design-mob z-[-1] translate-y-[20px] "/> */}
                 <div className="card-box flex flex-col lg:flex-row mt-10 gap-3 items-center justify-center lg:justify-start ">
                     <img src={BackendCardDestop } alt="logo" className="transition-transform duration-300 transform hover:scale-105 active:scale-95 w-[310px] h-[200px]"/>
                     <img src={BackendCard2} alt="logo" className="transition-transform duration-300 transform hover:scale-105 active:scale-95 w-[290px] h-[200px]"/>
