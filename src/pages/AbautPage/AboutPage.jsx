@@ -97,7 +97,7 @@ function  AboutPage(){
             {/* <MarsSectionText text1="MarsSectionText.aboutTextBast" text2="MarsSectionText.aboutDescriptionBast"/> */}
             <AboutAdvantages />
             <AboutCardAdvantages />
-            <TextDecoration  mainKey="weekdays" />
+            {/* <TextDecoration  mainKey="weekdays" /> */}
             <ImageStep />
             <MarsSectionText text1="MarsSectionText.aboutText" text2="MarsSectionText.aboutDescription"/>
             <CardStep />

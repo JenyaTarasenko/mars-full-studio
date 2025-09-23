@@ -14,7 +14,7 @@ function CardPrice(){
     const { t } = useTranslation();
 
     return(
-        <div className="flex flex-col  lg:flex-row items-center justify-center gap-5 lg:mt-[700px] mt-[100px]">
+        <div className="flex flex-col  lg:flex-row items-center justify-center gap-5 mt-[200px]">
             <div className="card-price w-[300px] h-[650px] flex flex-col items-center relative transform transition-transform duration-300 hover:scale-105">
 
                 {/* <h6 class="font-jost text-orange-400 mt-20 text-2xl">Одностраничные</h6> */}

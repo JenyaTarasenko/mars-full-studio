@@ -32,7 +32,7 @@ export default defineConfig({
 
 
 
-// // ——————————————————РАЗРАБОТКА——————————————————
+// ——————————————————РАЗРАБОТКА——————————————————
 // import { defineConfig } from 'vite'
 // import react from '@vitejs/plugin-react'
 // const cssFileName = 'index.min.css'

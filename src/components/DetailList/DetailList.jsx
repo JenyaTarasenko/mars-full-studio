@@ -98,9 +98,9 @@ const DetailList =()=>{
             </div>
             {/*block 1*/}
             {/*block 2*/}
-            <div className="w-full  bg-contain bg-center bg-no-repeat flex items-center justify-center flex-col mt-20 gap-10" style={{ backgroundImage:`url(${Moon})`}}>
+            <div className="w-full  bg-contain bg-center bg-no-repeat flex items-center justify-center flex-col mt-5 gap-10" style={{ backgroundImage:`url(${Moon})`}}>
                 
-                <div className="flex-1 flex items-center justify-center flex-col lg:flex-row mt-[200px]">
+                <div className="flex-1 flex items-center justify-center flex-col lg:flex-row mt-[30px]">
                     <div className="flex-1 flex flex-col items-center justify-center gap-5 lg:gap-10 px-4 relative">
 
                         <motion.h4 
@@ -119,7 +119,7 @@ const DetailList =()=>{
                         
                     <div className="flex-1 flex flex-col gap-5 mt-5 lg:mt-[100px]">
                         <div className="w-full h-full flex lg:flex-col flex-col-reverse lg:items-start items-center justify-start gap-5 lg:gap-10">
-                            <img src={project.image_job} alt="mars" className="w-[600px] h-[300px] px-1 object-cover" />
+                            <img src={project.image_job} alt="mars" className="w-[600px] h-[300px] px-5 object-cover" />
 
                             <motion.h4 
                                 className="font-jost text-sm font-normal text-white  max-w-[900px] px-10"

@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useTranslation } from 'react-i18next';
 import AboutFon from "../../assets/image/about-fon.png";
-import TextMars from "../../assets/image/text-mars.svg";
+
 import Shlem from "../../assets/image/shlem.svg";
 
 function AboutMain(){
@@ -25,11 +25,7 @@ function AboutMain(){
                         transition={{ duration: 1 }} // длительность 1 секунда
                     >{t('AboutMain.mainDescription')}</motion.h3>
 
-                    <img
-                        src={TextMars}
-                        alt="logo-decor"
-                        className="animate-spin-slow absolute sm:ml-[500px] sm:mt-[300px] ml-[140px] mt-[550px] z-[1]"
-                    />
+                   
                 </div>
                 <div className="flex justify-end mt-[250px] relative ">
                     <motion.div

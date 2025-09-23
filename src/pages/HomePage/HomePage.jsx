@@ -105,9 +105,9 @@ function HomePage(){
             <Advantages />
             <MarsSectionText text1="MarsSectionText.HomeText" text2="MarsSectionText.HomeDescription"/>
             <HomeServices />
-            <TextDecoration  mainKey="solutions"/>
+            {/* <TextDecoration  mainKey="solutions"/> */}
             <BastCard />
-            {/* <ButtonMain /> */}
+         
             <Shedule />
             <CardJob />
             <TextLittleSection text1="TextLittleSection.homeText" text2="TextLittleSection.homeDescription" />
