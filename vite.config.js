@@ -36,8 +36,6 @@ export default defineConfig({
 // import { defineConfig } from 'vite'
 // import react from '@vitejs/plugin-react'
 // const cssFileName = 'index.min.css'
-
-// // https://vite.dev/config/
 // export default defineConfig({
 //   plugins: [react()],
 //   publicDir: './public',

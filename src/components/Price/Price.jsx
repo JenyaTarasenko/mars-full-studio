@@ -30,7 +30,7 @@ function Price(){
         <>
             <div id="price" className="flex items-center justify-center  section-price-elips-destop flex-row mt-[200px]">
               
-                <motion.img src={logosDes[i18n.language] || logos.en} 
+                <motion.img src={logosDes[i18n.language] || logosDes.en} 
                  initial={{ opacity: 0, y: 100 }}          // старт: невидимая и ниже
                  whileInView={{ opacity: 1, y: 0 }}        // при появлении: видимая и на месте
                  transition={{ duration: 1, ease: "easeOut" }}
@@ -43,7 +43,7 @@ function Price(){
 
             </div>
             <div className="flex items-center justify-center section-price-elips-mobile flex-col mt-[200px]">
-                <motion.img src={logosMob[i18n.language] || logos.en}  
+                <motion.img src={logosMob[i18n.language] || logosMob.en}  
                 initial={{ opacity: 0, y: 100 }}          // старт: невидимая и ниже
                 whileInView={{ opacity: 1, y: 0 }}        // при появлении: видимая и на месте
                 transition={{ duration: 1, ease: "easeOut" }}
