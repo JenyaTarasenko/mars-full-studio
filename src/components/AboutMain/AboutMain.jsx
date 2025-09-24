@@ -35,7 +35,7 @@ function AboutMain(){
                         viewport={{ once: true, amount: 0.5 }} // анимация один раз при попадании в экран
                         transition={{ duration: 1 }}    // длительность анимации 1 секунда
                     ><h4 className="font-jost text-rose-300">{t('AboutMain.mainDescriptionItem')}</h4></motion.div>
-                    <img src={Shlem} alt="logo-decor" className="absolute mr-[5px] sm:mr-[250px]  mt-[-50px] z-[1]"/>
+                    {/* <img src={Shlem} loading="lazy"  alt="logo-decor" className="absolute mr-[5px] sm:mr-[250px]  mt-[-50px] z-[1]"/> */}
                 </div> 
             </div>
         </div>

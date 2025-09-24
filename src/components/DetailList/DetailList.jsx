@@ -6,11 +6,11 @@ import NumberDetail from '../NumberDetail/NumberDetail';
 import MarsSectionText from '../../components/MarsSectionText/MarsSectionText';
 import { motion } from "framer-motion";
 import DetailMain from "../../assets/image/detail-main.png";
-import Moon from "../../assets/image/moon.svg";
 
 
-import BgDetailTwo from "../../assets/image/DetailT.svg";
-import Speral from "../../assets/image/speral.svg";
+
+
+
 
 
 const DetailList =()=>{
@@ -97,8 +97,8 @@ const DetailList =()=>{
                
             </div>
             {/*block 1*/}
-            {/*block 2*/}
-            <div className="w-full  bg-contain bg-center bg-no-repeat flex items-center justify-center flex-col mt-5 gap-10" style={{ backgroundImage:`url(${Moon})`}}>
+            {/*block 2 style={{ backgroundImage:`url(${Moon})`}}*/}
+            <div className="w-full  bg-contain bg-center bg-no-repeat flex items-center justify-center flex-col mt-5 gap-10" >
                 
                 <div className="flex-1 flex items-center justify-center flex-col lg:flex-row mt-[30px]">
                     <div className="flex-1 flex flex-col items-center justify-center gap-5 lg:gap-10 px-4 relative">
@@ -113,13 +113,13 @@ const DetailList =()=>{
                             {getTranslated(project, 'description')}
                         </motion.h4>
 
-                        <img src={project.image_description} alt="mars" className="w-[500px] h-[300px] px-1 object-cover"  />
+                        <img src={project.image_description} loading="lazy"  alt="mars" className="w-[500px] h-[300px] px-1 object-cover"  />
 
                     </div> 
                         
                     <div className="flex-1 flex flex-col gap-5 mt-5 lg:mt-[100px]">
                         <div className="w-full h-full flex lg:flex-col flex-col-reverse lg:items-start items-center justify-start gap-5 lg:gap-10">
-                            <img src={project.image_job} alt="mars" className="w-[600px] h-[300px] px-5 object-cover" />
+                            <img src={project.image_job} alt="mars" loading="lazy" className="w-[600px] h-[300px] px-5 object-cover" />
 
                             <motion.h4 
                                 className="font-jost text-sm font-normal text-white  max-w-[900px] px-10"
@@ -145,7 +145,7 @@ const DetailList =()=>{
                         viewport={{ once: true, amount: 0.5 }} // один раз при 50% видимости
                         transition={{ duration: 1.2, ease: "easeOut" }}
                     >
-                        {t('DetailList.Text')}{" "}<span class="text-cyan-200 text-xl font-light">{t('DetailList.TextOne')}{" "}</span>{t('DetailList.TextTwo')}{" "}<span class="text-cyan-200 text-xl font-light">{t('DetailList.TextThree')}{" "}</span>{t('DetailList.TextFour')}<span class="text-cyan-200 text-xl font-light">{" "}{t('DetailList.TextFive')}{" "}</span>{t('DetailList.TextSix')}
+                        {t('DetailList.Text')}{" "}<span className="text-cyan-200 text-xl font-light">{t('DetailList.TextOne')}{" "}</span>{t('DetailList.TextTwo')}{" "}<span class="text-cyan-200 text-xl font-light">{t('DetailList.TextThree')}{" "}</span>{t('DetailList.TextFour')}<span class="text-cyan-200 text-xl font-light">{" "}{t('DetailList.TextFive')}{" "}</span>{t('DetailList.TextSix')}
                     </motion.h4>
 
                     {/* <h4 className="font-jost text-lg sm:text-xl text-white max-w-[900px] text-left sm:px-10 px-5 z-[10]">Каждый сайт, созданный студией Mars — это <span class="text-cyan-200 text-xl font-light">индивидуальное решение, не похожее на другие. </span>Перед разработкой мы внимательно<span class="text-cyan-200 text-xl font-light"> анализируем рынок и изучаем конкурентов,</span> чтобы понять их сильные стороны. Это позволяет нам создавать проекты, которые <span class="text-cyan-200 text-xl font-light">становятся лучше, удобнее и привлекательнее — </span>как с точки зрения функционала, так и с визуальной стороны.</h4> */}
@@ -179,7 +179,7 @@ const DetailList =()=>{
                     </div>
 
                     <div className="flex flex-col lg:items-end lg:justify-end items-center justify-center w-full mt-20">
-                        <img src={project.image_prototip} alt="logo-decor" className="w-[600px] h-[300px] z-[1] mt-5 object-cover px-5"/>
+                        <img src={project.image_prototip} loading="lazy"  alt="logo-decor" className="w-[600px] h-[300px] z-[1] mt-5 object-cover px-5"/>
                     </div>
                 </div>
             </div>
@@ -202,23 +202,23 @@ const DetailList =()=>{
                     </div>
                     <div classN="flex flex-col lg:items-end lg:justify-end items-center justify-center w-full mt-20">
                        
-                        <img src={project. image_prototip_end} alt="logo-decor" className="w-[600px] h-[300px] object-cover z-[1] px-5"/>
+                        <img src={project. image_prototip_end} loading="lazy"  alt="logo-decor" className="w-[600px] h-[300px] object-cover z-[1] px-5"/>
                     </div>
                     <div className="flex flex-col lg:items-start lg:justify-start items-center justify-center w-full mt-5 relative">
-                        <img src={Speral} className="absolute w-[300px] z-[-1]" />
+                        {/* <img src={Speral} className="absolute w-[300px] z-[-1]" /> */}
                         <h6 className="font-jost text-white  text-sm max-w-[700px] px-10">{getTranslated(project, 'text_prototip_end')}</h6>
                     </div>
                     <div className="flex flex-col lg:items-end lg:justify-end items-center justify-center w-full mt-10">
-                    <motion.h6 
-                        className="font-jost text-zinc-300 text-sm max-w-[500px] px-10"
-                        initial={{ opacity: 0, x: 50 }}        // невидимый, смещён вправо
-                        whileInView={{ opacity: 1, x: 0 }}     // плавно сдвигается на место и проявляется
-                        viewport={{ once: true, amount: 0.5 }} // один раз при 50% видимости
-                        transition={{ duration: 1.2, ease: "easeOut" }}
-                    >
-                        {t('DetailList.SectionDescription')}
-                    </motion.h6>
-                        {/* <h6 className="font-jost text-white text-sm max-w-[500px] px-10">Вся магия начинается с дизайна в Figma — мы создаём прототип будущего сайта, его «скелет». После утверждения макета проект переходит в этап фронтенд-разработки: интерфейс реализуется на React — современном фреймворке для создания адаптивных и быстрых решений с любым уровнем функционала.Затем к работе подключается бэкенд на Django. Здесь мы объединяем дизайн и функционал: тестируем систему, настраиваем API через DRF, обеспечиваем стабильную работу сайта.Финальный этап — это серверная часть: подключение домена, установка SSL-сертификата и размещение сайта на надёжном хостинге. В результате вы получаете готовый ресурс, который открывается в любой точке мира — быстро, безопасно и без ограничений</h6> */}
+                        <motion.h6 
+                            className="font-jost text-zinc-300 text-sm max-w-[500px] px-10"
+                            initial={{ opacity: 0, x: 50 }}        // невидимый, смещён вправо
+                            whileInView={{ opacity: 1, x: 0 }}     // плавно сдвигается на место и проявляется
+                            viewport={{ once: true, amount: 0.5 }} // один раз при 50% видимости
+                            transition={{ duration: 1.2, ease: "easeOut" }}
+                        >
+                            {t('DetailList.SectionDescription')}
+                        </motion.h6>
+                            {/* <h6 className="font-jost text-white text-sm max-w-[500px] px-10">Вся магия начинается с дизайна в Figma — мы создаём прототип будущего сайта, его «скелет». После утверждения макета проект переходит в этап фронтенд-разработки: интерфейс реализуется на React — современном фреймворке для создания адаптивных и быстрых решений с любым уровнем функционала.Затем к работе подключается бэкенд на Django. Здесь мы объединяем дизайн и функционал: тестируем систему, настраиваем API через DRF, обеспечиваем стабильную работу сайта.Финальный этап — это серверная часть: подключение домена, установка SSL-сертификата и размещение сайта на надёжном хостинге. В результате вы получаете готовый ресурс, который открывается в любой точке мира — быстро, безопасно и без ограничений</h6> */}
                         
                     </div>
                     <div>

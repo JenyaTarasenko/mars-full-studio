@@ -47,15 +47,16 @@ function Advantages(){
                 viewport={{ once: true, amount: 0.3 }}
                 className="w-full max-w-[1000px] mx-auto will-change-transform"
                 style={{ willChange: "transform, opacity" }} // подсказка браузеру
+                loading="lazy"
             />
     </div>
         {/* блок дестоп  */}
 
       
         <div className="flex items-center justify-center mt-20 advantages-mobile flex-col gap-20">
-            <img src={card1[lang]} alt="he best proposal for the development of Mars" />
-            <img src={card2[lang]} alt="he best proposal for the development of Mars" />
-            <img src={card3[lang]} alt="he best proposal for the development of Mars" />
+            <img src={card1[lang]} alt="he best proposal for the development of Mars" loading="lazy"/>
+            <img src={card2[lang]} alt="he best proposal for the development of Mars" loading="lazy"/>
+            <img src={card3[lang]} alt="he best proposal for the development of Mars" loading="lazy"/>
            
         </div>
     </>

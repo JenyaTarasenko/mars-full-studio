@@ -55,8 +55,8 @@ function CardPrice(){
                     {/* <p class="font-jost text-orange-100 mt-2 text-sm">Бесплатная поддержка</p> */}
                     <p className="font-jost text-orange-100 mt-2 text-sm">{t('cardPrice.CardOneSupport')}</p>
                 </div>
-                <img src={PriceCard1} alt="elips" className='absolute z-[-1] translate-y-[330px] translate-x-[-40px]'/>
-                <img src={DollarOne} alt="elips" className='absolute z-[-1] translate-y-[50px] translate-x-[0] w-[300px]'/>
+                <img src={PriceCard1}  loading="lazy" alt="elips" className='absolute z-[-1] translate-y-[330px] translate-x-[-40px]'/>
+                <img src={DollarOne} loading="lazy"  alt="One" className='absolute z-[-1] translate-y-[50px] translate-x-[0] w-[300px]'/>
 
             </div>
 
@@ -110,8 +110,8 @@ function CardPrice(){
                     <p className="font-jost text-orange-100 mt-2 text-sm">{t('cardPrice.CardTwoSupport')}</p>
                     {/* <p class="font-jost text-orange-100 mt-2 text-sm">Бесплатная поддержка</p> */}
                 </div>
-                <img src={PriceCard2} alt="elips" className='absolute z-[-1] translate-y-[350px] translate-x-[40px]'/>
-                <img src={DollarTwo} alt="elips" className='absolute z-[-1] translate-y-[50px] translate-x-[0] w-[300px]'/>
+                <img src={PriceCard2} loading="lazy"  alt="elips" className='absolute z-[-1] translate-y-[350px] translate-x-[40px]'/>
+                <img src={DollarTwo} loading="lazy"  alt="Two" className='absolute z-[-1] translate-y-[50px] translate-x-[0] w-[300px]'/>
 
             </div>
             <div className="card-price w-[300px] h-[650px] flex flex-col items-center relative transform transition-transform duration-300 hover:scale-105">
@@ -162,8 +162,8 @@ function CardPrice(){
                     {/* <p class="font-jost text-orange-100 mt-2 text-sm">Бесплатная поддержка</p> */}
                     <p className="font-jost text-orange-100 mt-2 text-sm">{t('cardPrice.CardThreeSupport')}</p>
                 </div>
-                <img src={PriceCard3} alt="elips" className='absolute z-[-1] translate-y-[360px] translate-x-[40px]'/>
-                <img src={DollarThree} alt="elips" className='absolute z-[-1] translate-y-[50px] translate-x-[0] w-[300px]'/>
+                <img src={PriceCard3} loading="lazy" alt="elips" className='absolute z-[-1] translate-y-[360px] translate-x-[40px]'/>
+                <img src={DollarThree} loading="lazy" alt="Three" className='absolute z-[-1] translate-y-[50px] translate-x-[0] w-[300px]'/>
 
             </div>
 
@@ -215,8 +215,8 @@ function CardPrice(){
                     <p className="font-jost text-orange-100 mt-2 text-sm">{t('cardPrice.CardFourMonitoring')}</p>
                     {/* <p className="font-jost text-orange-100 mt-2 text-sm">Мониторинг работы сайта 24/7</p> */}
                 </div>
-                <img src={ PriceCard4} alt="elips" className='absolute z-[-1] translate-y-[360px] translate-x-[40px]'/>
-                <img src={DollarFour} alt="elips" className='absolute z-[-1] translate-y-[50px] translate-x-[0] w-[300px]'/>
+                <img src={ PriceCard4} loading="lazy" alt="elips" className='absolute z-[-1] translate-y-[360px] translate-x-[40px]'/>
+                <img src={DollarFour} loading="lazy"  alt="Four" className='absolute z-[-1] translate-y-[50px] translate-x-[0] w-[300px]'/>
 
             </div>
            

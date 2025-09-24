@@ -9,7 +9,7 @@ export default function SocialFixed() {
       </a>
 
       {/* Telegram */}
-      <a href="https://t.me/jenyatarsenko" target="_blank" rel="noopener noreferrer" className="bg-white/20 backdrop-blur-md p-3 rounded-full shadow-lg hover:bg-white/30 transition-colors transform hover:scale-110">
+      <a href="https://t.me/jenyatarasenko" target="_blank" rel="noopener noreferrer" className="bg-white/20 backdrop-blur-md p-3 rounded-full shadow-lg hover:bg-white/30 transition-colors transform hover:scale-110">
         <FaTelegramPlane className="text-white w-5 h-5"/>
       </a>
 

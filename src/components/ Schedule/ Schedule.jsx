@@ -58,22 +58,22 @@ function Shedule(){
                     <span style={{color:"#D34725"}} className="font-extralight">{t('Shedule.itemOne')}{" "}{" "}</span>{t('Shedule.itemTwo')}
                 </motion.h6>
                 <div className="flex flex-row px-5 gap-5 mt-5 items-center">
-                    <img src={Shedule1} alt="logo-image" className='w-[25px]'/>
+                    <img src={Shedule1} loading="lazy" alt="logo-image" className='w-[25px]'/>
                     {/* <span className="font-jost text-blue-200 text-sm">Привлечении клиентов</span> */}
                     <span className="font-jost text-zinc-500 text-sm">{t('Shedule.itemCard')}</span>
                 </div>
                 <div className="flex flex-row px-5 gap-5 mt-2 items-center">
-                    <img src={Shedule2} alt="logo-image" className='w-[25px]'/>
+                    <img src={Shedule2} loading="lazy"  alt="logo-image" className='w-[25px]'/>
                     <span className="font-jost text-zinc-500 text-sm">{t('Shedule.itemCardOne')}</span>
                     {/* <span className="font-jost text-blue-200 text-sm">Удобстве взаимодействия</span> */}
                 </div>
                 <div className="flex flex-row px-5 gap-5 mt-2 items-center">
-                    <img src={Shedule3} alt="logo-image" className='w-[25px]'/>
+                    <img src={Shedule3} loading="lazy" alt="logo-image" className='w-[25px]'/>
                     {/* <span className="font-jost text-blue-200  text-sm">Оптимизации бизнес-процессов</span> */}
                     <span className="font-jost text-zinc-500  text-sm">{t('Shedule.itemCardTwo')}</span> 
                     
                 </div>
-                <img src={RockStyle} alt="Лого" className="absolute ml-0 mt-[-90px] sm:ml-[255px] "/>
+                <img src={RockStyle} loading="lazy" alt="Лого" className="absolute ml-0 mt-[-90px] sm:ml-[255px] "/>
             </div> 
             
             <div className="schedule-card-two w-[300px] sm:w-[600px] lg:w-[300px] h-[380px] flex flex-row items-end  justify-center gap-4">

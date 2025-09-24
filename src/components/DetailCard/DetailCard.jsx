@@ -36,16 +36,14 @@ function DetailCard(){
                             </div>
                         
                             <div className="flex items-center flex-row gap-5 mt-[90px] px-5">
-                                {/* <img src="/image/card-design1.svg" />
-                                <img src="/image/card-design2.svg" />
-                                <img src="/image/card-design3.svg" /> */}
-                                <img src={CardDesign1} className='w-[40px]'/>
-                                <img src={CardDesign2} className='w-[40px]'/>
-                                <img src={CardDesign3} className='w-[40px]'/>
+                               
+                                <img src={CardDesign1} className='w-[40px]' loading="lazy"/>
+                                <img src={CardDesign2} className='w-[40px]' loading="lazy"/>
+                                <img src={CardDesign3} className='w-[40px]' loading="lazy"/>
                             </div>
 
                             <div  className="flex items-start pl-4 mt-[30px]">
-                                {/* <h5 className="font-jost">Дизайн</h5> */}
+                               
                                 <h5 className="font-jost">{t('DetailCard.Design')}</h5>
                             </div>
                             <div className="mt-5 px-4">
@@ -66,9 +64,9 @@ function DetailCard(){
                                 {/* <img src="/image/card-design4.svg" />
                                 <img src="/image/card-design5.svg" />
                                 <img src="/image/card-design6.svg" /> */}
-                                <img src={CardDesign4} className='w-[40px]' />
-                                <img src={CardDesign5} className='w-[40px]'/>
-                                <img src={CardDesign6} className='w-[40px]' />
+                                <img src={CardDesign4} className='w-[40px]' loading="lazy" />
+                                <img src={CardDesign5} className='w-[40px]' loading="lazy"/>
+                                <img src={CardDesign6} className='w-[40px]' loading="lazy"/>
 
 
                             </div>
@@ -78,10 +76,10 @@ function DetailCard(){
                             </div>
                             <div className="mt-5 px-4">
                             <h6 className="font-jost font-light text-xs text-zinc-400">{t('DetailCard.FrontendText')}</h6>
-                                {/* <h6 className="font-jost font-light text-xs text-zinc-400">Мы разрабатываем интерфейсы с использованием React, HTML, CSS, Vite, React Hooks API</h6> */}
+
                             </div>
                             <img src={Two}
-                            // <img src="/image/cifra-two.svg"
+                  
                             alt="Лого"
                             className="absolute translate-x-[-45px] translate-y-[-50px]"/>     
                         </div>
@@ -91,12 +89,10 @@ function DetailCard(){
                                 <img src={ElipsDesign} alt="logo-card-style" className="w-[25px]"/>
                             </div>
                             <div className="flex items-center flex-row gap-5 mt-[90px] px-5">
-                                <img src={CardDesign7} className='w-[40px]'/>
-                                <img src={CardDesign8} className='w-[40px]'/>
-                                <img src={CardDesign9} className='w-[40px]'/>
-                                {/* <img src="/image/card-design7.svg" />
-                                <img src="/image/card-design8.svg" />
-                                <img src="/image/card-design9.svg" /> */}
+                                <img src={CardDesign7} className='w-[40px]' loading="lazy"/>
+                                <img src={CardDesign8} className='w-[40px]' loading="lazy"/>
+                                <img src={CardDesign9} className='w-[40px]' loading="lazy"/>
+                              
                             </div>
                             <div  className="flex items-start pl-4 mt-[30px]">
                                 {/* <h5 className="font-jost">Програмирование</h5> */}
@@ -118,20 +114,17 @@ function DetailCard(){
                                 <img src={ElipsDesign} alt="logo-card-style" className="w-[25px]"/>
                             </div>
                             <div className="flex items-center flex-row gap-5 mt-[90px] px-5">
-                                <img src={CardDesign10} className='w-[40px]'/>
-                                <img src={CardDesign11} className='w-[40px]'/>
-                                <img src={CardDesign12} className='w-[40px]'/>
-                                {/* <img src="/image/card-design10.svg" />
-                                <img src="/image/card-design11.svg" />
-                                <img src="/image/card-design12.svg" /> */}
+                                <img src={CardDesign10} className='w-[40px]' loading="lazy"/>
+                                <img src={CardDesign11} className='w-[40px]' loading="lazy"/>
+                                <img src={CardDesign12} className='w-[40px]' loading="lazy"/>
+                              
                             </div>
                             <div  className="flex items-start pl-4 mt-[30px]">
                             <h5 className="font-jost">{t('DetailCard.Server')}</h5>
-                                {/* <h5 className="font-jost">Сервер</h5> */}
                             </div>
                             <div className="mt-5 px-4">
                             <h6 className="font-jost font-light text-xs text-zinc-400">{t('DetailCard.ServerText')}</h6>
-                                {/* <h6 className="font-jost font-light text-xs text-zinc-400">Мы развёртываем веб-сайты на хостинге PythonAnywhere, настраиваем SSL-сертификаты для безопасного соединения и предоставляем поддержку</h6> */}
+
                             </div>
                             <img src={Four}
                             alt="Лого"

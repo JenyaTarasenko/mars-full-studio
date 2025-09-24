@@ -24,7 +24,7 @@ function MarsSectionText({text1, text2}){
     return(
         <>
         <div className="flex items-center mt-[200px] flex-col">
-            <img src={randomImage} alt="mars-image" className='w-[300px]'/>
+            <img src={randomImage} alt="mars-image-text" className='w-[300px]' loading="lazy"/>
             <motion.h6
                 initial={{ x: -100, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}

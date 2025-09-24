@@ -8,7 +8,7 @@ function Bast(){
     return(
         <>
         <div className="flex items-center justify-center min-h-screen mt-40">
-            <div className="bg-cover bg-center  h-[1200px] w-[750px] flex items-center justify-center flex-col z-[1]" style={{ backgroundImage: `url(${bast})`  }}>
+            <div className="bg-cover bg-center  h-[1200px] w-[750px] flex items-center justify-center flex-col z-[1]" style={{ backgroundImage: `url(${bast})` }}>
                 <div className="">
                     <motion.h5 
                         initial={{ opacity: 0, x: 100 }} // невидим и сдвинут влево
