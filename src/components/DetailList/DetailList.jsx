@@ -182,7 +182,7 @@ const DetailList =()=>{
                         </div>
 
                         <div className="flex flex-col lg:items-end lg:justify-end items-center justify-center w-full mt-20">
-                            <img src={project.image_prototip} loading="lazy"  alt="logo-decor" className="w-full  max-h-[700px] px-1 object-cover"/>
+                            <img src={project.image_prototip} loading="lazy"  alt="logo-decor" className="w-full h-auto  px-1 object-cover"/>
                         </div>
                     </div>
                 </div>
