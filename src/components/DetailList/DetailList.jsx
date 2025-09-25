@@ -84,15 +84,15 @@ const DetailList =()=>{
                     transition={{ duration: 1.5, ease: "easeOut" }} // плавность
                 />
                 <div className="flex flex-col mt-5 px-4 text-left">
-                    <motion.h1 
+                    <h1 
                         className="font-jost font-extrabold text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl"
-                        initial={{ opacity: 0, y: 50 }}       // изначально ниже и невидим
-                        whileInView={{ opacity: 1, y: 0 }}    // поднимается и становится видимым
-                        viewport={{ once: true, amount: 0.5 }} // один раз при 50% видимости
-                        transition={{ duration: 1.5, ease: "easeOut" }} // плавность
+                        // initial={{ opacity: 0, y: 50 }}       // изначально ниже и невидим
+                        // whileInView={{ opacity: 1, y: 0 }}    // поднимается и становится видимым
+                        // viewport={{ once: true, amount: 0.5 }} // один раз при 50% видимости
+                        // transition={{ duration: 1.5, ease: "easeOut" }} // плавность
                     >
                         {getTranslated(project, 'name')}
-                    </motion.h1>
+                    </h1>
                 </div>
                
             </div>
@@ -101,17 +101,17 @@ const DetailList =()=>{
             <div className="w-full  bg-contain bg-center bg-no-repeat flex items-center justify-center flex-col mt-5 gap-10" >
                 
                 <div className="flex-1 flex items-center justify-center flex-col lg:flex-row mt-[30px]">
-                    <div className="flex-1 flex flex-col items-center justify-center gap-5 lg:gap-10 px-4 relative">
+                    <div className="flex-1 flex flex-col items-center justify-center gap-5 lg:gap-10 px-4">
 
-                        <motion.h4 
+                        <h4 
                             className="font-jost text-sm  font-sm text-white max-w-[400px] text-left z-[10]"
-                            initial={{ opacity: 0, x: -50 }}        // невидимый, немного слева
-                            whileInView={{ opacity: 1, x: 0 }}      // плавно смещается на место
-                            viewport={{ once: true, amount: 0.5 }}  // анимация запускается один раз при 50% видимости
-                            transition={{ duration: 1.2, ease: "easeOut" }} // плавность
+                            // initial={{ opacity: 0, x: -50 }}        // невидимый, немного слева
+                            // whileInView={{ opacity: 1, x: 0 }}      // плавно смещается на место
+                            // viewport={{ once: true, amount: 0.5 }}  // анимация запускается один раз при 50% видимости
+                            // transition={{ duration: 1.2, ease: "easeOut" }} // плавность
                         >
                             {getTranslated(project, 'description')}
-                        </motion.h4>
+                        </h4>
 
                         <img src={project.image_description} loading="lazy"  alt="mars" className="w-[500px] h-[300px] px-1 object-cover"  />
 
@@ -121,15 +121,15 @@ const DetailList =()=>{
                         <div className="w-full h-full flex lg:flex-col flex-col-reverse lg:items-start items-center justify-start gap-5 lg:gap-10">
                             <img src={project.image_job} alt="mars" loading="lazy" className="w-[600px] h-[300px] px-5 object-cover" />
 
-                            <motion.h4 
+                            <h4 
                                 className="font-jost text-sm font-normal text-white  max-w-[900px] px-10"
-                                initial={{ opacity: 0, y: 50 }}        // невидимый, смещён вниз
-                                whileInView={{ opacity: 1, y: 0 }}     // плавно поднимается и проявляется
-                                viewport={{ once: true, amount: 0.5 }} // запускается один раз при 50% видимости
-                                transition={{ duration: 1.2, ease: "easeOut" }}
+                                // initial={{ opacity: 0, y: 50 }}        // невидимый, смещён вниз
+                                // whileInView={{ opacity: 1, y: 0 }}     // плавно поднимается и проявляется
+                                // viewport={{ once: true, amount: 0.5 }} // запускается один раз при 50% видимости
+                                // transition={{ duration: 1.2, ease: "easeOut" }}
                                 >
                             {getTranslated(project, 'text_job')}
-                            </motion.h4>
+                            </h4>
 
                         </div>
                     </div>
@@ -138,15 +138,15 @@ const DetailList =()=>{
 
         
 
-                    <motion.h4 
+                    <h4 
                         className="font-jost text-lg sm:text-xl text-white max-w-[900px] text-left sm:px-10 px-5 z-[10]"
-                        initial={{ opacity: 0, x: 50 }}        // невидимый, смещён вправо
-                        whileInView={{ opacity: 1, x: 0 }}     // плавно сдвигается на место и проявляется
-                        viewport={{ once: true, amount: 0.5 }} // один раз при 50% видимости
-                        transition={{ duration: 1.2, ease: "easeOut" }}
+                        // initial={{ opacity: 0, x: 50 }}        // невидимый, смещён вправо
+                        // whileInView={{ opacity: 1, x: 0 }}     // плавно сдвигается на место и проявляется
+                        // viewport={{ once: true, amount: 0.5 }} // один раз при 50% видимости
+                        // transition={{ duration: 1.2, ease: "easeOut" }}
                     >
                         {t('DetailList.Text')}{" "}<span className="text-cyan-200 text-xl font-light">{t('DetailList.TextOne')}{" "}</span>{t('DetailList.TextTwo')}{" "}<span class="text-cyan-200 text-xl font-light">{t('DetailList.TextThree')}{" "}</span>{t('DetailList.TextFour')}<span class="text-cyan-200 text-xl font-light">{" "}{t('DetailList.TextFive')}{" "}</span>{t('DetailList.TextSix')}
-                    </motion.h4>
+                    </h4>
 
                     {/* <h4 className="font-jost text-lg sm:text-xl text-white max-w-[900px] text-left sm:px-10 px-5 z-[10]">Каждый сайт, созданный студией Mars — это <span class="text-cyan-200 text-xl font-light">индивидуальное решение, не похожее на другие. </span>Перед разработкой мы внимательно<span class="text-cyan-200 text-xl font-light"> анализируем рынок и изучаем конкурентов,</span> чтобы понять их сильные стороны. Это позволяет нам создавать проекты, которые <span class="text-cyan-200 text-xl font-light">становятся лучше, удобнее и привлекательнее — </span>как с точки зрения функционала, так и с визуальной стороны.</h4> */}
                 </div>
@@ -209,15 +209,15 @@ const DetailList =()=>{
                         <h6 className="font-jost text-white  text-sm max-w-[700px] px-10">{getTranslated(project, 'text_prototip_end')}</h6>
                     </div>
                     <div className="flex flex-col lg:items-end lg:justify-end items-center justify-center w-full mt-10">
-                        <motion.h6 
+                        <h6 
                             className="font-jost text-zinc-300 text-sm max-w-[500px] px-10"
-                            initial={{ opacity: 0, x: 50 }}        // невидимый, смещён вправо
-                            whileInView={{ opacity: 1, x: 0 }}     // плавно сдвигается на место и проявляется
-                            viewport={{ once: true, amount: 0.5 }} // один раз при 50% видимости
-                            transition={{ duration: 1.2, ease: "easeOut" }}
+                            // initial={{ opacity: 0, x: 50 }}        // невидимый, смещён вправо
+                            // whileInView={{ opacity: 1, x: 0 }}     // плавно сдвигается на место и проявляется
+                            // viewport={{ once: true, amount: 0.5 }} // один раз при 50% видимости
+                            // transition={{ duration: 1.2, ease: "easeOut" }}
                         >
                             {t('DetailList.SectionDescription')}
-                        </motion.h6>
+                        </h6>
                             {/* <h6 className="font-jost text-white text-sm max-w-[500px] px-10">Вся магия начинается с дизайна в Figma — мы создаём прототип будущего сайта, его «скелет». После утверждения макета проект переходит в этап фронтенд-разработки: интерфейс реализуется на React — современном фреймворке для создания адаптивных и быстрых решений с любым уровнем функционала.Затем к работе подключается бэкенд на Django. Здесь мы объединяем дизайн и функционал: тестируем систему, настраиваем API через DRF, обеспечиваем стабильную работу сайта.Финальный этап — это серверная часть: подключение домена, установка SSL-сертификата и размещение сайта на надёжном хостинге. В результате вы получаете готовый ресурс, который открывается в любой точке мира — быстро, безопасно и без ограничений</h6> */}
                         
                     </div>

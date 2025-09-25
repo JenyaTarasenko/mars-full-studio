@@ -1,6 +1,6 @@
 import './style.css';
 import { useTranslation } from 'react-i18next';
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 
 import AdvantagesUk from "../../assets/image/advantages-Uk.svg";
 import AdvantagesEn from "../../assets/image/advantages-En.svg";
@@ -38,15 +38,15 @@ function Advantages(){
     return(
     <>
         <div className="flex items-center justify-center mt-20 advantages-desktop">
-            <motion.img
+            <img
                 src={logosDes[i18n.language] || logosDes.en} 
-                alt="The best proposal for the development of Mars"
-                initial={{ opacity: 0, y: 100 }}          // старт: невидимая и ниже
-                whileInView={{ opacity: 1, y: 0 }}        // при появлении: видимая и на месте
-                transition={{ duration: 1, ease: "easeOut" }}
-                viewport={{ once: true, amount: 0.3 }}
-                className="w-full max-w-[1000px] mx-auto will-change-transform"
-                style={{ willChange: "transform, opacity" }} // подсказка браузеру
+                // alt="The best proposal for the development of Mars"
+                // initial={{ opacity: 0, y: 100 }}          // старт: невидимая и ниже
+                // whileInView={{ opacity: 1, y: 0 }}        // при появлении: видимая и на месте
+                // transition={{ duration: 1, ease: "easeOut" }}
+                // viewport={{ once: true, amount: 0.3 }}
+                // className="w-full max-w-[1000px] mx-auto will-change-transform"
+                // style={{ willChange: "transform, opacity" }} // подсказка браузеру
                 loading="lazy"
             />
     </div>

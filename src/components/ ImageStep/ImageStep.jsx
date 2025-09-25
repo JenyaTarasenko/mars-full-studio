@@ -12,14 +12,11 @@ function ImageStep(){
         en:AboutEn,
         ru:AbotRu,
         uk:AboutUk
-        // en:"/image/about-en.svg",
-        // ru:"/image/about-ru.svg",
-        // uk:"/image/about-uk.svg"
     };
 
     return(
         <div className="flex items-center justify-center flex-col relative mt-20">
-            <img src={logos[i18n.language] || logos.en}/>
+            <img src={logos[i18n.language] || logos.en} loading="lazy"/>
         </div>
     );
 }    
