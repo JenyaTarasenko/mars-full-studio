@@ -98,7 +98,7 @@ const DetailList =()=>{
             </div>
             {/*block 1*/}
             {/*block 2 style={{ backgroundImage:`url(${Moon})`}}*/}
-            <div className="w-full  bg-contain bg-center bg-no-repeat flex items-center justify-center flex-col mt-5 gap-10" >
+            <div className="w-full  bg-contain bg-center bg-no-repeat flex items-center justify-center flex-col mt-5 gap-40" >
                 
                 <div className="flex-1 flex items-center justify-center flex-col lg:flex-row mt-[30px]">
                     <div className="flex-1 flex flex-col items-center justify-center gap-5 lg:gap-10 px-4">
@@ -113,13 +113,15 @@ const DetailList =()=>{
                             {getTranslated(project, 'description')}
                         </h4>
 
-                        <img src={project.image_description} loading="lazy"  alt="mars" className="w-[500px] h-[300px] px-1 object-cover"  />
+                        <img src={project.image_description} loading="lazy"  alt="mars" className="w-full  h-auto px-1 object-cover"  />
+
+                        {/* <img src={project.image_description} loading="lazy"  alt="mars" className="w-[500px] h-[300px] px-1 object-cover"  /> */}
 
                     </div> 
                         
                     <div className="flex-1 flex flex-col gap-5 mt-5 lg:mt-[100px]">
                         <div className="w-full h-full flex lg:flex-col flex-col-reverse lg:items-start items-center justify-start gap-5 lg:gap-10">
-                            <img src={project.image_job} alt="mars" loading="lazy" className="w-[600px] h-[300px] px-5 object-cover" />
+                            <img src={project.image_job} alt="mars" loading="lazy" className="w-full h-auto px-1 object-cover" />
 
                             <h4 
                                 className="font-jost text-sm font-normal text-white  max-w-[900px] px-10"
@@ -160,81 +162,85 @@ const DetailList =()=>{
                 <NumberDetail />
             </div>
             {/*block 3*/}
-            <div className="w-full sm:h-[1200px] h-[800px] bg-[url('/image/bg-detail1.png')] bg-cover bg-center flex flex-col items-center mt-20">
-                <div className="flex flex-col items-center justify-center">
-                    <div className="flex items-center justify-center">
-                    <h6 className="font-jost text-cyan-200 text-3xl sm:text-5xl">{t('DetailList.PrototipText')}<br />{t('DetailList.PrototipTextItem')}</h6>
-                        {/* <h6 className="font-jost text-cyan-200 text-3xl sm:text-5xl">Прототип<br />будущего сайта</h6> */}
+            <div  className='flex flex-col gap-10'>
+                <div className="w-full min-h-[800px] sm:min-h-[1200px] bg-[url('/image/bg-detail1.png')] bg-cover bg-center flex flex-col items-center mt-20">
+                    <div className="flex flex-col items-center justify-center">
+                        <div className="flex items-center justify-center">
+                        <h6 className="font-jost text-cyan-200 text-3xl sm:text-5xl">{t('DetailList.PrototipText')}<br />{t('DetailList.PrototipTextItem')}</h6>
+                            {/* <h6 className="font-jost text-cyan-200 text-3xl sm:text-5xl">Прототип<br />будущего сайта</h6> */}
+                        </div>
+                        <div className="flex flex-col lg:items-start lg:justify-start items-center justify-center w-full mt-20">
+                            <motion.h6 
+                                className="font-jost text-white  text-sm max-w-[700px] px-10"
+                                initial={{ opacity: 0, y: 50 }}       // изначально ниже и невидимый
+                                whileInView={{ opacity: 1, y: 0 }}    // плавно поднимается на своё место
+                                viewport={{ once: true, amount: 0.5 }} // срабатывает один раз
+                                transition={{ duration: 1.5, ease: "easeOut" }} // плавность появления
+                            >
+                            {getTranslated(project, 'text_prototip')}
+                            </motion.h6>
+                        </div>
+
+                        <div className="flex flex-col lg:items-end lg:justify-end items-center justify-center w-full mt-20">
+                            <img src={project.image_prototip} loading="lazy"  alt="logo-decor" className="w-full  max-h-[700px] px-1 object-cover"/>
+                        </div>
                     </div>
-                    <div className="flex flex-col lg:items-start lg:justify-start items-center justify-center w-full mt-20">
+                </div>
+                {/*block 3*/}
+                {/*block 4*/}
+                <div className="w-full min-h-[1300px] bg-cover bg-center flex flex-col items-center gap-20 pb-10" >
+                    <div className="flex flex-col items-center justify-center gap-10">
+                        <div className="flex items-center justify-center">
+
                         <motion.h6 
-                            className="font-jost text-white  text-sm max-w-[700px] px-10"
-                            initial={{ opacity: 0, y: 50 }}       // изначально ниже и невидимый
-                            whileInView={{ opacity: 1, y: 0 }}    // плавно поднимается на своё место
-                            viewport={{ once: true, amount: 0.5 }} // срабатывает один раз
+                            className="font-jost text-cyan-200 text-3xl sm:text-5xl"
+                            initial={{ opacity: 0 }}             // изначально невидимый
+                            whileInView={{ opacity: 1 }}         // появляется при попадании в область видимости
+                            viewport={{ once: true, amount: 0.5 }} // срабатывает один раз, когда 50% блока видно
                             transition={{ duration: 1.5, ease: "easeOut" }} // плавность появления
                         >
-                        {getTranslated(project, 'text_prototip')}
+                            {t('DetailList.PrototipTextOne')}<br />{t('DetailList.PrototipTextTwo')}
                         </motion.h6>
-                    </div>
-
-                    <div className="flex flex-col lg:items-end lg:justify-end items-center justify-center w-full mt-20">
-                        <img src={project.image_prototip} loading="lazy"  alt="logo-decor" className="w-[600px] h-[300px] z-[1] mt-5 object-cover px-5"/>
-                    </div>
-                </div>
-            </div>
-            {/*block 3*/}
-            {/*block 4*/}
-            <div className="w-full h-[1300px] bg-cover bg-center flex flex-col items-center gap-20">
-                <div className="flex flex-col items-center justify-center gap-10">
-                    <div className="flex items-center justify-center">
-
-                    <motion.h6 
-                        className="font-jost text-cyan-200 text-3xl sm:text-5xl"
-                        initial={{ opacity: 0 }}             // изначально невидимый
-                        whileInView={{ opacity: 1 }}         // появляется при попадании в область видимости
-                        viewport={{ once: true, amount: 0.5 }} // срабатывает один раз, когда 50% блока видно
-                        transition={{ duration: 1.5, ease: "easeOut" }} // плавность появления
-                    >
-                        {t('DetailList.PrototipTextOne')}<br />{t('DetailList.PrototipTextTwo')}
-                    </motion.h6>
-                        {/* <h6 className="font-jost text-cyan-200 text-3xl sm:text-5xl">Сайт<br />который получился</h6> */}
-                    </div>
-                    <div classN="flex flex-col lg:items-end lg:justify-end items-center justify-center w-full mt-20">
-                       
-                        <img src={project. image_prototip_end} loading="lazy"  alt="logo-decor" className="w-[600px] h-[300px] object-cover z-[1] px-5"/>
-                    </div>
-                    <div className="flex flex-col lg:items-start lg:justify-start items-center justify-center w-full mt-5 relative">
-                        {/* <img src={Speral} className="absolute w-[300px] z-[-1]" /> */}
-                        <h6 className="font-jost text-white  text-sm max-w-[700px] px-10">{getTranslated(project, 'text_prototip_end')}</h6>
-                    </div>
-                    <div className="flex flex-col lg:items-end lg:justify-end items-center justify-center w-full mt-10">
-                        <h6 
-                            className="font-jost text-zinc-300 text-sm max-w-[500px] px-10"
-                            // initial={{ opacity: 0, x: 50 }}        // невидимый, смещён вправо
-                            // whileInView={{ opacity: 1, x: 0 }}     // плавно сдвигается на место и проявляется
-                            // viewport={{ once: true, amount: 0.5 }} // один раз при 50% видимости
-                            // transition={{ duration: 1.2, ease: "easeOut" }}
-                        >
-                            {t('DetailList.SectionDescription')}
-                        </h6>
-                            {/* <h6 className="font-jost text-white text-sm max-w-[500px] px-10">Вся магия начинается с дизайна в Figma — мы создаём прототип будущего сайта, его «скелет». После утверждения макета проект переходит в этап фронтенд-разработки: интерфейс реализуется на React — современном фреймворке для создания адаптивных и быстрых решений с любым уровнем функционала.Затем к работе подключается бэкенд на Django. Здесь мы объединяем дизайн и функционал: тестируем систему, настраиваем API через DRF, обеспечиваем стабильную работу сайта.Финальный этап — это серверная часть: подключение домена, установка SSL-сертификата и размещение сайта на надёжном хостинге. В результате вы получаете готовый ресурс, который открывается в любой точке мира — быстро, безопасно и без ограничений</h6> */}
+                            {/* <h6 className="font-jost text-cyan-200 text-3xl sm:text-5xl">Сайт<br />который получился</h6> */}
+                        </div>
+                        <div classN="flex flex-col lg:items-end lg:justify-end items-center justify-center w-full mt-20">
                         
+                            <img src={project. image_prototip_end} loading="lazy"  alt="logo-decor" className="w-full  h-auto px-1 object-cover"/>
+                        </div>
+                        <div className="flex flex-col lg:items-start lg:justify-start items-center justify-center w-full mt-5 relative">
+                            {/* <img src={Speral} className="absolute w-[300px] z-[-1]" /> */}
+                            <h6 className="font-jost text-white  text-sm max-w-[700px] px-10">{getTranslated(project, 'text_prototip_end')}</h6>
+                        </div>
+                        <div className="flex flex-col lg:items-end lg:justify-end items-center justify-center w-full mt-10">
+                            <h6 
+                                className="font-jost text-zinc-300 text-sm max-w-[500px] px-10"
+                                // initial={{ opacity: 0, x: 50 }}        // невидимый, смещён вправо
+                                // whileInView={{ opacity: 1, x: 0 }}     // плавно сдвигается на место и проявляется
+                                // viewport={{ once: true, amount: 0.5 }} // один раз при 50% видимости
+                                // transition={{ duration: 1.2, ease: "easeOut" }}
+                            >
+                                {t('DetailList.SectionDescription')}
+                            </h6>
+                            
+                            
+                        </div>
+                        <div>
+                            <a 
+                            href={project.url} 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className=''><div className="flex items-center justify-center px-4 py-2 text-white rounded-full mt-[30px] font-jost font-light hover:border-red-500 border border-white" style={{width: "180px", height: "40px"}}>
+                                {/* <span className="font-normal">смотреть проект</span> */}
+                                <span className="font-normal">{t('DetailList.ButtoText')}</span>
+                            </div></a>
+                        </div>
+                
                     </div>
-                    <div>
-                        <a 
-                        href={project.url} 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        className='block hidden sm:block'><div className="flex items-center justify-center px-4 py-2 text-white rounded-full mt-[30px] font-jost font-light hover:border-red-500 border border-white" style={{width: "180px", height: "40px"}}>
-                            {/* <span className="font-normal">смотреть проект</span> */}
-                            <span className="font-normal">{t('DetailList.ButtoText')}</span>
-                        </div></a>
-                    </div>
-            
                 </div>
+                {/*block 4*/}
+
             </div>
-            {/*block 4*/}
+           
         </>
     );
 }
