@@ -8,7 +8,49 @@
     <meta name="google-site-verification" content="reL_Sx5gy9mocFUEHJA4ULjjJVxoGZUtpqkVioPkrTc" />
     <title></title>
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+      <!-- Favicons -->
+     <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/fa16.png' %}?v=2">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/fa32.png' %}?v=2">
+    <link rel="icon" type="image/png" sizes="512x512" href="{% static 'favicon/fa512.png' %}?v=2">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/fa180.png' %}?v=2">
+ 
+     <!-- Open Graph -->
+    <meta property="og:title" content="Mars Studio">
+    <meta property="og:description" content="Создание современных сайтов с уникальным дизайном — от лендингов до интернет-магазинов">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.web-mars.com/">
+    <meta property="og:image" content="https://www.web-mars.com/static/favicon/mars-image.png?v=2">
+    <meta property="og:site_name" content="Mars Studio">
+ 
+     <!-- Structured Data JSON-LD -->
+    <script type="application/ld+json">
+     {
+       "@context": "https://schema.org",
+       "@type": "Organization",
+       "name": "Mars Studio",
+       "url": "https://www.web-mars.com/",
+       "logo": "https://www.web-mars.com/static/favicon/fa512.png",
+       "description": "Марс Студия — полный цикл разработки интернет сайтов для вашего бизнеса",
+       "inLanguage": ["ru", "en", "uk"],
+       "contactPoint": [
+         {
+           "@type": "ContactPoint",
+           "telephone": "+380731606731",
+           "contactType": "customer service",
+           "email": "mars.studio.dnepr@gmail.com",
+           "areaServed": "UA",
+           "availableLanguage": ["ru", "uk", "en"]
+         }
+       ]
+     }
+    </script>
+ 
+     <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mars Studio">
+    <meta name="twitter:description" content="Создание современных сайтов с уникальным дизайном">
+    <meta name="twitter:image" content="https://www.web-mars.com/static/favicon/mars-image.png?v=2">
     {% if debug %}
     <script type="module" src="http://localhost:5173/@vite/client"></script>
 
