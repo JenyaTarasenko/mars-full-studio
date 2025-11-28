@@ -6,6 +6,7 @@ from rest_framework.views import APIView
 from django.shortcuts import get_object_or_404
 from rest_framework.response import Response
 
+
 # список всех проектов
 class StudioMarsListAPIView(generics.ListAPIView):
     queryset = StudioMars.objects.all()
@@ -19,5 +20,8 @@ class StudioMarsListDetailView(APIView):
         return Response(serializer.data)
         
     
-    
+###############################SEO#####################################
+
+
+
 
